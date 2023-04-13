@@ -4,15 +4,15 @@
     width: 85%;
     margin: 0 auto;
 }
-@mixin title{
-    font-family: $main-font;
-    color: $accent-color;
-    font-size: 4em;
-    font-weight: 500;
-}
-
 // Colors
 $accent-color:#CA8D66;
 
 // Fonts
 $main-font:'Montserrat Alternates', sans-serif;
+
+.title{
+    font-family: $main-font;
+    color: $accent-color;
+    font-size: 4em;
+    font-weight: 500;
+}
