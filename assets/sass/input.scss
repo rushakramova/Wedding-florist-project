@@ -4,7 +4,8 @@
     width: 85%;
     margin: 0 auto;
 }
-@mixin title{
+
+@mixin title {
     font-family: $main-font;
     color: $accent-color;
     font-size: 4em;
@@ -93,8 +94,12 @@ $main-font: 'Montserrat Alternates', sans-serif;
         li {
             list-style-type: none;
 
+            a {
+                margin-right: 20px;
+            }
+
             .social__icon.social__icon_img {
-                width: 70%;
+                width: 80%;
             }
         }
     }
