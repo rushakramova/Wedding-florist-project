@@ -45,32 +45,42 @@ $main-font: "Montserrat Alternates", sans-serif;
 /*Testimonials*/
 .testimonials {
   @include container;
+  margin-top: 4.375em;
+  margin-bottom: 3.75em;
+
+  &__title {
+    margin-bottom: 2.5em;
+  }
 
   &__cards {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 1.25em;
   }
   &__card {
-    flex-basis: 50%;
+    flex-basis: 49%;
     border: 1px solid $accent-color;
 
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: flex-start;
   }
   &__img {
-    flex-basis: 45%;
+    flex-basis: 34%;
     max-width: 100%;
+    padding: 1.875em 1.125em;
   }
   &__text {
-    flex-basis: 55%;
+    flex-basis: 66%;
+    margin: 2.5em auto;
   }
   &__author {
+    margin-bottom: 1.563em;
     font-family: $main-font;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: min(1.5em, 24px);
     line-height: 29px;
 
     color: $accent-color;
@@ -80,7 +90,7 @@ $main-font: "Montserrat Alternates", sans-serif;
     font-family: $main-font;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 24px;
     line-height: 29px;
 
     color: #5c6c72;

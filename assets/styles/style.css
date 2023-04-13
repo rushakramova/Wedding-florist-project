@@ -35,27 +35,36 @@ ol {
   max-width: 1440px;
   width: 85%;
   margin: 0 auto;
+  margin-top: 4.375em;
+  margin-bottom: 3.75em;
+}
+.testimonials__title {
+  margin-bottom: 2.5em;
 }
 .testimonials__cards {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1.25em;
 }
 .testimonials__card {
-  flex-basis: 50%;
+  flex-basis: 49%;
   border: 1px solid #ca8d66;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-flow: row nowrap;
+  align-items: flex-start;
 }
 .testimonials__img {
-  flex-basis: 45%;
+  flex-basis: 34%;
   max-width: 100%;
+  padding: 1.875em 1.125em;
 }
 .testimonials__text {
-  flex-basis: 55%;
+  flex-basis: 66%;
+  margin: 2.5em auto;
 }
 .testimonials__author {
+  margin-bottom: 1.563em;
   font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 600;
