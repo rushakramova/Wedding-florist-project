@@ -19,12 +19,13 @@ $main-font: 'Montserrat Alternates', sans-serif;
     h2 {
         font-size: 64px;
         font-family: $main-font;
+        font-weight: 500;
+        color: rgba(202, 141, 102, 1);
 
     }
 
     .container__cards {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
 
         .card {
@@ -32,9 +33,72 @@ $main-font: 'Montserrat Alternates', sans-serif;
             height: 470px;
             border: 1px rgba(92, 108, 114, 1) solid;
             font-size: 24px;
-
+            margin-left: 0;
+            margin-right: auto;
+            margin-bottom: 3%;
         }
 
+        .product__img {
+            width: 100%;
+        }
 
+        .product__name {
+            font-family: $main-font;
+            font-weight: 600;
+            font-size: 24px;
+            color: rgba(92, 108, 114, 1);
+            text-align: center;
+        }
+
+        .product__price {
+            font-family: $main-font;
+            font-weight: 600;
+            font-size: 24px;
+            color: rgba(202, 141, 102, 1);
+            text-align: center;
+        }
     }
+
+    .social-network {
+        background-color: rgba(202, 141, 102, 0.5);
+        width: 710px;
+        height: 72px;
+        border-radius: 10px;
+        display: flex;
+        margin-left: 50%;
+
+        p {
+            font-family: $main-font;
+            font-size: 32px;
+            margin-left: 101px;
+            margin-top: 17px;
+        }
+
+        .social__icon {
+            margin-top: 0;
+            margin-bottom: 20px;
+            // border: 1px red solid;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style-type: none;
+
+            .social__icon.social__icon_img {
+                width: 70%;
+            }
+        }
+    }
+
+    .line {
+        margin-top: 70px;
+
+        .line__img {
+            width: 100%;
+        }
+    }
+
 }
