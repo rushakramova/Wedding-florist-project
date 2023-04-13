@@ -1,12 +1,40 @@
 // Mixins
-@mixin container{
+@mixin container {
     max-width: 1440px;
     width: 85%;
     margin: 0 auto;
 }
 
 // Colors
-$accent-color:#CA8D66;
+$accent-color: #CA8D66;
 
 // Fonts
-$main-font:'Montserrat Alternates', sans-serif;
+$main-font: 'Montserrat Alternates', sans-serif;
+
+// Стили блока price
+
+.container__price {
+    @include container();
+
+    h2 {
+        font-size: 64px;
+        font-family: $main-font;
+
+    }
+
+    .container__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .card {
+            width: 345px;
+            height: 470px;
+            border: 1px rgba(92, 108, 114, 1) solid;
+            font-size: 24px;
+
+        }
+
+
+    }
+}
