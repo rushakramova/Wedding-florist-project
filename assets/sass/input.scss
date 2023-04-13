@@ -4,6 +4,12 @@
     width: 85%;
     margin: 0 auto;
 }
+@mixin title{
+    font-family: $main-font;
+    color: $accent-color;
+    font-size: 64px;
+    font-weight: 500;
+}
 
 // Colors
 $accent-color:#CA8D66;
