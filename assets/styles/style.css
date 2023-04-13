@@ -1,8 +1,75 @@
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/*Box-sizing*/
+* {
+  box-sizing: border-box;
+}
+
 .title {
   font-family: "Montserrat Alternates", sans-serif;
-  color: #CA8D66;
+  color: #ca8d66;
   font-size: 4em;
   font-weight: 500;
+}
+
+/*Testimonials*/
+.testimonials {
+  max-width: 1440px;
+  width: 85%;
+  margin: 0 auto;
+}
+.testimonials__cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.testimonials__card {
+  flex-basis: 50%;
+  border: 1px solid #ca8d66;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.testimonials__img {
+  flex-basis: 45%;
+  max-width: 100%;
+}
+.testimonials__text {
+  flex-basis: 55%;
+}
+.testimonials__author {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 29px;
+  color: #ca8d66;
+}
+.testimonials__quote {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 29px;
+  color: #5c6c72;
 }
 
 /*# sourceMappingURL=style.css.map */

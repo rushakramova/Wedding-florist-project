@@ -1,18 +1,88 @@
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/*Box-sizing*/
+* {
+  box-sizing: border-box;
+}
+
 // Mixins
-@mixin container{
-    max-width: 1440px;
-    width: 85%;
-    margin: 0 auto;
+@mixin container {
+  max-width: 1440px;
+  width: 85%;
+  margin: 0 auto;
 }
 // Colors
-$accent-color:#CA8D66;
+$accent-color: #ca8d66;
 
 // Fonts
-$main-font:'Montserrat Alternates', sans-serif;
+$main-font: "Montserrat Alternates", sans-serif;
 
-.title{
+.title {
+  font-family: $main-font;
+  color: $accent-color;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+/*Testimonials*/
+.testimonials {
+  @include container;
+
+  &__cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  &__card {
+    flex-basis: 50%;
+    border: 1px solid $accent-color;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  &__img {
+    flex-basis: 45%;
+    max-width: 100%;
+  }
+  &__text {
+    flex-basis: 55%;
+  }
+  &__author {
     font-family: $main-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 29px;
+
     color: $accent-color;
-    font-size: 4em;
-    font-weight: 500;
+  }
+
+  &__quote {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 29px;
+
+    color: #5c6c72;
+  }
 }
