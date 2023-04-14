@@ -10,10 +10,20 @@
 }
 // Colors
 $accent-color: #ca8d66;
+$gray: #5c6c72;
 
 // Fonts
 $main-font: "Montserrat Alternates", sans-serif;
 
+/*Screen sizes*/
+$mobile: 767px;
+$tablet: 1024px;
+
+/*Box-sizing*/
+* {
+  box-sizing: border-box;
+}
+// Class for H2
 .title {
   font-family: $main-font;
   color: $accent-color;

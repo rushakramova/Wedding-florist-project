@@ -1,1 +1,10 @@
-{"version":3,"sourceRoot":"","sources":["../sass/input.scss"],"names":[],"mappings":"AAgBA;EACE,aAHU;EAIV,OAPa;EAQb;EACA;;;AAGF;AACA;EAtBE;EACA;EACA;EAuBA;EACA;;AAEA;EAvBA;EACA;EAwBE;;AAGF;EA5BA;EACA;EA6BE;EACA;EACA;EACA;;AAEF;EACE;EACA;EAEA;EACA;EACA;;AAEF;EACE;EACA;EACA;EACA;;AAEF;EACE;EACA;;AAEF;EACE;EACA,aAhDQ;EAiDR;EACA;EACA;EACA;EAEA,OAzDW;;AA4Db;EACE,aA1DQ;EA2DR;EACA;EACA;EACA;EAEA","file":"style.css"}
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "../sass/input.scss"
+  ],
+  "names": [],
+  "mappings": "AAYA;EACI,aAHO;EAIP,OAPU;EAQV;EACA",
+  "file": "style.css"
+}
