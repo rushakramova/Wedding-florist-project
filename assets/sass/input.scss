@@ -1,0 +1,54 @@
+// Mixins
+@mixin main-container {
+    max-width: 1920px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+@mixin container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+@mixin tablet-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*Reset*/
+@import "reset";
+
+// Colors
+$accent-color: #CA8D66;
+$gray: #5C6C72;
+
+// Fonts
+$main-font: 'Montserrat Alternates', sans-serif;
+
+/*Screen sizes*/
+$mobile: 767px;
+$tablet: 1024px;
+
+/*Box-sizing*/
+* {
+    box-sizing: border-box;
+}
+
+// Class for H2
+.title {
+    font-family: $main-font;
+    color: $accent-color;
+    font-size: 4em;
+    font-weight: 500;
+}
+
+// Примеры работ
+
+.block4__blocks {
+    column-count: 4;
+    column-width: 340px;
+    column-gap: 20px;
+    row-gap: 31px;
+    /*border: 1px solid red;*/
+    margin: 0 200px;
+}
