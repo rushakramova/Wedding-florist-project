@@ -1,32 +1,11 @@
-p {
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-ul,
-ol {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-/*Box-sizing*/
-* {
-  box-sizing: border-box;
-}
-
 // Mixins
+@mixin main-container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
 @mixin container {
-  max-width: 1440px;
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
 }
 // Colors
@@ -44,15 +23,18 @@ $main-font: "Montserrat Alternates", sans-serif;
 
 /*Testimonials*/
 .testimonials {
-  @include container;
+  @include main-container;
+
   margin-top: 4.375em;
   margin-bottom: 3.75em;
 
   &__title {
+    @include container;
     margin-bottom: 2.5em;
   }
 
   &__cards {
+    @include container;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -68,12 +50,13 @@ $main-font: "Montserrat Alternates", sans-serif;
   }
   &__img {
     flex-basis: 34%;
+    width: 100%;
     max-width: 100%;
     padding: 1.875em 1.125em;
   }
   &__text {
     flex-basis: 66%;
-    margin: 2.5em auto;
+    margin: 2.5em 0.8em;
   }
   &__author {
     margin-bottom: 1.563em;
