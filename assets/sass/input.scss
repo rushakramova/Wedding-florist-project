@@ -1,15 +1,36 @@
 // Mixins
-@mixin container{
-    max-width: 1440px;
+@mixin main-container{
+    max-width: 1920px;
     width: 85%;
     margin: 0 auto;
 }
+@mixin container{
+    width: 75%;
+    margin: 0 auto;
+}
+@mixin tablet-container {
+    width: 95%;
+    margin: 0 auto;
+}
+/*Reset*/
+@import "reset";
+
 // Colors
 $accent-color:#CA8D66;
+$gray:#5C6C72;
 
 // Fonts
 $main-font:'Montserrat Alternates', sans-serif;
 
+/*Screen sizes*/
+$mobile: 767px;
+$tablet: 1024px;
+
+/*Box-sizing*/
+* {
+    box-sizing: border-box;
+}
+// Class for H2
 .title{
     font-family: $main-font;
     color: $accent-color;
