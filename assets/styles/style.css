@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Medium.ttf");
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Montserrat_Alternates/MontserratAlternates-SemiBold.ttf");
+}
 /*Reset*/
 p {
   margin: 0;
@@ -34,48 +52,59 @@ ol {
 
 /*Testimonials*/
 .testimonials {
-  max-width: 1920px;
+  max-width: 1470px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
   margin-top: 4.375em;
   margin-bottom: 3.75em;
 }
 .testimonials__title {
-  width: 75%;
-  margin: 0 auto;
   margin-bottom: 2.5em;
 }
 .testimonials__cards {
-  width: 75%;
-  margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  gap: 1.25em;
+  gap: 20px;
 }
 .testimonials__card {
-  flex-basis: 49%;
+  flex-basis: 49.3%;
   border: 1px solid #ca8d66;
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
 }
+.testimonials__card:hover {
+  box-shadow: 0 0 5px 5px #ca8d66;
+  transition: all 150ms ease-in-out;
+}
+@media (max-width: 1024px) {
+  .testimonials__card {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .testimonials__card {
+    flex-wrap: wrap;
+  }
+}
 .testimonials__img {
   flex-basis: 34%;
   width: 100%;
   max-width: 100%;
-  padding: 1.875em 1.125em;
+  padding: 30px 17px;
 }
 .testimonials__text {
   flex-basis: 66%;
-  margin: 2.5em 0.8em;
+  padding: 40px 13px;
 }
 .testimonials__author {
-  margin-bottom: 1.563em;
+  margin-bottom: 25px;
   font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: min(1.5em, 24px);
+  font-size: 1.5em;
   line-height: 29px;
   color: #ca8d66;
 }
@@ -83,7 +112,7 @@ ol {
   font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 29px;
   color: #5c6c72;
 }

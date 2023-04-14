@@ -1,13 +1,35 @@
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Montserrat_Alternates/MontserratAlternates-SemiBold.ttf");
+}
+
 // Mixins
-@mixin main-container {
-  max-width: 1920px;
+@mixin container {
+  max-width: 1470px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
-@mixin container {
-  width: 75%;
-  margin: 0 auto;
-}
+
+/*Reset*/
+@import "reset";
+
 // Colors
 $accent-color: #ca8d66;
 $gray: #5c6c72;
@@ -23,6 +45,7 @@ $tablet: 1024px;
 * {
   box-sizing: border-box;
 }
+
 // Class for H2
 .title {
   font-family: $main-font;
@@ -33,47 +56,56 @@ $tablet: 1024px;
 
 /*Testimonials*/
 .testimonials {
-  @include main-container;
+  @include container;
 
   margin-top: 4.375em;
   margin-bottom: 3.75em;
 
   &__title {
-    @include container;
     margin-bottom: 2.5em;
   }
 
   &__cards {
-    @include container;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    gap: 1.25em;
+    gap: 20px;
   }
   &__card {
-    flex-basis: 49%;
+    flex-basis: 49.3%;
     border: 1px solid $accent-color;
 
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
+
+    &:hover {
+      box-shadow: 0 0 5px 5px $accent-color;
+      transition: all 150ms ease-in-out;
+    }
+    @media (max-width: $tablet) {
+      flex-basis: 100%;
+    }
+    @media (max-width: $mobile) {
+      flex-wrap: wrap;
+    }
   }
   &__img {
     flex-basis: 34%;
     width: 100%;
     max-width: 100%;
-    padding: 1.875em 1.125em;
+    padding: 30px 17px;
   }
   &__text {
     flex-basis: 66%;
-    margin: 2.5em 0.8em;
+    padding: 40px 13px;
   }
   &__author {
-    margin-bottom: 1.563em;
+    margin-bottom: 25px;
     font-family: $main-font;
     font-style: normal;
     font-weight: 600;
-    font-size: min(1.5em, 24px);
+    font-size: 1.5em;
     line-height: 29px;
 
     color: $accent-color;
@@ -83,9 +115,9 @@ $tablet: 1024px;
     font-family: $main-font;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 29px;
 
-    color: #5c6c72;
+    color: $gray;
   }
 }

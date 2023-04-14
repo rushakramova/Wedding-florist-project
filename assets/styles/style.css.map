@@ -1,10 +1,1 @@
-{
-  "version": 3,
-  "sourceRoot": "",
-  "sources": [
-    "../sass/input.scss"
-  ],
-  "names": [],
-  "mappings": "AAYA;EACI,aAHO;EAIP,OAPU;EAQV;EACA",
-  "file": "style.css"
-}
+{"version":3,"sourceRoot":"","sources":["../sass/input.scss","../sass/reset.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;;AAWF;AC7BA;EACI;;;AAEJ;AAAA;AAAA;AAAA;AAAA;AAAA;EAMI;;;AAEJ;AAAA;EAEA;EACA;EACA;;;ADwBA;AAIA;AACA;EACE;;;AAIF;EACE,aAbU;EAcV,OAlBa;EAmBb;EACA;;;AAGF;AACA;EAlCE;EACA;EACA;EACA;EAkCA;EACA;;AAEA;EACE;;AAGF;EACE;EACA;EACA;EACA;;AAEF;EACE;EACA;EAEA;EACA;EACA;;AAEA;EACE;EACA;;AAEF;EAZF;IAaI;;;AAEF;EAfF;IAgBI;;;AAGJ;EACE;EACA;EACA;EACA;;AAEF;EACE;EACA;;AAEF;EACE;EACA,aAnEQ;EAoER;EACA;EACA;EACA;EAEA,OA7EW;;AAgFb;EACE,aA7EQ;EA8ER;EACA;EACA;EACA;EAEA,OAtFG","file":"style.css"}
