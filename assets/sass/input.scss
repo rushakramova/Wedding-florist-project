@@ -21,7 +21,7 @@
 // Colors
 $accent-color: #CA8D66;
 $gray: #5C6C72;
-$bggray:#E0E0E0;
+$bggray: #E0E0E0;
 
 // Fonts
 $main-font: 'Montserrat Alternates', sans-serif;
@@ -42,6 +42,7 @@ $tablet: 1024px;
     color: $accent-color;
     font-size: 4em;
     font-weight: 500;
+    margin-bottom: 1.5em;
 }
 
 // Class for H3
@@ -53,35 +54,65 @@ $tablet: 1024px;
 }
 
 // Примеры работ
-.block4 {
+.block4,
+.block7 {
     display: flex;
     flex-direction: column;
     @include container
 }
 
-.block4__blocks {
+.block4__blocks,
+.block7__blocks {
     column-count: 4;
-    column-width: 21em;
-    column-gap: 20px;
-    row-gap: 31px;
-    /*border: 1px solid red;*/
+    column-width: 345px;
+}
+
+.block4__photo-1,
+.block4__photo-2,
+.block4__photo-3,
+.block4__photo-4,
+.block4__photo-5,
+.block4__photo-6,
+.block7__photo-1,
+.block7__photo-2,
+.block7__photo-3,
+.block7__photo-4,
+.block7__photo-5,
+.block7__photo-6,
+.block4__text,
+.block7__text {
+    padding-bottom: 20px;
+    padding-right: 20px;
 }
 
 .block4_p,
-li {
+.block7_p, .block7_pp,
+ol {
     font-family: $inter;
     color: $gray;
-    background-color: $bggray;
     font-size: 1.5em;
     font-weight: 400;
+    background-color: $bggray;
+    background-clip: padding-box;
+    max-width: 345px;
 }
 
+.block4_p,.block7_p {
+    height: 181px;
+}
 
+ol {
+    height: 408px;
+}
+.block7_pp {
+    height: 466px;
+}
 ol>li {
-    padding: 0.6em;
+    padding: 0.4em;
 }
 
-.block4__text {
+.block4__text,
+.block7__text {
     display: flex;
     flex-direction: column;
     gap: 2.5em;
