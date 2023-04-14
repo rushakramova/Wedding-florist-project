@@ -1,0 +1,28 @@
+/*Screen sizes*/
+/*Box-sizing*/
+* {
+  box-sizing: border-box;
+}
+
+/*Reset*/
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=style.css.map */
