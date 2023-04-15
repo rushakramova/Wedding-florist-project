@@ -1,7 +1,7 @@
 // Mixins
 @mixin main-container {
     max-width: 1920px;
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -64,6 +64,10 @@ $tablet: 1024px;
             width: 345px;
             height: 470px;
             border: 1px $gray solid;
+        }
+
+        .card:hover {
+            box-shadow: 3px 3px 3px 3px rgba(92, 108, 114, 0.1);
         }
 
         .card__img {
