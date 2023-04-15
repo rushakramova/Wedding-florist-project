@@ -1,0 +1,100 @@
+// Mixins
+@mixin main-container {
+    max-width: 1920px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+@mixin container {
+    max-width: 1470px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@mixin tablet-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*Reset*/
+@import "reset";
+
+// Colors
+$accent-color: #CA8D66;
+$gray: #5C6C72;
+
+// Fonts
+$main-font: 'Montserrat Alternates', sans-serif;
+
+/*Screen sizes*/
+$mobile: 767px;
+$tablet: 1024px;
+
+/*Box-sizing*/
+* {
+    box-sizing: border-box;
+}
+
+// Class for H2
+.title {
+    font-family: $main-font;
+    color: $accent-color;
+    font-size: 4em;
+    font-weight: 500;
+}
+
+// Стили блока Букеты
+
+
+.container__bouquets {
+    @include container();
+
+    .title {
+        margin-bottom: 41px;
+    }
+
+    .container__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-start;
+
+        .card {
+            width: 345px;
+            height: 470px;
+            border: 1px $gray solid;
+        }
+
+        .card__img {
+            width: 100%;
+        }
+
+        .product__name {
+            font-family: $main-font;
+            font-weight: 600;
+            font-size: 24px;
+            color: $gray;
+            text-align: center;
+            margin-top: 22px;
+            margin-bottom: 22px;
+        }
+
+        .product__price {
+            font-family: $main-font;
+            font-weight: 600;
+            font-size: 24px;
+            color: $accent-color;
+            text-align: center;
+        }
+    }
+
+    .line {
+        margin-top: 60px;
+        margin-right: 30px;
+
+        .line__img {
+            width: 100%;
+        }
+    }
+}
