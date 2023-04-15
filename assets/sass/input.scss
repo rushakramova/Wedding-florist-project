@@ -1,25 +1,12 @@
 // Mixins
-@mixin main-container{
-    max-width: 1920px;
-    width: 85%;
+@mixin container{
+    max-width: 1470px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-@mixin container {
-    width: 75%;
-    margin: 0 auto;
-}
-@mixin tablet-container {
-    width: 95%;
-    margin: 0 auto;
-}
-
-// Class for H2
-@mixin title{
-    font-family: $main-font;
-    color: $accent-color;
-    font-size: 4em;
-    font-weight: 500;
-}
+/*Reset*/
+@import "reset";
 
 // Colors
 $accent-color:#CA8D66;
@@ -36,6 +23,10 @@ $tablet: 1024px;
 * {
     box-sizing: border-box;
 }
-
-/*Reset*/
-@import "reset";
+// Class for H2
+.title{
+    font-family: $main-font;
+    color: $accent-color;
+    font-size: 4em;
+    font-weight: 500;
+}

@@ -1,9 +1,3 @@
-/*Screen sizes*/
-/*Box-sizing*/
-* {
-  box-sizing: border-box;
-}
-
 /*Reset*/
 p {
   margin: 0;
@@ -18,11 +12,23 @@ h6 {
   margin: 0;
 }
 
-ul,
-ol {
+ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+/*Screen sizes*/
+/*Box-sizing*/
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #CA8D66;
+  font-size: 4em;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
