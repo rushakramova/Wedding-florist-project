@@ -30,3 +30,7 @@ $tablet: 1024px;
     font-size: 4em;
     font-weight: 500;
 }
+.line {
+    @include container();
+    margin-top: 2.125em ;
+}
