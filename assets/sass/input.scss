@@ -12,11 +12,6 @@
     padding-right: 15px;
 }
 
-@mixin tablet-container {
-    width: 95%;
-    margin: 0 auto;
-}
-
 /*Reset*/
 @import "reset";
 
@@ -101,4 +96,9 @@ $tablet: 1024px;
             width: 100%;
         }
     }
+}
+
+.line {
+    @include container();
+    margin-top: 2.125em;
 }
