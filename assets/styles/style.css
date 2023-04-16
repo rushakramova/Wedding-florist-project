@@ -57,7 +57,7 @@ ul {
 .container__bouquets .container__cards .card__img {
   width: 100%;
 }
-.container__bouquets .container__cards .product__name {
+.container__bouquets .container__cards .card__name {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -66,7 +66,7 @@ ul {
   margin-top: 22px;
   margin-bottom: 22px;
 }
-.container__bouquets .container__cards .product__price {
+.container__bouquets .container__cards .card__price {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -79,6 +79,14 @@ ul {
 }
 .container__bouquets .line .line__img {
   width: 100%;
+}
+
+.line {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 2.125em;
 }
 
 /*# sourceMappingURL=style.css.map */
