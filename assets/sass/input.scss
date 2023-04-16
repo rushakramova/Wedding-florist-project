@@ -12,6 +12,7 @@
 $accent-color:#CA8D66;
 $gray:#5C6C72;
 
+
 // Fonts
 $main-font:'Montserrat Alternates', sans-serif;
 
@@ -29,4 +30,97 @@ $tablet: 1024px;
     color: $accent-color;
     font-size: 4em;
     font-weight: 500;
+}
+.contacts {
+    display: inline-flex;
+    width: 710px;
+    height: 72px;
+    background: rgba(202, 141, 102, 0.5);
+    margin-top: 1.8em;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__order{
+        margin-left: 81px;
+        font-weight: 500;
+        font-size: 32px;
+    }
+
+}
+.icon-social{
+    display: inline-flex;
+    width: 50%;
+    align-items: center;
+
+    &__item-link_instagram{
+        margin-left: 18px;
+        margin-right: 30px;
+    }
+
+    &__item-link_telegram{
+        margin-right: 30px;
+    }
+
+    &__item-link_whatsapp{
+        margin-right: 30px;
+    }
+
+    &__item-link_phone{
+        margin-right: 30px;
+    }
+
+}
+.about-instagram{
+    font-size: 12px;
+    color: $accent-color;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    margin-top: 0.688em;
+    margin-left: 16em;
+}
+.line {
+    @include container();
+    margin-top: 2.125em ;
+}
+.arrow{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+.container-about-me{
+    @include container();
+}
+.about-me{
+    @include container();
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-top: 1.563em;
+    
+    &__studio-img{
+        position: relative;
+        width: 345px;
+        height: 586px;
+        margin-left: 0.5em;
+        align-items:center;
+    }
+
+    &__avatar-img{
+        width: 400px;
+        position: relative;
+        left:-70px;
+    }
+
+    &__info{
+        font-family: $main-font;
+        font-weight: 400;
+        font-size: 1.5em;
+        color: #000000;
+        max-width: 658px;
+        max-height: 600px;
+    }
+    &__info-text{
+        margin-bottom: 1em;
+    }   
 }
