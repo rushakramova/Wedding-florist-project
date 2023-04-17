@@ -1,3 +1,6 @@
+body {
+    background-color: white;
+}
 // Mixins
 @mixin container{
     max-width: 1470px;
@@ -16,8 +19,8 @@ $gray:#5C6C72;
 $main-font:'Montserrat Alternates', sans-serif;
 
 /*Screen sizes*/
-$mobile: 767px;
-$tablet: 1024px;
+$mobile: 360px;
+$tablet: 768px;
 
 /*Box-sizing*/
 * {
