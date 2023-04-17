@@ -103,6 +103,105 @@ $tablet: 1024px;
     margin-top: 2.125em;
 }
 
-@media screen and (min-width: 660px) and (max-width: 1469px) {}
+@media screen and (min-width: 1440px) {
+    .line_tablet {
+        display: none;
+    }
 
-@media screen and (max-width: 659px) {}
+    .line_mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 660px) and (max-width: 1439px) {
+
+    .container__bouquets {
+        max-width: 690px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .title {
+            font-size: 29.33px;
+        }
+
+        .container__cards {
+
+            .card {
+                width: 150px;
+                height: 226px;
+            }
+
+            .card__name {
+                font-size: 12px;
+                margin-top: 10.57px;
+                margin-bottom: 10px;
+            }
+
+            .card__price {
+                font-size: 12px;
+            }
+        }
+
+        .line {
+            display: none;
+        }
+
+        .line_tablet {
+            margin-top: 20px;
+            margin-left: -20px;
+        }
+
+        .line_mobile {
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 659px) {
+
+    .container__bouquets {
+        max-width: 360px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .title {
+            font-size: 36px;
+        }
+
+        .container__cards {
+
+            .card {
+                width: 160px;
+                height: 226px;
+            }
+
+            .card__name {
+                font-size: 12px;
+                margin-top: 11px;
+                margin-bottom: 10px;
+            }
+
+            .card__price {
+                font-size: 12px;
+            }
+        }
+
+        .line {
+            display: none;
+        }
+
+        .line_tablet {
+            display: none;
+            margin-top: 20px;
+            margin-left: -20px;
+        }
+
+        .line_mobile {
+            margin-top: 20px;
+            margin-left: -5px;
+        }
+    }
+}
