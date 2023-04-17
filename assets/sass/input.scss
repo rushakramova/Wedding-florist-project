@@ -1,18 +1,10 @@
 // Mixins
-@mixin main-container {
-    max-width: 1920px;
-    width: 85%;
-    margin: 0 auto;
-}
 
 @mixin container {
-    width: 75%;
+    max-width: 1470px;
     margin: 0 auto;
-}
-
-@mixin tablet-container {
-    width: 95%;
-    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /*Reset*/
@@ -42,15 +34,16 @@ $tablet: 1024px;
     color: $accent-color;
     font-size: 4em;
     font-weight: 500;
-    margin-bottom: 1.5em;
-}
+    margin-bottom: 40px;
 
-// Class for H3
-.title_h3 {
-    font-family: $main-font;
-    color: $gray;
-    font-size: 1.5em;
-    font-weight: 600;
+    // Class for H3
+    &_h3 {
+        font-family: $main-font;
+        color: $gray;
+        font-size: 1.5em;
+        font-weight: 600;
+        padding-bottom: 20px;
+    }
 }
 
 // Примеры работ
@@ -79,34 +72,77 @@ $tablet: 1024px;
 .block7__photo-4,
 .block7__photo-5,
 .block7__photo-6,
-.block4__text,
 .block7__text {
     padding-bottom: 20px;
     padding-right: 20px;
 }
 
-.block4_p,
-.block7_p, .block7_pp,
+.block7_p,
+.block7_pp,
 ol {
     font-family: $inter;
     color: $gray;
-    font-size: 1.5em;
+}
+
+.block7_p,
+.block7_pp {
+    font-weight: 600;
+    line-height: 29.26px;
+}
+
+ol {
     font-weight: 400;
+    line-height: 29.05px;
+}
+
+.block7_p,
+.block7_pp {
     background-color: $bggray;
+}
+
+.block7_p,
+.block7_pp,
+ol {
+    font-size: 1.5em;
+}
+
+.block4_p {
+    font-family: $main-font;
+    color: #000;
+    font-weight: 400;
+    font-size: 0.75em;
+    line-height: 20px;
+}
+
+//Ширина блоков с текстом
+.block4__text_1,
+.block4__text_2,
+.block7__text_1,
+.block7__text_2 {
     background-clip: padding-box;
     max-width: 345px;
 }
 
-.block4_p,.block7_p {
-    height: 181px;
+.block4__text_2>h3 {
+    padding-bottom: 0px;
+}
+
+.block4_p {
+    height: 233px;
 }
 
 ol {
-    height: 408px;
+    height: 405px;
 }
+
+.block7_p {
+    height: 181px;
+}
+
 .block7_pp {
-    height: 466px;
+    height: 470px;
 }
+
 ol>li {
     padding: 0.4em;
 }
@@ -115,5 +151,12 @@ ol>li {
 .block7__text {
     display: flex;
     flex-direction: column;
-    gap: 2.5em;
+}
+
+.block4__text {
+    gap: 20px;
+}
+
+.block7__text {
+    gap: 35px;
 }
