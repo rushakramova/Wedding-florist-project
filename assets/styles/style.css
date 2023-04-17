@@ -31,6 +31,14 @@ ul {
   font-weight: 500;
 }
 
+.line {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 2.125em;
+}
+
 .contacts {
   display: inline-flex;
   width: 710px;
@@ -64,6 +72,13 @@ ul {
 }
 .icon-social__item-link_phone {
   margin-right: 30px;
+}
+.icon-social .icon-social__item-link:hover {
+  -webkit-box-shadow: 62px 32px 60px 6px rgba(43, 172, 208, 0.21);
+  -moz-box-shadow: 62px 32px 60px 6px rgba(43, 172, 208, 0.21);
+  box-shadow: 62px 32px 60px 6px rgba(43, 172, 208, 0.21);
+  opacity: 0.4;
+  transition: 0.5s;
 }
 
 .about-instagram {

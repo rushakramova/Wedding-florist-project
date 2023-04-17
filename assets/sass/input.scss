@@ -74,6 +74,14 @@ $tablet: 1024px;
         margin-right: 30px;
     }
 
+    .icon-social__item-link:hover{
+        -webkit-box-shadow: 62px 32px 60px 6px rgba(43, 172, 208, 0.21);
+        -moz-box-shadow: 62px 32px 60px 6px rgba(43, 172, 208, 0.21);
+        box-shadow: 62px 32px 60px 6px rgba(43, 172, 208, 0.21);
+        opacity: 0.4;
+        transition: 0.5s;
+    }
+
 }
 .about-instagram{
     font-size: 12px;
