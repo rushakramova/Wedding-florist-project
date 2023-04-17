@@ -34,3 +34,64 @@ $tablet: 1024px;
     @include container();
     margin-top: 2.125em ;
 }
+// Display
+$dg: grid;
+
+.contacts-map{
+    @include container();
+    display: $dg;
+    font-family: $main-font;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1.5fr;
+    padding: 0;
+    max-height: 818px;
+
+    &__title{
+        grid-row: 1/2;
+    }
+
+    &__text{
+        display: $dg;
+        font-size: 2em;
+        grid-row: 2/3;
+    }
+    &__logo,
+    &__map{
+        grid-row: 3/4;
+    }
+    &__logo{
+        align-self: center;
+    }
+    
+}
+.contacts-map__list{
+    display: $dg;
+    align-items: stretch;
+}
+.contacts-map__list .phone-link{
+    color: $gray;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.contacts-map__list .messenger-link,
+.contacts-map__list .social-link,
+.contacts-map__list .map-link{
+    text-decoration: none;
+    color: #000000;
+    &:hover{
+        text-decoration: underline;
+    }
+    }
+
+.contacts-map__map{
+        display: $dg;
+    }
+
+.map-frame{
+    max-width: 100%;
+    justify-self: stretch;
+    align-self: stretch;
+}
+    

@@ -31,4 +31,74 @@ ul {
   font-weight: 500;
 }
 
+.line {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 2.125em;
+}
+
+.contacts-map {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: grid;
+  font-family: "Montserrat Alternates", sans-serif;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1.5fr;
+  padding: 0;
+  max-height: 818px;
+}
+.contacts-map__title {
+  grid-row: 1/2;
+}
+.contacts-map__text {
+  display: grid;
+  font-size: 2em;
+  grid-row: 2/3;
+}
+.contacts-map__logo, .contacts-map__map {
+  grid-row: 3/4;
+}
+.contacts-map__logo {
+  align-self: center;
+}
+
+.contacts-map__list {
+  display: grid;
+  align-items: stretch;
+}
+
+.contacts-map__list .phone-link {
+  color: #5C6C72;
+  text-decoration: none;
+}
+.contacts-map__list .phone-link:hover {
+  text-decoration: underline;
+}
+
+.contacts-map__list .messenger-link,
+.contacts-map__list .social-link,
+.contacts-map__list .map-link {
+  text-decoration: none;
+  color: #000000;
+}
+.contacts-map__list .messenger-link:hover,
+.contacts-map__list .social-link:hover,
+.contacts-map__list .map-link:hover {
+  text-decoration: underline;
+}
+
+.contacts-map__map {
+  display: grid;
+}
+
+.map-frame {
+  max-width: 100%;
+  justify-self: stretch;
+  align-self: stretch;
+}
+
 /*# sourceMappingURL=style.css.map */
