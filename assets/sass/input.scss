@@ -1,19 +1,19 @@
 // Mixins
-@mixin container{
-    max-width: 1470px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+@mixin container {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /*Reset*/
 @import "reset";
 
 // Colors
-$accent-color:#CA8D66;
-$gray:#5C6C72;
+$accent-color: #ca8d66;
+$gray: #5c6c72;
 
 // Fonts
-$main-font:'Montserrat Alternates', sans-serif;
+$main-font: "Montserrat Alternates", sans-serif;
 
 /*Screen sizes*/
 $mobile: 767px;
@@ -21,16 +21,134 @@ $tablet: 1024px;
 
 /*Box-sizing*/
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 // Class for H2
-.title{
-    font-family: $main-font;
-    color: $accent-color;
-    font-size: 4em;
-    font-weight: 500;
+.title {
+  font-family: $main-font;
+  color: $accent-color;
+  font-size: 4em;
+  font-weight: 500;
 }
+
 .line {
-    @include container();
-    margin-top: 2.125em ;
+  @include container();
+  margin-top: 2.125em;
+}
+
+.card {
+  width: 345px;
+  height: 470px;
+  border: 1px $gray solid;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__name {
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: $gray;
+    text-align: center;
+    margin-top: 22px;
+  }
+
+  &__price {
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: $accent-color;
+    text-align: center;
+    margin-top: 22px;
+  }
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.contacts {
+  display: inline-flex;
+  width: 710px;
+  height: 72px;
+  background: rgba(202, 141, 102, 0.5);
+  margin-top: 1.8em;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__order {
+    font-family: $main-font;
+    margin-left: 35px;
+    font-weight: 500;
+    font-size: 2em;
+  }
+}
+
+.icon-social {
+  display: inline-flex;
+  width: 50%;
+  align-items: center;
+
+  &__item-link_instagram {
+    margin-left: 25px;
+    margin-right: 32px;
+
+    :hover {
+      filter: drop-shadow(5px 5px 10px #df72a9);
+    }
+  }
+
+  &__item-link_vk {
+    margin-right: 32px;
+
+    :hover {
+      box-shadow: 5px 5px 10px #75b2f8;
+    }
+  }
+
+  &__item-link_telegram {
+    margin-right: 36px;
+
+    :hover {
+      filter: drop-shadow(5px 5px 10px #81cef0);
+    }
+  }
+
+  &__item-link_whatsapp {
+    margin-right: 40px;
+
+    :hover {
+      filter: drop-shadow(5px 5px 10px #55e895);
+    }
+  }
+
+  &__item-link_phone {
+    margin-right: 52px;
+
+    :hover {
+      filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.45));
+    }
+  }
+}
+
+.accessories {
+  @include container();
+  display: flex;
+  flex-direction: column;
+  margin-top: 73px;
+
+  .contacts {
+    align-self: flex-end;
+  }
+}
+
+.accessories-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 41px;
+  gap: 1.25em;
 }
