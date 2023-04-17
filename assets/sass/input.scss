@@ -102,3 +102,7 @@ $tablet: 1024px;
     @include container();
     margin-top: 2.125em;
 }
+
+@media screen and (min-width: 660px) and (max-width: 1469px) {}
+
+@media screen and (max-width: 659px) {}
