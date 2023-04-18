@@ -104,6 +104,7 @@ ol {
 .example__block_text {
   background-clip: padding-box;
   max-width: 345px;
+  padding-bottom: 20px;
 }
 
 .example_p {
@@ -134,7 +135,70 @@ ol > li {
 }
 
 .example__text {
-  gap: 35px;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+    line-height: 43.88px;
+  }
+  .title_h3 {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+  .example_p,
+  .example_p_bouquet,
+  .example_p2_bouquet {
+    font-size: 12px;
+    line-height: 19.78px;
+  }
+  ol {
+    padding-inline-start: 15px;
+  }
+  li {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .example__blocks_photo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  * img {
+    object-fit: cover;
+  }
+  .example__photo-1 > img {
+    width: 150px;
+    height: 205px;
+  }
+  .example__photo-2 > img {
+    width: 150px;
+    height: 98px;
+  }
+  .example__photo-3 > img {
+    width: 150px;
+    height: 98px;
+  }
+  .example__photo-4 > img {
+    width: 150px;
+    height: 242px;
+  }
+  .example__photo-5 > img {
+    width: 150px;
+    height: 184px;
+  }
+  .example__photo-6 > img {
+    width: 150px;
+    height: 147px;
+  }
+  .example_p_bouquet,
+  .example_p2_bouquet {
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #000;
+    background-color: transparent;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
