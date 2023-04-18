@@ -1,7 +1,21 @@
+body {
+    background-color: white;
+}
 // Mixins
-
-@mixin container {
+@mixin container{
     max-width: 1470px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@mixin tablet-container{
+    max-width: 690px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@mixin mobile-container{
+    max-width: 360px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -18,10 +32,13 @@ $bggray: #E0E0E0;
 // Fonts
 $main-font: 'Montserrat Alternates', sans-serif;
 $inter: 'Inter', sans-serif;
+$mfont-size:36px;
 
 /*Screen sizes*/
-$mobile: 767px;
-$tablet: 1024px;
+$big-display:1920px;
+$middle-display:1470px;
+$tablet: 768px;
+$mobile: 360px;
 
 /*Box-sizing*/
 * {
@@ -32,7 +49,7 @@ $tablet: 1024px;
 .title {
     font-family: $main-font;
     color: $accent-color;
-    font-size: 4em;
+    font-size: 64px;
     font-weight: 500;
     margin-bottom: 40px;
 
@@ -44,6 +61,11 @@ $tablet: 1024px;
         font-weight: 600;
         padding-bottom: 20px;
     }
+}
+
+.line {
+    @include container();
+    margin-top: 2.125em ;
 }
 
 // Примеры работ
@@ -158,5 +180,4 @@ ol>li {
 }
 
 .block7__text {
-    gap: 35px;
-}
+    gap: 35px;}

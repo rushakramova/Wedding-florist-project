@@ -1,3 +1,7 @@
+body {
+  background-color: white;
+}
+
 /*Reset*/
 p {
   margin: 0;
@@ -27,7 +31,7 @@ ul {
 .title {
   font-family: "Montserrat Alternates", sans-serif;
   color: #CA8D66;
-  font-size: 4em;
+  font-size: 64px;
   font-weight: 500;
   margin-bottom: 40px;
 }
@@ -37,6 +41,14 @@ ul {
   font-size: 1.5em;
   font-weight: 600;
   padding-bottom: 20px;
+}
+
+.line {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 2.125em;
 }
 
 .block4,
