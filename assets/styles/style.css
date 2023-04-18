@@ -41,32 +41,26 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 .container__bouquets .title {
   margin-bottom: 41px;
 }
-
 .container__bouquets .container__cards {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: flex-start;
 }
-
 .container__bouquets .container__cards .card {
   width: 345px;
   height: 470px;
   border: 1px #5C6C72 solid;
 }
-
 .container__bouquets .container__cards .card:hover {
   box-shadow: 3px 3px 3px 3px rgba(92, 108, 114, 0.1);
 }
-
 .container__bouquets .container__cards .card__img {
   width: 100%;
 }
-
 .container__bouquets .container__cards .card__name {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
@@ -76,7 +70,6 @@ ul {
   margin-top: 22px;
   margin-bottom: 22px;
 }
-
 .container__bouquets .container__cards .card__price {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
@@ -84,12 +77,10 @@ ul {
   color: #CA8D66;
   text-align: center;
 }
-
 .container__bouquets .line {
   margin-top: 60px;
   margin-right: 30px;
 }
-
 .container__bouquets .line .line__img {
   width: 100%;
 }
@@ -106,12 +97,10 @@ ul {
   .line_tablet {
     display: none;
   }
-
   .line_mobile {
     display: none;
   }
 }
-
 @media screen and (min-width: 660px) and (max-width: 1439px) {
   .container__bouquets {
     max-width: 690px;
@@ -119,40 +108,32 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
   }
-
   .container__bouquets .title {
     font-size: 29.33px;
   }
-
   .container__bouquets .container__cards .card {
     width: 150px;
     height: 226px;
   }
-
   .container__bouquets .container__cards .card__name {
     font-size: 12px;
     margin-top: 10.57px;
     margin-bottom: 10px;
   }
-
   .container__bouquets .container__cards .card__price {
     font-size: 12px;
   }
-
   .container__bouquets .line {
     display: none;
   }
-
   .container__bouquets .line_tablet {
     margin-top: 20px;
     margin-left: -20px;
   }
-
   .container__bouquets .line_mobile {
     display: none;
   }
 }
-
 @media screen and (max-width: 659px) {
   .container__bouquets {
     max-width: 360px;
@@ -160,207 +141,31 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
   }
-
   .container__bouquets .title {
     font-size: 36px;
   }
-
   .container__bouquets .container__cards .card {
     width: 160px;
     height: 226px;
   }
-
   .container__bouquets .container__cards .card__name {
     font-size: 12px;
     margin-top: 11px;
     margin-bottom: 10px;
   }
-
   .container__bouquets .container__cards .card__price {
     font-size: 12px;
   }
-
   .container__bouquets .line {
     display: none;
   }
-
   .container__bouquets .line_tablet {
     display: none;
     margin-top: 20px;
     margin-left: -20px;
   }
-
   .container__bouquets .line_mobile {
     margin-top: 20px;
     margin-left: -5px;
   }
-}
-
-.container__bouquets {
-  max-width: 1470px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.container__bouquets .title {
-  margin-bottom: 41px;
-}
-
-.container__bouquets .container__cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: flex-start;
-}
-
-.container__bouquets .container__cards .card {
-  width: 345px;
-  height: 470px;
-  border: 1px #5C6C72 solid;
-}
-
-.container__bouquets .container__cards .card:hover {
-  box-shadow: 3px 3px 3px 3px rgba(92, 108, 114, 0.1);
-}
-
-.container__bouquets .container__cards .card__img {
-  width: 100%;
-}
-
-.container__bouquets .container__cards .card__name {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  color: #5C6C72;
-  text-align: center;
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-
-.container__bouquets .container__cards .card__price {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  color: #CA8D66;
-  text-align: center;
-}
-
-.container__bouquets .line {
-  margin-top: 60px;
-  margin-right: 30px;
-}
-
-.container__bouquets .line .line__img {
-  width: 100%;
-}
-
-.line {
-  max-width: 1470px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 2.125em;
-}
-
-@media screen and (min-width: 1440px) {
-  .line_tablet {
-    display: none;
-  }
-
-  .line_mobile {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 660px) and (max-width: 1439px) {
-  .container__bouquets {
-    max-width: 690px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .container__bouquets .title {
-    font-size: 29.33px;
-  }
-
-  .container__bouquets .container__cards .card {
-    width: 150px;
-    height: 226px;
-  }
-
-  .container__bouquets .container__cards .card__name {
-    font-size: 12px;
-    margin-top: 10.57px;
-    margin-bottom: 10px;
-  }
-
-  .container__bouquets .container__cards .card__price {
-    font-size: 12px;
-  }
-
-  .container__bouquets .line {
-    display: none;
-  }
-
-  .container__bouquets .line_tablet {
-    margin-top: 20px;
-    margin-left: -20px;
-  }
-
-  .container__bouquets .line_mobile {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 659px) {
-  .container__bouquets {
-    max-width: 360px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .container__bouquets .title {
-    font-size: 36px;
-  }
-
-  .container__bouquets .container__cards .card {
-    width: 160px;
-    height: 226px;
-  }
-
-  .container__bouquets .container__cards .card__name {
-    font-size: 12px;
-    margin-top: 11px;
-    margin-bottom: 10px;
-  }
-
-  .container__bouquets .container__cards .card__price {
-    font-size: 12px;
-  }
-
-  .container__bouquets .line {
-    display: none;
-  }
-
-  .container__bouquets .line_tablet {
-    display: none;
-    margin-top: 20px;
-    margin-left: -20px;
-  }
-
-  .container__bouquets .line_mobile {
-    margin-top: 20px;
-    margin-left: -5px;
-  }
-}
-
-.line {
-  max-width: 1470px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 2.125em;
 }

@@ -3,9 +3,22 @@ body {
 }
 
 // Mixins
-
 @mixin container {
     max-width: 1470px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@mixin tablet-container {
+    max-width: 798px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@mixin mobile-container {
+    max-width: 390px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
