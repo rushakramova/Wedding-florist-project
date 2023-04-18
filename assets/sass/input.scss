@@ -5,6 +5,18 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+@mixin tablet-container {
+  max-width: 798px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@mixin mobile-container {
+  max-width: 390px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 /*Reset*/
 @import "reset";
@@ -17,8 +29,10 @@ $gray: #5c6c72;
 $main-font: "Montserrat Alternates", sans-serif;
 
 /*Screen sizes*/
-$mobile: 767px;
-$tablet: 1024px;
+$big-display: 1920px;
+$middle-display: 1470px;
+$tablet: 778px;
+$mobile: 359px;
 
 /*Box-sizing*/
 * {
@@ -31,6 +45,10 @@ $tablet: 1024px;
   color: $accent-color;
   font-size: 4em;
   font-weight: 500;
+
+  @media (max-width: $middle-display) {
+    font-size: 36px;
+  }
 }
 .line {
   @include container();
@@ -40,9 +58,7 @@ $tablet: 1024px;
 /*Testimonials*/
 .testimonials {
   @include container;
-
-  margin-top: 4.375em;
-  margin-bottom: 3.75em;
+  margin-bottom: 70px;
 
   &__title {
     margin-bottom: 2.5em;
@@ -55,32 +71,20 @@ $tablet: 1024px;
     gap: 20px;
   }
   &__card {
-    flex-basis: 49.3%;
+    max-width: 710px;
     border: 1px solid $accent-color;
 
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
-
-    &:hover {
-      box-shadow: 0 0 5px 5px $accent-color;
-      transition: all 150ms ease-in-out;
-    }
-    @media (max-width: $tablet) {
-      flex-basis: 100%;
-    }
-    @media (max-width: $mobile) {
-      flex-wrap: wrap;
-    }
   }
   &__img {
-    flex-basis: 34%;
-    width: 100%;
+    width: 242px;
     max-width: 100%;
     padding: 30px 17px;
   }
   &__text {
-    flex-basis: 66%;
+    max-width: 468px;
     padding: 40px 13px;
   }
   &__author {
@@ -88,7 +92,7 @@ $tablet: 1024px;
     font-family: $main-font;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 24px;
     line-height: 29px;
 
     color: $accent-color;
@@ -98,9 +102,62 @@ $tablet: 1024px;
     font-family: $main-font;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 24px;
     line-height: 29px;
 
     color: $gray;
+  }
+
+  @media (max-width: $middle-display) {
+    @include tablet-container;
+
+    &__title {
+      margin-bottom: 5px;
+    }
+    &__card {
+      max-width: 320px;
+    }
+    &__img {
+      max-width: 114.42px;
+      padding: 10px;
+    }
+    &__text {
+      max-width: 205.58px;
+      padding: 10px 10px 10px 0;
+    }
+    &__author {
+      margin-bottom: 5px;
+    }
+    &__author,
+    &__quote {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    @include mobile-container;
+    margin-bottom: 25px;
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__card {
+      max-width: 330px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    &__cards {
+      gap: 10px;
+    }
+    &__card {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__text {
+      flex-basis: 95%;
+      text-align: center;
+    }
   }
 }

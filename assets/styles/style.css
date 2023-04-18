@@ -30,6 +30,11 @@ ul {
   font-size: 4em;
   font-weight: 500;
 }
+@media (max-width: 1470px) {
+  .title {
+    font-size: 36px;
+  }
+}
 
 .line {
   max-width: 1470px;
@@ -45,8 +50,7 @@ ul {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 4.375em;
-  margin-bottom: 3.75em;
+  margin-bottom: 70px;
 }
 .testimonials__title {
   margin-bottom: 2.5em;
@@ -58,34 +62,19 @@ ul {
   gap: 20px;
 }
 .testimonials__card {
-  flex-basis: 49.3%;
+  max-width: 710px;
   border: 1px solid #ca8d66;
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
 }
-.testimonials__card:hover {
-  box-shadow: 0 0 5px 5px #ca8d66;
-  transition: all 150ms ease-in-out;
-}
-@media (max-width: 1024px) {
-  .testimonials__card {
-    flex-basis: 100%;
-  }
-}
-@media (max-width: 767px) {
-  .testimonials__card {
-    flex-wrap: wrap;
-  }
-}
 .testimonials__img {
-  flex-basis: 34%;
-  width: 100%;
+  width: 242px;
   max-width: 100%;
   padding: 30px 17px;
 }
 .testimonials__text {
-  flex-basis: 66%;
+  max-width: 468px;
   padding: 40px 13px;
 }
 .testimonials__author {
@@ -93,7 +82,7 @@ ul {
   font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 24px;
   line-height: 29px;
   color: #ca8d66;
 }
@@ -101,9 +90,67 @@ ul {
   font-family: "Montserrat Alternates", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 24px;
   line-height: 29px;
   color: #5c6c72;
+}
+@media (max-width: 1470px) {
+  .testimonials {
+    max-width: 798px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .testimonials__title {
+    margin-bottom: 5px;
+  }
+  .testimonials__card {
+    max-width: 320px;
+  }
+  .testimonials__img {
+    max-width: 114.42px;
+    padding: 10px;
+  }
+  .testimonials__text {
+    max-width: 205.58px;
+    padding: 10px 10px 10px 0;
+  }
+  .testimonials__author {
+    margin-bottom: 5px;
+  }
+  .testimonials__author, .testimonials__quote {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+@media (max-width: 778px) {
+  .testimonials {
+    max-width: 390px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 25px;
+  }
+  .testimonials__title {
+    margin-bottom: 10px;
+  }
+  .testimonials__card {
+    max-width: 330px;
+  }
+}
+@media (max-width: 359px) {
+  .testimonials__cards {
+    gap: 10px;
+  }
+  .testimonials__card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .testimonials__text {
+    flex-basis: 95%;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
