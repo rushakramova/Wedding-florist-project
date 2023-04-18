@@ -40,6 +40,9 @@ ul {
   color: #5C6C72;
   font-size: 1.5em;
   font-weight: 600;
+  line-height: 29.26px;
+}
+.title_h3_bouquet {
   padding-bottom: 20px;
 }
 
@@ -51,8 +54,7 @@ ul {
   margin-top: 2.125em;
 }
 
-.block4,
-.block7 {
+.example {
   display: flex;
   flex-direction: column;
   max-width: 1470px;
@@ -60,92 +62,64 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
 }
-
-.block4__blocks,
-.block7__blocks {
+.example__blocks {
   column-count: 4;
   column-width: 345px;
 }
 
-.block4__photo-1,
-.block4__photo-2,
-.block4__photo-3,
-.block4__photo-4,
-.block4__photo-5,
-.block4__photo-6,
-.block7__photo-1,
-.block7__photo-2,
-.block7__photo-3,
-.block7__photo-4,
-.block7__photo-5,
-.block7__photo-6,
-.block7__text {
+.example__photo-1,
+.example__photo-2,
+.example__photo-3,
+.example__photo-4,
+.example__photo-5,
+.example__photo-6 {
   padding-bottom: 20px;
   padding-right: 20px;
 }
 
-.block7_p,
-.block7_pp,
+.example_p_bouquet,
+.example_p2_bouquet,
 ol {
   font-family: "Inter", sans-serif;
   color: #5C6C72;
-}
-
-.block7_p,
-.block7_pp {
-  font-weight: 600;
-  line-height: 29.26px;
-}
-
-ol {
+  font-size: 24px;
   font-weight: 400;
-  line-height: 29.05px;
+  line-height: 29px;
 }
 
-.block7_p,
-.block7_pp {
-  background-color: #E0E0E0;
-}
-
-.block7_p,
-.block7_pp,
-ol {
-  font-size: 1.5em;
-}
-
-.block4_p {
+.example_p {
   font-family: "Montserrat Alternates", sans-serif;
   color: #000;
   font-weight: 400;
-  font-size: 0.75em;
+  font-size: 12px;
   line-height: 20px;
+  padding-top: 20px;
 }
 
-.block4__text_1,
-.block4__text_2,
-.block7__text_1,
-.block7__text_2 {
+.example_p_bouquet,
+.example_p2_bouquet {
+  background-color: #E0E0E0;
+}
+
+.example__block_text {
   background-clip: padding-box;
   max-width: 345px;
 }
 
-.block4__text_2 > h3 {
-  padding-bottom: 0px;
-}
-
-.block4_p {
+.example_p {
   height: 233px;
 }
 
 ol {
   height: 405px;
+  margin: 0;
 }
 
-.block7_p {
+.example_p_bouquet {
   height: 181px;
 }
 
-.block7_pp {
+.example_p2_bouquet {
   height: 470px;
 }
 
@@ -153,17 +127,13 @@ ol > li {
   padding: 0.4em;
 }
 
-.block4__text,
-.block7__text {
+.example__text {
   display: flex;
   flex-direction: column;
+  max-width: 345px;
 }
 
-.block4__text {
-  gap: 20px;
-}
-
-.block7__text {
+.example__text {
   gap: 35px;
 }
 

@@ -1,20 +1,23 @@
 body {
     background-color: white;
 }
+
 // Mixins
-@mixin container{
+@mixin container {
     max-width: 1470px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-@mixin tablet-container{
+
+@mixin tablet-container {
     max-width: 690px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
-@mixin mobile-container{
+
+@mixin mobile-container {
     max-width: 360px;
     margin: 0 auto;
     padding-left: 15px;
@@ -32,11 +35,11 @@ $bggray: #E0E0E0;
 // Fonts
 $main-font: 'Montserrat Alternates', sans-serif;
 $inter: 'Inter', sans-serif;
-$mfont-size:36px;
+$mfont-size: 36px;
 
 /*Screen sizes*/
-$big-display:1920px;
-$middle-display:1470px;
+$big-display: 1920px;
+$middle-display: 1470px;
 $tablet: 768px;
 $mobile: 360px;
 
@@ -53,131 +56,115 @@ $mobile: 360px;
     font-weight: 500;
     margin-bottom: 40px;
 
-    // Class for H3
+    //Типографика H3 example, example_bouquet
     &_h3 {
         font-family: $main-font;
         color: $gray;
         font-size: 1.5em;
         font-weight: 600;
-        padding-bottom: 20px;
+        line-height: 29.26px;
+
+        //Отступ от заголовка h3
+        &_bouquet {
+            padding-bottom: 20px;
+        }
     }
 }
 
 .line {
     @include container();
-    margin-top: 2.125em ;
+    margin-top: 2.125em;
 }
 
-// Примеры работ
-.block4,
-.block7 {
+// Позиционирование - example
+.example {
     display: flex;
     flex-direction: column;
+
+    &__blocks {
+        column-count: 4;
+        column-width: 345px;
+    }
+
     @include container
 }
 
-.block4__blocks,
-.block7__blocks {
-    column-count: 4;
-    column-width: 345px;
-}
-
-.block4__photo-1,
-.block4__photo-2,
-.block4__photo-3,
-.block4__photo-4,
-.block4__photo-5,
-.block4__photo-6,
-.block7__photo-1,
-.block7__photo-2,
-.block7__photo-3,
-.block7__photo-4,
-.block7__photo-5,
-.block7__photo-6,
-.block7__text {
+//Отступы у фото
+.example__photo-1,
+.example__photo-2,
+.example__photo-3,
+.example__photo-4,
+.example__photo-5,
+.example__photo-6 {
     padding-bottom: 20px;
     padding-right: 20px;
 }
 
-.block7_p,
-.block7_pp,
+//Типографика
+.example_p_bouquet,
+.example_p2_bouquet,
 ol {
     font-family: $inter;
     color: $gray;
-}
-
-.block7_p,
-.block7_pp {
-    font-weight: 600;
-    line-height: 29.26px;
-}
-
-ol {
+    font-size: 24px;
     font-weight: 400;
-    line-height: 29.05px;
+    line-height: 29px;
 }
 
-.block7_p,
-.block7_pp {
-    background-color: $bggray;
-}
-
-.block7_p,
-.block7_pp,
-ol {
-    font-size: 1.5em;
-}
-
-.block4_p {
+.example_p {
     font-family: $main-font;
     color: #000;
     font-weight: 400;
-    font-size: 0.75em;
+    font-size: 12px;
     line-height: 20px;
+    padding-top: 20px;
 }
 
+//Заливка фона за текстом
+.example_p_bouquet,
+.example_p2_bouquet {
+    background-color: $bggray;
+}
+
+
+
 //Ширина блоков с текстом
-.block4__text_1,
-.block4__text_2,
-.block7__text_1,
-.block7__text_2 {
+.example__block_text {
     background-clip: padding-box;
     max-width: 345px;
 }
 
-.block4__text_2>h3 {
-    padding-bottom: 0px;
-}
-
-.block4_p {
+//Высота блоков
+.example_p {
     height: 233px;
 }
 
 ol {
     height: 405px;
+    margin: 0;
 }
 
-.block7_p {
+.example_p_bouquet {
     height: 181px;
 }
 
-.block7_pp {
+.example_p2_bouquet {
     height: 470px;
 }
 
+//Отступы в списке
 ol>li {
     padding: 0.4em;
 }
 
-.block4__text,
-.block7__text {
+//Блоки текста example, bouquet
+.example__text {
     display: flex;
     flex-direction: column;
+    max-width: 345px;
 }
 
-.block4__text {
-    gap: 20px;
+//Отступы между блоками текста bouquet
+.example__text {
+    gap: 35px;
 }
-
-.block7__text {
-    gap: 35px;}
