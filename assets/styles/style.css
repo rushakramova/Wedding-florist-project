@@ -1,3 +1,7 @@
+body {
+  background-color: white;
+}
+
 /*Reset*/
 p {
   margin: 0;
@@ -124,7 +128,7 @@ ul {
     line-height: 15px;
   }
 }
-@media (max-width: 778px) {
+@media (max-width: 768px) {
   .testimonials {
     max-width: 390px;
     margin: 0 auto;
@@ -139,7 +143,7 @@ ul {
     max-width: 330px;
   }
 }
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .testimonials__cards {
     gap: 10px;
   }
