@@ -1,3 +1,7 @@
+body {
+  background-color: white;
+}
+
 /*Reset*/
 p {
   margin: 0;
@@ -125,4 +129,10 @@ ul {
   padding-top: 37px;
 }
 
-/*# sourceMappingURL=style.css.map */
+.line {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 2.125em;
+}
