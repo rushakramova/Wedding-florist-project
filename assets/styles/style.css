@@ -143,13 +143,18 @@ ol > li {
 }
 
 @media (max-width: 768px) {
+  .example {
+    margin: 20px;
+  }
   .title {
     font-size: 36px;
     line-height: 43.88px;
+    margin-bottom: 20px;
   }
   .title_h3 {
     font-size: 16px;
     line-height: 19.5px;
+    max-width: 260px;
   }
   .example_p,
   .example_p_bouquet,
@@ -165,14 +170,40 @@ ol > li {
     font-size: 12px;
     line-height: 24px;
   }
+  .example__blocks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 560px;
+    align-content: space-between;
+  }
+  .example__blocks_bouquet {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 560px;
+    align-content: stretch;
+  }
   .example__blocks_photo {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    max-width: 320px;
+    max-height: 680px;
+  }
+  .example_p, .example__text_bouquet {
+    max-width: 320px;
+  }
+  ol, .example_p2_bouquet {
+    max-height: 163px;
+  }
+  ol > li {
+    padding-bottom: 0px;
   }
   * img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
   .example__photo-1 > img {
     width: 150px;
@@ -193,6 +224,11 @@ ol > li {
   .example__photo-5 > img {
     width: 150px;
     height: 184px;
+  }
+  .example__photo-5,
+  .example__photo-1,
+  .example__photo-2 {
+    order: -1;
   }
   .example__photo-6 > img {
     width: 150px;
