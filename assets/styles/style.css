@@ -31,14 +31,14 @@ ul {
 .title {
   font-family: "Montserrat Alternates", sans-serif;
   color: #CA8D66;
-  font-size: 4em;
+  font-size: 64px;
   font-weight: 500;
 }
 
 .line {
-  max-width: 1470px;
+  max-width: 1578px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 54px;
+  padding-right: 54px;
   margin-top: 2.125em;
 }
