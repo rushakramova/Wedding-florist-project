@@ -3,22 +3,23 @@ body {
 }
 
 // Mixins
-@mixin container {
-    max-width: 1470px;
+@mixin desktop-container {
+    max-width: 1548px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 54px;
+    padding-right: 54px;
 }
 
 @mixin tablet-container {
-    max-width: 690px;
+    max-width: 768px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 54px;
+    padding-right: 54px;
 }
 
 @mixin mobile-container {
-    max-width: 390px;
+    max-width: 530px;
+    width: 100%;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -57,7 +58,7 @@ $mobile: 360px;
 
 
 .container__bouquets {
-    @include container();
+    @include desktop-container();
 
     .title {
         margin-bottom: 41px;
@@ -72,7 +73,7 @@ $mobile: 360px;
         .card {
             width: 345px;
             height: 470px;
-            border: 1px $gray solid;
+            // border: 1px $gray solid;
         }
 
         .card:hover {
@@ -81,6 +82,8 @@ $mobile: 360px;
 
         .card__img {
             width: 100%;
+            object-fit: cover;
+            height: auto;
         }
 
         .card__name {
@@ -89,7 +92,7 @@ $mobile: 360px;
             font-size: 24px;
             color: $gray;
             text-align: center;
-            margin-top: 22px;
+            margin-top: 15px;
         }
 
         .card__price {
@@ -98,7 +101,7 @@ $mobile: 360px;
             font-size: 24px;
             color: $accent-color;
             text-align: center;
-            margin-top: 22px;
+            margin-top: 15px;
         }
     }
 
@@ -109,16 +112,43 @@ $mobile: 360px;
 //     margin-top: 2.125em;
 // }
 
+//Ноут
+@media screen and (max-width: 1459px) {
+    .container__bouquets {
+        max-width: 1108px; //1000 + 54 + 54
+        margin: 0 auto;
+        padding-left: 54px;
+        padding-right: 54px;
 
-@media (max-width: 360px) {}
+        .title {
+            font-size: 29.33px;
+        }
 
-@media screen and (max-width: 1470px) {
+        .container__cards {
+
+            .card {
+                width: 235px;
+                height: 330px;
+            }
+
+            .card__name {
+                font-size: 15px;
+                margin-top: 5px;
+            }
+
+            .card__price {
+                font-size: 15px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+// Планшет
+@media screen and (max-width: 1149px) {
 
     .container__bouquets {
-        max-width: 690px;
-        margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        @include tablet-container;
 
         .title {
             font-size: 29.33px;
@@ -133,25 +163,23 @@ $mobile: 360px;
 
             .card__name {
                 font-size: 12px;
-                margin-top: 10.57px;
-                margin-bottom: 10px;
+                margin-top: 5px;
+
             }
 
             .card__price {
                 font-size: 12px;
+                margin-top: 5px;
             }
         }
     }
 }
 
-
-@media screen and (max-width: 768px) {
+//Мобилка
+@media screen and (max-width: 769px) {
 
     .container__bouquets {
-        max-width: 360px;
-        margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        @include mobile-container();
 
         .title {
             font-size: 36px;
@@ -166,12 +194,16 @@ $mobile: 360px;
 
             .card__name {
                 font-size: 12px;
-                margin-top: 11px;
-                margin-bottom: 10px;
+                margin-top: 5px;
+            }
+
+            .card__img {
+                max-width: 300px;
             }
 
             .card__price {
                 font-size: 12px;
+                margin-top: 5px;
             }
         }
     }
