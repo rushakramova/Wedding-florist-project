@@ -31,29 +31,24 @@ ul {
 .title {
   font-family: "Montserrat Alternates", sans-serif;
   color: #ca8d66;
-  font-size: 4em;
+  font-size: 64px;
   font-weight: 500;
-}
-@media (max-width: 1470px) {
-  .title {
-    font-size: 36px;
-  }
 }
 
 .line {
-  max-width: 1470px;
+  max-width: 1578px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 54px;
+  padding-right: 54px;
   margin-top: 2.125em;
 }
 
 /*Testimonials*/
 .testimonials {
-  max-width: 1470px;
+  max-width: 1578px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 54px;
+  padding-right: 54px;
   margin-bottom: 70px;
 }
 .testimonials__title {
@@ -98,12 +93,12 @@ ul {
   line-height: 29px;
   color: #5c6c72;
 }
-@media (max-width: 1470px) {
+@media (max-width: 1108px) {
   .testimonials {
-    max-width: 798px;
+    max-width: 768px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 54px;
+    padding-right: 54px;
   }
   .testimonials__title {
     margin-bottom: 5px;
@@ -130,7 +125,8 @@ ul {
 }
 @media (max-width: 768px) {
   .testimonials {
-    max-width: 390px;
+    max-width: 530px;
+    width: 100%;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -143,7 +139,7 @@ ul {
     max-width: 330px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 530px) {
   .testimonials__cards {
     gap: 10px;
   }
