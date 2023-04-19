@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+  background-color: white;
 }
 // Mixins
 @mixin container {
@@ -8,17 +8,17 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-@mixin tablet-container{
-    max-width: 798px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+@mixin tablet-container {
+  max-width: 798px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-@mixin mobile-container{
-    max-width: 390px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+@mixin mobile-container {
+  max-width: 390px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*Reset*/
@@ -32,8 +32,8 @@ $gray: #5c6c72;
 $main-font: "Montserrat Alternates", sans-serif;
 
 /*Screen sizes*/
-$big-display:1920px;
-$middle-display:1470px;
+$big-display: 1920px;
+$middle-display: 1470px;
 $tablet: 768px;
 $mobile: 360px;
 
@@ -108,6 +108,7 @@ $mobile: 360px;
   display: inline-flex;
   width: 50%;
   align-items: center;
+  padding-top: 8px;
 
   &__item-link_instagram {
     margin-left: 25px;
@@ -120,9 +121,11 @@ $mobile: 360px;
 
   &__item-link_vk {
     margin-right: 32px;
+    width: 60px;
+    height: 60px;
 
     :hover {
-      box-shadow: 5px 5px 10px #75b2f8;
+      filter: drop-shadow(5px 5px 10px #75b2f8);
     }
   }
 
@@ -155,7 +158,7 @@ $mobile: 360px;
   @include container();
   display: flex;
   flex-direction: column;
-  margin-top: 73px;
+  margin-bottom: 70px;
 
   .contacts {
     align-self: flex-end;

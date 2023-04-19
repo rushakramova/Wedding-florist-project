@@ -93,6 +93,7 @@ ul {
   display: inline-flex;
   width: 50%;
   align-items: center;
+  padding-top: 8px;
 }
 .icon-social__item-link_instagram {
   margin-left: 25px;
@@ -103,9 +104,11 @@ ul {
 }
 .icon-social__item-link_vk {
   margin-right: 32px;
+  width: 60px;
+  height: 60px;
 }
 .icon-social__item-link_vk :hover {
-  box-shadow: 5px 5px 10px #75b2f8;
+  filter: drop-shadow(5px 5px 10px #75b2f8);
 }
 .icon-social__item-link_telegram {
   margin-right: 36px;
@@ -133,7 +136,7 @@ ul {
   padding-right: 15px;
   display: flex;
   flex-direction: column;
-  margin-top: 73px;
+  margin-bottom: 70px;
 }
 .accessories .contacts {
   align-self: flex-end;
@@ -147,5 +150,3 @@ ul {
   margin-top: 41px;
   gap: 1.25em;
 }
-
-/*# sourceMappingURL=style.css.map */
