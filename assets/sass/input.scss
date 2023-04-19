@@ -67,7 +67,8 @@ $mobile: 769px;
     margin-top: 2.125em ;
 }
 /*header*/
-.menu-conteiner{
+.menuconteiner {
+    @include container;
     font-family: $main-font;
     font-weight: 600;
     max-width: 1920px;
@@ -78,8 +79,8 @@ $mobile: 769px;
     position: fixed;
     top: 0;
     z-index: 999;
-}
-    .menu-conteiner__blok {
+
+    &__blok {
         margin: 0 auto;
         color: $accent-color;
         display: grid;
@@ -91,60 +92,93 @@ $mobile: 769px;
         width: 100%;
         height: 115px;
     }
-    .menu-conteiner__chapter, .menu-conteiner__logo {
+    &__chapter, &__logo {
         text-align: center;
         margin: 0;
         padding: 0px;
     }
-    .menu-conteiner__link{
+    &__link{
         text-decoration: none;
         color: $accent-color;
     }
-    .menu-conteiner__logo {
+    &__logo {
         background-image: url(/assets/images/img_header/Logo.png);
         height: 112px;
     }
-    .menu-conteiner__link:hover{
+    &__link:hover{
         text-decoration: underline;
     }
-.title-mainpage{
-    margin-top: 117px;
-    position: relative;
-    background-image: url(/assets/images/img_header/img_for_header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover 858px;
-    background-position: center;
-    opacity: 0.73;
-    max-width: 1920px;
-    height: 858px;
-    width: 100%;
-    font-family: $main-font;
-    font-weight: 500;
-    font-size: 32px;
-    color: #000000;
+
+    @media (max-width: $middle-display) {
+        @include laptop-container;
+        max-width: 1459px;
+        height: 96px;
+        &__blok {
+            grid-template-columns: 15% 15% 219px 15% 15%;
+            gap: 2%;
+            max-width: 1108px;
+            height: 96px;
+        }
+        &__logo {
+            background-image: url(/assets/images/img_header/Logo_tablet.png);
+            height: 57px;
+        }
+    }
+    @media (max-width: $tablet) {
+        @include tablet-container;
+        max-width: 1149px;
+        height: 80px;
+        &__blok {
+            grid-template-columns: 15% 15% 219px 15% 15%;
+            gap: 2%;
+            max-width: 7688px;
+            height: 80px;
+        }
+        &__logo {
+            background-image: url(/assets/images/img_header/Logo_tablet.png);
+            height: 57px;
+        }
+    }
 }
-    .title-mainpage__bloc_1, .title-mainpage__bloc_2{
-        display: inline-block;
-        width: 1104px;
-        background: rgba(255, 255, 255, 0.64);
-        backdrop-filter: blur(2px);
-        border-radius: 0px 21px 21px 0px;
-        margin-left: 0px;
-    }
-    .title-mainpage__bloc_1{
-        height: 148px;
-        margin-top: 66px;
-    }
-    .title-mainpage__bloc_2{
-        height: 113px;
-        margin-top: 417px;
-        margin-bottom: 114px;
-    }
-    .title-mainpage__text1{
-        margin-left: 242px;
-        padding-top: 35px;
-    }
-    .title-mainpage__text2{
-        margin-left: 242px;
-        padding-top: 37px;
-    }
+    .title-mainpage{
+        margin-top: 117px;
+        position: relative;
+        background-image: url(/assets/images/img_header/img_for_header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover 858px;
+        background-position: center;
+        opacity: 0.73;
+        max-width: 1920px;
+        height: 858px;
+        width: 100%;
+        font-family: $main-font;
+        font-weight: 500;
+        font-size: 32px;
+        color: #000000;
+
+        &__bloc_1, &__bloc_2{
+            display: inline-block;
+            width: 1104px;
+            background: rgba(255, 255, 255, 0.64);
+            backdrop-filter: blur(2px);
+            border-radius: 0px 21px 21px 0px;
+            margin-left: 0px;
+        }
+        &__bloc_1{
+            height: 148px;
+            margin-top: 66px;
+        }
+        &__bloc_2{
+            height: 113px;
+            margin-top: 417px;
+            margin-bottom: 114px;
+        }
+        &__text1{
+            margin-left: 242px;
+            padding-top: 35px;
+        }
+        &__text2{
+            margin-left: 242px;
+            padding-top: 37px;
+        }
+}
