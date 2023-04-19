@@ -84,6 +84,11 @@ $mobile: 360px;
     &__blocks {
         column-count: 4;
         column-width: 345px;
+
+        &_photo {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     @include container
@@ -202,6 +207,7 @@ ol>li {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        justify-content: center;
     }
 
     *img {
@@ -213,7 +219,7 @@ ol>li {
         height: 205px;
     }
 
-    .example__photo-2>img{
+    .example__photo-2>img {
         width: 150px;
         height: 98px;
     }
@@ -227,9 +233,10 @@ ol>li {
         width: 150px;
         height: 242px;
     }
+
     .example__photo-5>img {
         width: 150px;
-        height:184px;
+        height: 184px;
     }
 
     .example__photo-6>img {
@@ -242,5 +249,83 @@ ol>li {
         font-family: $main-font;
         color: #000;
         background-color: transparent;
+    }
+}
+
+@media (max-width: $mobile) {
+    .title {
+        margin-bottom: 10px;
+    }
+
+    .example__blocks_photo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+        max-height: 600px;
+    }
+
+    .example__photo-1,
+    .example__photo-2,
+    .example__photo-3,
+    .example__photo-4,
+    .example__photo-5,
+    .example__photo-6 {
+        padding-bottom: 10px;
+        padding-right: 10px;
+        max-width: min-content;
+    }
+
+    *img {
+        object-fit: cover;
+    }
+
+    .example__photo-1>img {
+        width: 160px;
+        height: 205px;
+    }
+
+    .example__photo-1,
+    .example__photo-2,
+    .example__photo-5 {
+        order: -1;
+    }
+
+    .example__photo-2>img {
+        width: 160px;
+        height: 98px;
+    }
+
+    .example__photo-3>img {
+        width: 160px;
+        height: 98px;
+    }
+
+    .example__photo-4>img {
+        width: 160px;
+        height: 242px;
+    }
+
+    .example__photo-5>img {
+        width: 160px;
+        height: 184px;
+    }
+
+    .example__photo-6>img {
+        width: 160px;
+        height: 147px;
+    }
+
+    ol {
+        height: 213px;
+    }
+
+    .example__blocks_bouquet {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .example__blocks_photo_bouquet {
+        order: -1;
     }
 }
