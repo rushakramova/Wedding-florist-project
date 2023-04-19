@@ -35,14 +35,6 @@ ul {
   font-weight: 500;
 }
 
-.line {
-  max-width: 1470px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 2.125em;
-}
-
 .arrow {
   display: inline-flex;
   width: 100%;
@@ -50,17 +42,17 @@ ul {
 }
 
 .container-about-me {
-  max-width: 1470px;
+  max-width: 1578px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 54px;
+  padding-right: 54px;
 }
 
 .about-me {
-  max-width: 1470px;
+  max-width: 1578px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 54px;
+  padding-right: 54px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
