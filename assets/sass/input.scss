@@ -47,9 +47,9 @@ $mfont-size:36px;
 
 /*Screen sizes*/
 $big-display:1920px;
-$middle-display:1459px;
-$tablet: 1149px;
-$mobile: 769px;
+$middle-display:1108px;
+$tablet: 768px;
+$mobile: 530px;
 
 /*Box-sizing*/
 * {
@@ -61,8 +61,4 @@ $mobile: 769px;
     color: $accent-color;
     font-size: 64px;
     font-weight: 500;
-}
-.line {
-    @include container();
-    margin-top: 2.125em ;
 }
