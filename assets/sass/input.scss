@@ -45,8 +45,8 @@ $main-font: "Montserrat Alternates", sans-serif;
 $mfont-size: 36px;
 
 /*Screen sizes*/
-$big-display:1920px;
-$middle-display:1499px;
+$big-display: 1920px;
+$middle-display: 1499px;
 $tablet: 1149px;
 $mobile: 769px;
 
@@ -56,14 +56,14 @@ $mobile: 769px;
 }
 
 // Class for H2
-.title{
+.title {
   font-family: $main-font;
   color: $accent-color;
   font-size: 64px;
   font-weight: 500;
 
-  @media screen and (max-width:$tablet){
-      font-size: $mfont-size;
+  @media screen and (max-width: $tablet) {
+    font-size: $mfont-size;
   }
 }
 .line {
@@ -162,4 +162,4 @@ $mobile: 769px;
       flex-basis: 95%;
     }
   }
-
+}
