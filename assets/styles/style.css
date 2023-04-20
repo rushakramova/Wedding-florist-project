@@ -34,3 +34,94 @@ ul {
   font-size: 64px;
   font-weight: 500;
 }
+
+/* start footer*/
+.footer {
+  display: flex;
+  width: 1920px;
+  height: 239px;
+  background: rgba(202, 141, 102, 0.57);
+}
+
+.footer-order {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 754px;
+  height: 110px;
+  position: absolute;
+  margin: 0;
+  left: 619px;
+  top: 43px;
+}
+
+.order-phone {
+margin-top: 16px;
+margin-bottom: 0;
+font-family: Montserrat Alternates;
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 50px;
+text-align: center;
+color: black;
+}
+
+.order-phone__color {
+  color: #5c6c72;
+}
+
+.order-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  width: 366px;
+  height: 70px;
+  list-style: none;
+  margin: 0;
+  
+}
+.order-social__icon {
+  display: flex;
+  justify-items: center;
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+}
+.order-social__icon-link__instagram:hover {
+  filter: drop-shadow(10px 5px 10px #ca40ec);
+}
+.order-social__icon-link__vk:hover {
+  filter: drop-shadow(10px 5px 10px #6365f1);
+}
+.order-social__icon-link__telegram:hover {
+  filter: drop-shadow(10px 5px 10px #77fcf1);
+}
+.order-social__icon-link__whatsapp:hover {
+  filter: drop-shadow(10px 5px 10px #00d95f);
+}
+.order-social__icon-link__phone:hover {
+  filter: drop-shadow(10px 5px 10px #686069);
+}
+
+.attencion {
+display: flex;
+width: 257px;
+height: 30px;
+font-family: Inter;
+font-weight: 400;
+font-size: 12px;
+line-height: 14.52px;
+text-align: center;
+margin: 0;
+}
+
+.text36 {
+  position: absolute;
+  width: 55px;
+  height:20px ;
+  top: 140%;
+}
+
+/* end footer*/
