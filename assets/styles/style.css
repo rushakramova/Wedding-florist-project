@@ -123,5 +123,8 @@ margin: 0;
   height:20px ;
   top: 140%;
 }
+.footer__logo {
+  visibility: hidden;
+}
 
 /* end footer*/
