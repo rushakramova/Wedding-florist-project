@@ -1,17 +1,177 @@
-/* Error: Mixins may not contain mixin declarations.
- *    ,
- * 30 | @mixin tablet-container{
- *    | ^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   assets\sass\input.scss 30:1  root stylesheet */
+body {
+  background-color: white;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Mixins may not contain mixin declarations.\a    \2577 \a 30 \2502  @mixin tablet-container{\d\a    \2502  ^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   assets\\sass\\input.scss 30:1  root stylesheet";
+/*Reset*/
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/*Screen sizes*/
+/*Box-sizing*/
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #ca8d66;
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.card {
+  width: 345px;
+  height: 470px;
+  border: 1px #5c6c72 solid;
+}
+.card__img {
+  width: 100%;
+}
+.card__name {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #5c6c72;
+  text-align: center;
+  margin-top: 15px;
+}
+.card__price {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #ca8d66;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.contacts {
+  display: inline-flex;
+  width: 710px;
+  height: 72px;
+  background: rgba(202, 141, 102, 0.5);
+  margin-top: 3.75em;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contacts__order {
+  font-family: "Montserrat Alternates", sans-serif;
+  margin-left: 35px;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.icon-social {
+  display: inline-flex;
+  width: 50%;
+  align-items: center;
+  padding-top: 8px;
+}
+.icon-social__item-link_instagram {
+  margin-left: 25px;
+  margin-right: 32px;
+}
+.icon-social__item-link_instagram :hover {
+  filter: drop-shadow(5px 5px 10px #df72a9);
+}
+.icon-social__item-link_vk {
+  margin-right: 32px;
+  width: 60px;
+  height: 60px;
+}
+.icon-social__item-link_vk :hover {
+  filter: drop-shadow(5px 5px 10px #75b2f8);
+}
+.icon-social__item-link_telegram {
+  margin-right: 36px;
+}
+.icon-social__item-link_telegram :hover {
+  filter: drop-shadow(5px 5px 10px #81cef0);
+}
+.icon-social__item-link_whatsapp {
+  margin-right: 40px;
+}
+.icon-social__item-link_whatsapp :hover {
+  filter: drop-shadow(5px 5px 10px #55e895);
+}
+.icon-social__item-link_phone {
+  margin-right: 52px;
+}
+.icon-social__item-link_phone :hover {
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.45));
+}
+
+.accessories-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 41px;
+  gap: 1.25em;
+}
+
+.accessories {
+  max-width: 1578px;
+  margin: 0 auto;
+  padding-left: 54px;
+  padding-right: 54px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+.accessories .contacts {
+  align-self: flex-end;
+}
+@media (max-width: 768px) {
+  .accessories {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  .accessories .title {
+    font-size: 36px;
+  }
+  .accessories .accessories-cards {
+    margin-top: 20px;
+  }
+  .accessories .card {
+    width: 150px;
+    height: 226px;
+  }
+  .accessories .card__img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+  }
+  .accessories .card__name {
+    font-size: 0.75em;
+    margin-top: 5px;
+  }
+  .accessories .card__price {
+    font-size: 0.75em;
+    margin-top: 5px;
+  }
 }
