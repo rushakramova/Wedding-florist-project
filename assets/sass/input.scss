@@ -72,6 +72,14 @@ $mobile: 769px;
     display: inline-flex;
     width: 100%;
     justify-content: center;
+
+    @media screen and (max-width:$mobile){
+        width: 100%;
+        align-content: center;
+
+
+    }
+
 }
 .container-about-me{
     @include container();
@@ -81,7 +89,7 @@ $mobile: 769px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    margin-top: 1.563em;
+    margin-top: 16px;
     
     &__studio-img{
         position: relative;
@@ -100,12 +108,16 @@ $mobile: 769px;
         height: auto;
         width: 100%;
         max-width: 300px;
+        z-index: 1;
+    }
+    &__img-mobile-769{
+        display: none;
     }
 
     &__info{
         font-family: $main-font;
         font-weight: 400;
-        font-size: 1.5em;
+        font-size: 24px;
         color: #000000;
         height: auto;
         width: 100vw;
@@ -113,7 +125,130 @@ $mobile: 769px;
     }
     &__info-text{
         margin-bottom: 1em;
-    }   
+    } 
+
+    @media screen and (max-width:$middle-display){
+        margin-top: 5px;
+        
+        &__studio-img{
+            position: relative;
+            margin-left: 0.5em;
+            object-fit: cover;
+            height: auto;
+            width: 100%;
+            max-width: 220px;
+        }
+        &__avatar-img{
+            // width: 400px;
+            position: relative;
+            left:-70px;
+            object-fit: cover;
+            height: auto;
+            width: 100%;
+            max-width: 170px;
+        }
+
+        &__info{
+            font-family: $main-font;
+            font-weight: 400;
+            font-size: 18px;
+            margin-left: -30px;
+            color: #000000;
+            height: auto;
+            width: 100vw;
+            max-width: 350px;
+        }
+    }
+
+    @media screen and (max-width:$tablet){
+        margin-top: 5px;
+        
+        &__studio-img{
+            position: relative;
+            margin-left: 0.5em;
+            object-fit: cover;
+            height: auto;
+            width: 100%;
+            max-width: 220px;
+        }
+        &__avatar-img{
+            // width: 400px;
+            position: relative;
+            left:-70px;
+            object-fit: cover;
+            height: auto;
+            width: 100%;
+            max-width: 170px;
+        }
+
+        &__info{
+            font-family: $main-font;
+            font-weight: 400;
+            font-size: 14px;
+            // margin-left: -30px;
+            color: #000000;
+            height: auto;
+            width: 100vw;
+            max-width: 269px;
+        }
+    }
+
+    @media screen and (max-width:$mobile){
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 400px 1fr 150px;
+        gap: 5px;
+        align-items: center;
+        margin-top: 10px;
+        padding: 15px;
+
+        &__avatar-img{
+            display: none;
+        }
+        &__img-mobile-769{
+            display: flex;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            position: relative;
+            margin-left: 5em;
+            object-fit: cover;
+            height: auto;
+            width: 100%;
+            max-width: 160px;
+        }
+        &__studio-img{
+
+            position: relative;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            margin: 0;
+            object-fit: cover;
+            height: auto;
+            width: 100%;
+            max-width: 220px;
+        }
+
+        &__info{
+            grid-column: 1/3;
+            grid-row: 2/3;
+            font-family: $main-font;
+            font-weight: 400;
+            font-size: 14px;
+            margin-left: 30px;
+            color: #000000;
+            height: auto;
+            width: 100vw;
+            max-width: 330px;
+        }
+
+
+
+
+
+
+
+    }
+
 }
 .contacts {
     display: inline-flex;
@@ -130,9 +265,8 @@ $mobile: 769px;
         margin-left: 81px;
         font-weight: 500;
         font-size: 32px;
-    }
-
-    @media screen and (max-width:$tablet) {
+    }  
+    @media screen and (max-width:$middle-display) {
         height: 72px;
         width: 320px;
 
@@ -143,8 +277,9 @@ $mobile: 769px;
     }
     .icon-social{
         display: inline-flex;
-        width: 50%;
+        width: 100%;
         align-items: center;
+        justify-content: space-around;
 
         &__item-link_instagram{
             margin-left: 8px;
@@ -166,18 +301,51 @@ $mobile: 769px;
     
         &__item-link_phone{
             margin-right: 10px;
+        }
+    }
+
+}
+
+
+
+
+    @media screen and (max-width:$tablet) {
+        height: 72px;
+        width: 320px;
+
+        &__order{
+            width: 100%;
+            font-weight: 500;
+            font-size: 16px;
+    }
+    .icon-social{
+        display: inline-flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+
+        &__item-link_instagram{
+            margin-left: 8px;
+            margin-right: 10px;
+        }
+    
+        &__item-link_vk{
+            margin-right: 10px;
+        }
+    
+        &__item-link_telegram{
+            margin-right: 10px;
+        }
+    
+        &__item-link_whatsapp{
+            margin-right: 10px;
     
         }
     
+        &__item-link_phone{
+            margin-right: 10px;
+        }
     }
-
-
-
-
-
-
-
-
 
 }
 }
