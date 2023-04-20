@@ -48,9 +48,9 @@ $mfont-size:36px;
 
 /*Screen sizes*/
 $big-display:1920px;
-$middle-display:1108px;
-$tablet: 768px;
-$mobile: 530px;
+$middle-display:1499px;
+$tablet: 1149px;
+$mobile: 769px;
 
 /*Box-sizing*/
 * {
@@ -62,6 +62,10 @@ $mobile: 530px;
     color: $accent-color;
     font-size: 64px;
     font-weight: 500;
+
+    @media screen and (max-width:$tablet){
+        font-size: $mfont-size;
+    }
 }
 
 .arrow{
