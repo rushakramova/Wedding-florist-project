@@ -1,157 +1,17 @@
-body {
-  background-color: white;
-}
+/* Error: expected "}".
+ *     ,
+ * 164 |   }
+ *     |    ^
+ *     '
+ *   assets\sass\input.scss 164:4  root stylesheet */
 
-/*Reset*/
-p {
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-/*Screen sizes*/
-/*Box-sizing*/
-* {
-  box-sizing: border-box;
-}
-
-.title {
-  font-family: "Montserrat Alternates", sans-serif;
-  color: #ca8d66;
-  font-size: 64px;
-  font-weight: 500;
-}
-@media (max-width: 1499px) {
-  .title {
-    font-size: 36px;
-  }
-}
-
-.line {
-  max-width: 1578px;
-  margin: 0 auto;
-  padding-left: 54px;
-  padding-right: 54px;
-  margin-top: 2.125em;
-}
-
-/*Testimonials*/
-.testimonials {
-  max-width: 1578px;
-  margin: 0 auto;
-  padding-left: 54px;
-  padding-right: 54px;
-  margin-bottom: 70px;
-}
-.testimonials__title {
-  margin-bottom: 40px;
-}
-.testimonials__cards {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  gap: 20px;
-}
-.testimonials__card {
-  flex-basis: 49%;
-  border: 1px solid #ca8d66;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-start;
-}
-.testimonials__img {
-  flex-basis: 35%;
-  max-width: 242px;
-  width: 100%;
-  padding: 30px 17px;
-}
-.testimonials__text {
-  padding: 40px 13px;
-}
-.testimonials__author {
-  margin-bottom: 25px;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: #ca8d66;
-}
-.testimonials__quote {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: #5c6c72;
-}
-@media (max-width: 1499px) {
-  .testimonials {
-    max-width: 1108px;
-    margin: 0 auto;
-    padding-left: 54px;
-    padding-right: 54px;
-  }
-  .testimonials__title {
-    margin-bottom: 5px;
-  }
-  .testimonials__img {
-    max-width: 114.42px;
-    padding: 10px;
-  }
-  .testimonials__text {
-    max-width: 100%;
-    padding: 10px 10px 10px 0;
-  }
-  .testimonials__author {
-    margin-bottom: 5px;
-  }
-  .testimonials__author, .testimonials__quote {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-  }
-}
-@media (max-width: 1149px) {
-  .testimonials {
-    max-width: 768px;
-    margin: 0 auto;
-    padding-left: 54px;
-    padding-right: 54px;
-  }
-  .testimonials__card {
-    flex-basis: 48%;
-  }
-}
-@media (max-width: 769px) {
-  .testimonials {
-    max-width: 530px;
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 25px;
-  }
-  .testimonials__title {
-    margin-bottom: 10px;
-  }
-  .testimonials__cards {
-    gap: 10px;
-  }
-  .testimonials__card {
-    flex-basis: 95%;
-  }
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "}".\a     \2577 \a 164 \2502    }\a     \2502     ^\a     \2575 \a   assets\\sass\\input.scss 164:4  root stylesheet';
 }
