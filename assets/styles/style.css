@@ -41,7 +41,10 @@ ul {
   border: 1px #5c6c72 solid;
 }
 .card__img {
+  object-fit: cover;
+  height: auto;
   width: 100%;
+  max-width: 345px;
 }
 .card__name {
   font-family: "Montserrat Alternates", sans-serif;
@@ -66,19 +69,50 @@ ul {
 
 .contacts {
   display: inline-flex;
+  flex-wrap: wrap;
   width: 710px;
   height: 72px;
   background: rgba(202, 141, 102, 0.5);
-  margin-top: 3.75em;
+  margin-top: 1.8em;
   border-radius: 10px;
   align-items: center;
   justify-content: flex-start;
 }
 .contacts__order {
-  font-family: "Montserrat Alternates", sans-serif;
-  margin-left: 35px;
+  margin-left: 81px;
   font-weight: 500;
-  font-size: 2em;
+  font-size: 32px;
+}
+@media screen and (max-width: 1499px) {
+  .contacts {
+    width: 330px;
+    height: 72px;
+  }
+  .contacts__order {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1149px) {
+  .contacts {
+    width: 330px;
+    height: 72px;
+  }
+  .contacts__order {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .contacts {
+    height: 100px;
+    width: 330px;
+  }
+  .contacts__order {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+  }
 }
 
 .icon-social {
@@ -88,90 +122,79 @@ ul {
   padding-top: 8px;
 }
 .icon-social__item-link_instagram {
-  margin-left: 25px;
-  margin-right: 32px;
+  margin-left: 18px;
+  margin-right: 30px;
 }
 .icon-social__item-link_instagram :hover {
-  filter: drop-shadow(5px 5px 10px #df72a9);
+  filter: drop-shadow(10px 5px 10px #ca40ec);
 }
 .icon-social__item-link_vk {
-  margin-right: 32px;
-  width: 60px;
-  height: 60px;
+  margin-right: 30px;
 }
 .icon-social__item-link_vk :hover {
-  filter: drop-shadow(5px 5px 10px #75b2f8);
+  filter: drop-shadow(10px 5px 10px #6365f1);
 }
 .icon-social__item-link_telegram {
-  margin-right: 36px;
+  margin-right: 30px;
 }
 .icon-social__item-link_telegram :hover {
-  filter: drop-shadow(5px 5px 10px #81cef0);
+  filter: drop-shadow(10px 5px 10px #77acf1);
 }
 .icon-social__item-link_whatsapp {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 .icon-social__item-link_whatsapp :hover {
-  filter: drop-shadow(5px 5px 10px #55e895);
+  filter: drop-shadow(10px 5px 10px #00d95f);
 }
 .icon-social__item-link_phone {
-  margin-right: 52px;
+  margin-right: 30px;
 }
 .icon-social__item-link_phone :hover {
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.45));
+  filter: drop-shadow(5px 5px 10px #686069);
 }
-
-.accessories-cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 41px;
-  gap: 1.25em;
-}
-
-.accessories {
-  max-width: 1578px;
-  margin: 0 auto;
-  padding-left: 54px;
-  padding-right: 54px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 70px;
-}
-.accessories .contacts {
-  align-self: flex-end;
-}
-@media (max-width: 768px) {
-  .accessories {
-    max-width: 768px;
-    margin: 0 auto;
-    padding-left: 54px;
-    padding-right: 54px;
-  }
-  .accessories .title {
-    font-size: 36px;
-  }
-  .accessories .accessories-cards {
-    margin-top: 20px;
-  }
-  .accessories .card {
-    width: 150px;
-    height: 226px;
-  }
-  .accessories .card__img {
-    object-fit: cover;
-    height: auto;
+@media screen and (max-width: 1499px) {
+  .icon-social {
     width: 100%;
-    max-width: 300px;
+    align-items: center;
+    justify-content: space-around;
   }
-  .accessories .card__name {
-    font-size: 0.75em;
-    margin-top: 5px;
+  .icon-social__item-link_instagram {
+    margin-left: 8px;
+    margin-right: 10px;
   }
-  .accessories .card__price {
-    font-size: 0.75em;
-    margin-top: 5px;
+  .icon-social__item-link_vk {
+    margin-right: 10px;
+  }
+  .icon-social__item-link_telegram {
+    margin-right: 10px;
+  }
+  .icon-social__item-link_whatsapp {
+    margin-right: 10px;
+  }
+  .icon-social__item-link_phone {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 1149px) {
+  .icon-social {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .icon-social__item-link_instagram {
+    margin-left: 8px;
+    margin-right: 10px;
+  }
+  .icon-social__item-link_vk {
+    margin-right: 10px;
+  }
+  .icon-social__item-link_telegram {
+    margin-right: 10px;
+  }
+  .icon-social__item-link_whatsapp {
+    margin-right: 10px;
+  }
+  .icon-social__item-link_phone {
+    margin-right: 10px;
   }
 }
