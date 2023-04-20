@@ -46,9 +46,9 @@ $mfont-size: 36px;
 
 /*Screen sizes*/
 $big-display: 1920px;
-$middle-display: 1108px;
-$tablet: 768px;
-$mobile: 530px;
+$middle-display: 1499px;
+$tablet: 1149px;
+$mobile: 769px;
 
 /*Box-sizing*/
 * {
@@ -61,6 +61,9 @@ $mobile: 530px;
   color: $accent-color;
   font-size: 64px;
   font-weight: 500;
+  @media (max-width: $middle-display) {
+    font-size: $mfont-size;
+  }
 }
 .line {
   @include container();
@@ -71,11 +74,9 @@ $mobile: 530px;
 .testimonials {
   @include container;
   margin-bottom: 70px;
-
   &__title {
-    margin-bottom: 2.5em;
+    margin-bottom: 40px;
   }
-
   &__cards {
     display: flex;
     flex-flow: row wrap;
@@ -83,20 +84,19 @@ $mobile: 530px;
     gap: 20px;
   }
   &__card {
-    max-width: 710px;
+    flex-basis: 49%;
     border: 1px solid $accent-color;
-
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
   }
   &__img {
-    width: 242px;
-    max-width: 100%;
+    flex-basis: 35%;
+    max-width: 242px;
+    width: 100%;
     padding: 30px 17px;
   }
   &__text {
-    max-width: 468px;
     padding: 40px 13px;
   }
   &__author {
@@ -106,35 +106,28 @@ $mobile: 530px;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-
     color: $accent-color;
   }
-
   &__quote {
     font-family: $main-font;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-
     color: $gray;
   }
 
   @media (max-width: $middle-display) {
-    @include tablet-container;
-
+    @include laptop-container;
     &__title {
       margin-bottom: 5px;
-    }
-    &__card {
-      max-width: 320px;
     }
     &__img {
       max-width: 114.42px;
       padding: 10px;
     }
     &__text {
-      max-width: 205.58px;
+      max-width: 100%;
       padding: 10px 10px 10px 0;
     }
     &__author {
@@ -149,27 +142,23 @@ $mobile: 530px;
   }
 
   @media (max-width: $tablet) {
+    @include tablet-container;
+    &__card {
+      flex-basis: 48%;
+    }
+  }
+
+  @media (max-width: $mobile) {
     @include mobile-container;
     margin-bottom: 25px;
     &__title {
       margin-bottom: 10px;
     }
-    &__card {
-      max-width: 330px;
-    }
-  }
-
-  @media (max-width: $mobile) {
     &__cards {
       gap: 10px;
     }
     &__card {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    &__text {
       flex-basis: 95%;
-      text-align: center;
     }
   }
 }
