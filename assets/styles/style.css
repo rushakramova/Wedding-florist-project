@@ -61,7 +61,6 @@ ul {
   width: 100%;
   object-fit: cover;
   height: auto;
-  max-width: 300px;
 }
 .container__bouquets .container__cards .card__name {
   font-family: "Montserrat Alternates", sans-serif;
