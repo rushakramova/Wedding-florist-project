@@ -34,6 +34,11 @@ ul {
   font-size: 64px;
   font-weight: 500;
 }
+@media screen and (max-width: 1149px) {
+  .title {
+    font-size: 36px;
+  }
+}
 
 .arrow {
   display: inline-flex;
@@ -103,7 +108,7 @@ ul {
   font-weight: 500;
   font-size: 32px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1149px) {
   .contacts {
     height: 72px;
     width: 320px;
