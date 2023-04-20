@@ -32,36 +32,51 @@ ul {
   font-family: "Montserrat Alternates", sans-serif;
   color: #CA8D66;
   font-size: 64px;
+  font-size: 64px;
   font-weight: 500;
 }
 
+.line {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding-left: 54px;
+  padding-right: 54px;
+  margin-top: 2.125em;
+}
+
 .container__bouquets {
-  max-width: 1548px;
+  max-width: 1470px;
   margin: 0 auto;
   padding-left: 54px;
   padding-right: 54px;
 }
+
 .container__bouquets .title {
   margin-bottom: 41px;
 }
+
 .container__bouquets .container__cards {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: flex-start;
 }
+
 .container__bouquets .container__cards .card {
   width: 345px;
   height: 470px;
 }
+
 .container__bouquets .container__cards .card:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
+
 .container__bouquets .container__cards .card__img {
   width: 100%;
   object-fit: cover;
   height: auto;
 }
+
 .container__bouquets .container__cards .card__name {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
@@ -70,6 +85,7 @@ ul {
   text-align: center;
   margin-top: 15px;
 }
+
 .container__bouquets .container__cards .card__price {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
@@ -86,67 +102,81 @@ ul {
     padding-left: 54px;
     padding-right: 54px;
   }
+
   .container__bouquets .title {
     font-size: 29.33px;
   }
+
   .container__bouquets .container__cards .card {
     width: 235px;
     height: 330px;
   }
+
   .container__bouquets .container__cards .card__name {
     font-size: 15px;
     margin-top: 5px;
   }
+
   .container__bouquets .container__cards .card__price {
     font-size: 15px;
     margin-top: 5px;
   }
 }
+
 @media screen and (max-width: 1149px) {
   .container__bouquets {
-    max-width: 768px;
+    max-width: 690px;
     margin: 0 auto;
     padding-left: 54px;
     padding-right: 54px;
   }
+
   .container__bouquets .title {
     font-size: 29.33px;
   }
+
   .container__bouquets .container__cards .card {
     width: 150px;
     height: 226px;
   }
+
   .container__bouquets .container__cards .card__name {
     font-size: 12px;
     margin-top: 5px;
   }
+
   .container__bouquets .container__cards .card__price {
     font-size: 12px;
     margin-top: 5px;
   }
 }
+
 @media screen and (max-width: 769px) {
   .container__bouquets {
-    max-width: 530px;
-    width: 100%;
+    max-width: 360px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
   }
+
   .container__bouquets .title {
     font-size: 36px;
   }
+
   .container__bouquets .container__cards .card {
     width: 160px;
     height: 226px;
   }
+
   .container__bouquets .container__cards .card__name {
     font-size: 12px;
     margin-top: 5px;
   }
+
   .container__bouquets .container__cards .card__img {
     max-width: 300px;
   }
+
   .container__bouquets .container__cards .card__price {
     font-size: 12px;
     margin-top: 5px;
