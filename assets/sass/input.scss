@@ -362,6 +362,7 @@ $mobile: 769px;
 
     @media (max-width: $mobile) {
         @include mobile-container;
+        max-width: 360px;
 
         &__title {
             display: flex;
