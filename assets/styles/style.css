@@ -38,6 +38,8 @@ ul {
 /* start footer*/
 .footer {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 1920px;
   height: 239px;
   background: rgba(202, 141, 102, 0.57);
@@ -50,10 +52,7 @@ ul {
   flex-wrap: wrap;
   width: 754px;
   height: 110px;
-  position: absolute;
-  margin: 0;
-  left: 619px;
-  top: 43px;
+  margin: 0 auto;
 }
 
 .order-phone {
@@ -113,18 +112,126 @@ font-family: Inter;
 font-weight: 400;
 font-size: 12px;
 line-height: 14.52px;
-text-align: center;
+text-align: right;
 margin: 0;
 }
 
 .text36 {
-  position: absolute;
   width: 55px;
   height:20px ;
-  top: 140%;
 }
 .footer__logo {
   visibility: hidden;
 }
-
+@media  (max-width: 1499px) {
+  .footer {
+    width: 100%;
+    height: 15em;
+  }
+  
+}
+@media (max-width: 1149px) {
+  .footer {
+    width: 100%;
+    height: 12.5em;
+  }
+}
+@media (max-width: 769px) {
+  .footer {
+    width: 100%;
+    height: 12em;
+  }
+  .footer-order {
+    width: 40em;
+    height: 6.9em;
+  }
+  
+  .order-phone {
+  font-size: 2em;
+  margin-top: 5px;
+  line-height: 30px;
+  }
+  
+  .order-phone__color {
+    visibility: hidden;
+  }
+  .footer__logo {
+    visibility: visible;
+    width: 22em;
+    height: 5em;
+    margin-top: -1em;
+    margin-left: -2em;
+    
+  }
+  .order-social {
+    width: 18em;
+    height: 4.5em;
+  }
+  .order-social__icon {
+    width: 3em;
+    height: 3em;
+  }
+  .order-social__icon img {
+    width: 3em;
+    height: 3em;
+  }
+  .attencion {
+    width: 25em;
+    height: 2em;
+    font-size: 0.6em;
+    line-height: 12px;
+    text-align: right;
+    margin-top: 2em;
+    }
+    .text36 {
+      width: 2.5em;
+      height: 1em;
+      align-self: flex-end;
+      margin-bottom: 1em;
+    }
+}
+@media (max-width: 570px) {
+  .footer {
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+  }
+  .footer-order {
+    width: 20.5em;
+    margin: 0 auto;
+  }
+  .order-phone {
+    visibility: hidden;
+    }
+    .order-social {
+      margin-top: -3em;
+      width: 22.5em;
+      height: 2.5em;
+      border: 1px solid #ca8d66;
+    }
+    
+    .order-social__icon img {
+      width: 2.5em;
+      height: 2.5em;
+    }
+    .footer__logo {
+      visibility: visible;
+      width: 100%;
+      height: 5em;
+      margin: 2em 0 0 0;
+}
+ .attencion {
+  width: 100%;
+  height: 2em;
+  font-size: 0.48em;
+  text-align: center;
+  margin-top: 1em;
+}
+.text36 {
+  width: 2.2em;
+  height: 0.75em;
+  align-self: center;
+  margin: 0 auto
+}
+}
 /* end footer*/
