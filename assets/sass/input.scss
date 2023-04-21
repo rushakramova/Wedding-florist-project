@@ -48,6 +48,7 @@ $mfont-size: 36px;
 /*Screen sizes*/
 $big-display: 1920px;
 $middle-display: 1499px;
+$middle-display_example: 1559px;
 $tablet: 1149px;
 $mobile: 769px;
 
@@ -107,7 +108,7 @@ $mobile: 769px;
         }
     }
 
-    *img {
+    >img {
         object-fit: cover;
         height: auto;
         width: 100%;
@@ -183,7 +184,7 @@ $mobile: 769px;
         gap: 20px;
     }
 
-    @media (max-width: $middle-display) {
+    @media (max-width: $middle-display_example) {
         @include laptop-container;
 
         //Типографика
