@@ -1,130 +1,128 @@
 body {
-    background-color: white;
+  background-color: white;
 }
 // Mixins
-@mixin container{
-    max-width: 1470px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+@mixin container {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-@mixin tablet-container{
-    max-width: 690px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+@mixin tablet-container {
+  max-width: 690px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-@mixin mobile-container{
-    max-width: 360px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+@mixin mobile-container {
+  max-width: 360px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*Reset*/
 @import "reset";
 
 // Colors
-$accent-color:#CA8D66;
-$gray:#5C6C72;
+$accent-color: #ca8d66;
+$gray: #5c6c72;
 
 // Fonts
-$main-font:'Montserrat Alternates', sans-serif;
-$mfont-size:36px;
-
+$main-font: "Montserrat Alternates", sans-serif;
+$mfont-size: 36px;
 
 /*Screen sizes*/
-$big-display:1920px;
-$middle-display:1470px;
+$big-display: 1920px;
+$middle-display: 1470px;
 $tablet: 768px;
 $mobile: 360px;
 
 /*Box-sizing*/
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 // Class for H2
-.title{
-    font-family: $main-font;
-    color: $accent-color;
-    font-size: 64px;
-    font-weight: 500;
+.title {
+  font-family: $main-font;
+  color: $accent-color;
+  font-size: 64px;
+  font-weight: 500;
 }
 .line {
-    @include container();
-    margin-top: 2.125em ;
+  @include container();
+  margin-top: 2.125em;
 }
 // Display
 $dg: grid;
 
-.contacts-map{
-    @include container();
+.contacts-map {
+  @include container();
+  display: $dg;
+  font-family: $main-font;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1.5fr;
+  padding: 0;
+  max-width: 1441px;
+  max-height: 818px;
+
+  &__title1,
+  &__title2 {
+    grid-row: 1/2;
+  }
+
+  &__text1,
+  &__text2 {
+    display: $dg;
+    font-size: 2em;
+    grid-row: 2/3;
+  }
+  &__logo,
+  &__map {
+    display: $dg;
+    grid-row: 3/4;
+  }
+  &__logo {
+    align-self: center;
+  }
+  &__list {
+    display: $dg;
+    align-items: stretch;
+  }
+  @media screen and (max-width: $tablet) {
+    @include tablet-container();
     display: $dg;
     font-family: $main-font;
+    max-width: 660px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1.5fr;
-    padding: 0;
-    max-width: 1441px;
-    max-height: 818px;
+    grid-template-rows: 0.5fr 1fr 1.5fr 0.5fr 1fr;
+    border: 1px solid black;
+  }
 
-    &__title1,
-    &__title2{
-        grid-row: 1/2;
-    }
-
-    &__text1,
-    &__text2{
-        display: $dg;
-        font-size: 2em;
-        grid-row: 2/3;
-    }
-    &__logo,
-    &__map{
-        display: $dg;
-        grid-row: 3/4;
-    }
-    &__logo{
-        align-self: center;
-    }
-    &__list{
-        display: $dg;
-        align-items: stretch;  
-    }
-    @media screen and (max-width: $tablet){
-        @include tablet-container();
-        display: $dg;
-        font-family: $main-font;
-        max-width: 660px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr 1.5fr 0.5fr 1fr;
-        border: 1px solid black;
-    }
-    
-
-.contacts-map__list .phone-link{
+  .contacts-map__list .phone-link {
     color: $gray;
     text-decoration: none;
-    &:hover{
-        text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
     }
-}
-.contacts-map__list .messenger-link,
-.contacts-map__list .social-link,
-.contacts-map__list .map-link{
+  }
+  .contacts-map__list .messenger-link,
+  .contacts-map__list .social-link,
+  .contacts-map__list .map-link {
     text-decoration: none;
     color: #000000;
-    &:hover{
-        text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
     }
-    }
+  }
 
-.map-frame{
+  .map-frame {
     max-width: 100%;
     justify-self: stretch;
     align-self: stretch;
-}
+  }
 
-@media screen and (max-width: $mobile){
+  @media screen and (max-width: $mobile) {
     @include mobile-container();
     display: $dg;
     font-family: $main-font;
@@ -133,44 +131,46 @@ $dg: grid;
     grid-template-rows: 0.5fr 1fr 1.5fr 0.5fr 1fr;
     padding: 0;
     border: 1px solid black;
-}
+  }
 
-    &__title1{
-        order:4;
-    }
-    
-    &__title2{
-        &__title{font-size: 1em;}
-        order:1;
-    }
+  &__title1 {
+    order: 4;
+  }
 
-    &__text1{
-        border: 1px solid black;
-        display: $dg;
-        font-size: 1em;
-        order:5;
+  &__title2 {
+    &__title {
+      font-size: 1em;
     }
-    &__text2{
-        border: 1px solid black;
-        display: $dg;
-        font-size: 1em;
-        order:2;
-    }
-    &__map{
-        border: 1px solid black;
-        display: $dg;
-        max-width: 100%;
-        order: 3;    
-    }
-    &__logo{
-        display: none;
-    }
-    &__list{
-        border: 1px solid black;
-        display: $dg;
-        align-items: stretch;  
-    }
-    .title{
-        font-size: 2em;
-    }
+    order: 1;
+  }
+
+  &__text1 {
+    border: 1px solid black;
+    display: $dg;
+    font-size: 1em;
+    order: 5;
+  }
+  &__text2 {
+    border: 1px solid black;
+    display: $dg;
+    font-size: 1em;
+    order: 2;
+  }
+  &__map {
+    border: 1px solid black;
+    display: $dg;
+    max-width: 100%;
+    order: 3;
+  }
+  &__logo {
+    display: none;
+  }
+  &__list {
+    border: 1px solid black;
+    display: $dg;
+    align-items: stretch;
+  }
+  .title {
+    font-size: 2em;
+  }
 }
