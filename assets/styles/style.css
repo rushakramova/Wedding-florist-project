@@ -90,9 +90,10 @@ ul {
   height: 470px;
 }
 .card__img {
-  width: 100%;
   object-fit: cover;
   height: auto;
+  width: 100%;
+  max-width: 370px;
 }
 .card__name {
   font-family: "Montserrat Alternates", sans-serif;
@@ -113,7 +114,19 @@ ul {
 @media screen and (max-width: 1499px) {
   .card {
     width: 235px;
-    height: 300px;
+    height: 350px;
+  }
+  .card__img {
+    max-width: 235px;
+  }
+}
+@media screen and (max-width: 1149px) {
+  .card {
+    width: 150px;
+    height: 226px;
+  }
+  .card__img {
+    max-width: 235px;
   }
   .card__name {
     font-size: 12px;
@@ -124,15 +137,12 @@ ul {
     margin-top: 5px;
   }
 }
-@media screen and (max-width: 1149px) {
-  .card {
-    width: 150px;
-    height: 226px;
-  }
-}
 @media screen and (max-width: 769px) {
   .card {
     width: 160px;
+  }
+  .card__img {
+    max-width: 160px;
   }
 }
 
