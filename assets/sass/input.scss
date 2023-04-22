@@ -1,6 +1,7 @@
 body {
   background-color: white;
 }
+
 // Mixins
 @mixin container {
   max-width: 1578px;
@@ -39,14 +40,17 @@ body {
 // Colors
 $accent-color: #ca8d66;
 $gray: #5c6c72;
+$bggray: #e0e0e0;
 
 // Fonts
 $main-font: "Montserrat Alternates", sans-serif;
+$inter: "Inter", sans-serif;
 $mfont-size: 36px;
 
 /*Screen sizes*/
 $big-display: 1920px;
 $middle-display: 1499px;
+$middle-display_example: 1559px;
 $tablet: 1149px;
 $mobile: 769px;
 
@@ -65,145 +69,733 @@ $mobile: 769px;
     font-size: $mfont-size;
   }
 }
-// Display
-$dg: grid;
+// Стрелка
+.arrow {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
 
-.contacts-map {
+  @media screen and (max-width: $mobile) {
+    width: 100vw;
+    min-width: 350px;
+    align-content: center;
+  }
+}
+// Заголовок блока "Обо мне"
+.container-about-me {
   @include container();
-  display: $dg;
-  font-family: $main-font;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 110px 250px 1.5fr;
-  gap: 2px;
-  padding: 0;
-  max-width: 1441px;
-  max-height: 818px;
-  .title-map__mobile {
-    display: none;
-  }
-
-  &__title1,
-  &__title2 {
-    grid-row: 1/2;
-    padding-top: 10px;
-  }
-
-  &__text1,
-  &__text2 {
-    display: $dg;
-    font-size: 32px;
-    font-weight: 500;
-    grid-row: 2/3;
-  }
-  &__logo,
-  &__map {
-    display: $dg;
-    grid-row: 3/4;
-  }
-  &__logo {
-    align-self: center;
-  }
-  &__list {
-    display: $dg;
-    align-items: stretch;
-  }
   @media screen and (max-width: $middle-display) {
     @include laptop-container();
-    grid-template-columns: 1.1fr 1fr;
-    grid-template-rows: 0.5fr 150px 1.5fr;
-    gap: 10px;
-
-    &__title1,
-    &__title2 {
-      font-size: $mfont-size;
-    }
-
-    &__text1,
-    &__text2 {
-      font-size: 18px;
-    }
-    .contacts-logo {
-      width: 100%;
-      max-width: 500px;
-    }
   }
 
   @media screen and (max-width: $tablet) {
     @include tablet-container();
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 120px 1.5fr;
-    &__text1,
-    &__text2 {
-      font-size: 14px;
-    }
-    &__title1,
-    &__title2 {
-      padding-top: 0px;
-    }
-    .title-map__mobile {
-      display: none;
-    }
+    margin-bottom: 15px;
   }
 
   @media screen and (max-width: $mobile) {
     @include mobile-container();
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px 150px 220px 45px 100px;
-    gap: 2px;
-    font-size: $mfont-size;
+  }
+}
+// Информация о создательнице
+.about-me {
+  @include container();
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-top: 16px;
 
-    .title-map__mobile {
-      display: block;
+  &__studio-img {
+    position: relative;
+    margin-left: 0.5em;
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  &__avatar-img {
+    position: relative;
+    left: -70px;
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    z-index: 1;
+  }
+  &__img-mobile-769 {
+    display: none;
+  }
+
+  &__info {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    height: auto;
+    width: 100vw;
+    max-width: 658px;
+  }
+  &__info-text {
+    margin-bottom: 1em;
+  }
+
+  @media screen and (max-width: $middle-display) {
+    @include laptop-container();
+    margin-top: 5px;
+
+    &__studio-img {
+      max-width: 260px;
     }
-    .title-map__display {
+    &__avatar-img {
+      max-width: 170px;
+    }
+
+    &__info {
+      font-size: 18px;
+      margin-left: -30px;
+      color: #000000;
+      max-height: 440px;
+      width: 100vw;
+      max-width: 400px;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    margin-top: 5px;
+
+    &__studio-img {
+      margin-left: 0;
+      max-width: 220px;
+    }
+    &__avatar-img {
+      max-width: 170px;
+    }
+
+    &__info {
+      font-size: 14px;
+      max-height: 380px;
+      max-width: 370px;
+    }
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 320px 1fr 150px;
+    gap: 5px;
+    align-items: start;
+    margin-top: 10px;
+    padding: 15px;
+
+    &__avatar-img {
       display: none;
     }
-    &__title1 {
-      grid-column: 1/2;
-      grid-row: 4/5;
-    }
-
-    &__title2 {
-      font-size: $mfont-size;
+    &__img-mobile-769 {
+      display: block;
       grid-column: 1/2;
       grid-row: 1/2;
+      position: relative;
+      margin-left: 70px;
+      object-fit: cover;
+      height: auto;
+      width: 100%;
+      max-width: 160px;
     }
-    &__text1 {
-      grid-column: 1/2;
-      grid-row: 5/6;
+    &__studio-img {
+      display: block;
+      position: relative;
+      grid-column: 2/3;
+      grid-row: 1/2;
+      margin-left: -35px;
+      object-fit: cover;
+      height: 300px;
+      width: 100%;
+      width: 160px;
     }
-    &__text2 {
-      grid-column: 1/2;
+
+    &__info {
+      grid-column: 1/3;
       grid-row: 2/3;
+      font-size: 14px;
+      margin-left: 0px;
+      height: auto;
+      width: 90vw;
+      min-width: 320px;
     }
-    &__map {
-      max-width: 350px;
+  }
+}
+// Блок с контактами для связи
+.contacts {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 710px;
+  height: 72px;
+  background: rgba(202, 141, 102, 0.5);
+  margin-top: 1.8em;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: flex-start;
+
+  &_price {
+    margin-top: 58px;
+    align-self: flex-end;
+  }
+
+  &__order {
+    font-family: $main-font;
+    padding-left: 81px;
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  @media screen and (max-width: $middle-display) {
+    width: 320px;
+    height: 72px;
+
+    &_price {
+      margin-top: 20px;
     }
-    &__logo {
-      display: none;
+
+    &__order {
+      width: 100%;
+      padding-left: 0px;
+      text-align: center;
+      font-size: 16px;
     }
   }
 
-  .contacts-map__list .phone-link {
+  @media screen and (max-width: $tablet) {
+    width: 320px;
+    height: 72px;
+
+    &_price {
+      margin-top: 20px;
+    }
+
+    &__order {
+      width: 100%;
+      padding-left: 0px;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: $mobile) {
+    max-width: 330px;
+    width: 100%;
+    height: 100px;
+    background: white;
+    border-radius: 0px;
+    border: 1px rgba(202, 141, 102, 0.5) solid;
+
+    &_price {
+      margin-top: 20px;
+      align-self: center;
+    }
+
+    &__order {
+      width: 100%;
+      padding-left: 0px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+}
+
+// Блок с иконками социальных сетей
+.icon-social {
+  display: inline-flex;
+  width: 50%;
+  align-items: center;
+  padding-top: 8px;
+
+  &__item-link_instagram {
+    padding-left: 18px;
+    padding-right: 30px;
+
+    :hover {
+      filter: drop-shadow(10px 5px 10px #ca40ec);
+    }
+  }
+
+  &__item-link_vk {
+    padding-right: 30px;
+
+    :hover {
+      filter: drop-shadow(10px 5px 10px #6365f1);
+    }
+  }
+
+  &__item-link_telegram {
+    padding-right: 30px;
+
+    :hover {
+      filter: drop-shadow(10px 5px 10px #77acf1);
+    }
+  }
+
+  &__item-link_whatsapp {
+    padding-right: 30px;
+
+    :hover {
+      filter: drop-shadow(10px 5px 10px #00d95f);
+    }
+  }
+
+  &__item-link_phone {
+    padding-right: 30px;
+
+    :hover {
+      filter: drop-shadow(5px 5px 10px #686069);
+    }
+  }
+  @media screen and (max-width: $middle-display) {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+    &__item-link_instagram {
+      padding-left: 8px;
+      padding-right: 10px;
+    }
+
+    &__item-link_vk {
+      padding-right: 10px;
+    }
+
+    &__item-link_telegram {
+      padding-right: 10px;
+    }
+
+    &__item-link_whatsapp {
+      padding-right: 10px;
+    }
+
+    &__item-link_phone {
+      padding-right: 10px;
+    }
+  }
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+    &__item-link_instagram {
+      padding-left: 8px;
+      padding-right: 10px;
+    }
+
+    &__item-link_vk {
+      padding-right: 10px;
+    }
+
+    &__item-link_telegram {
+      padding-right: 10px;
+    }
+
+    &__item-link_whatsapp {
+      padding-right: 10px;
+    }
+
+    &__item-link_phone {
+      padding-right: 10px;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+    &__item-link_instagram {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    &__item-link_vk {
+      padding-right: 8px;
+    }
+
+    &__item-link_telegram {
+      padding-right: 8px;
+    }
+
+    &__item-link_whatsapp {
+      padding-right: 8px;
+    }
+
+    &__item-link_phone {
+      padding-right: 8px;
+    }
+  }
+}
+// Example
+.example {
+  @include container;
+
+  //Типографика H3 example, example_bouquet
+  &__title {
+    margin-bottom: 40px;
+
+    &_h3,
+    &_h3_bouquet {
+      font-family: $main-font;
+      color: $gray;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 29px;
+
+      //Отступ от заголовка h3
+      &_bouquet {
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  &__blocks {
+    -webkit-columns: 4 345px;
+    -moz-columns: 4 345px;
+    columns: 4 345px;
+
+    &_photo {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  > img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    max-width: 345px;
+  }
+
+  //Отступы у фото
+  &__photo {
+    padding-bottom: 20px;
+  }
+
+  //Типографика
+  &_p_bouquet,
+  &_p2_bouquet,
+  &_ol {
+    font-family: $inter;
     color: $gray;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
   }
-  .contacts-map__list .messenger-link,
-  .contacts-map__list .social-link,
-  .contacts-map__list .map-link {
-    text-decoration: none;
-    color: #000000;
-    &:hover {
-      text-decoration: underline;
+
+  &_p {
+    font-family: $main-font;
+    color: #000;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 20px;
+  }
+
+  //Отступы в списке
+  &_ol > li {
+    padding: 0.3em;
+  }
+
+  //Заливка фона за текстом
+  &_p_bouquet,
+  &_p2_bouquet {
+    background-color: $bggray;
+  }
+
+  //Ширина блоков с текстом
+  &__block_text {
+    background-clip: padding-box;
+    max-width: 345px;
+    padding-bottom: 20px;
+  }
+
+  //Высота блоков
+  &_p {
+    height: 233px;
+  }
+
+  &_ol {
+    height: 350px;
+    margin: 0;
+  }
+
+  &_p_bouquet {
+    height: 181px;
+  }
+
+  &_p2_bouquet {
+    height: 470px;
+  }
+
+  //Блоки текста example, bouquet
+  &__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 345px;
+    gap: 20px;
+  }
+
+  @media (max-width: $middle-display_example) {
+    @include laptop-container;
+
+    //Типографика
+    &__title_h3,
+    &__title_h3_bouquet {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &_ol,
+    &_p_bouquet,
+    &_p2_bouquet {
+      font-size: 12px;
+    }
+
+    &_p {
+      font-size: 10px;
+      max-height: 254px;
+      padding-top: 10px;
+    }
+
+    &_p_bouquet,
+    &_p2_bouquet {
+      font-family: $main-font;
+      color: #000;
+      background-color: transparent;
+    }
+
+    &__blocks {
+      -webkit-columns: 4 235px;
+      -moz-columns: 4 235px;
+      columns: 4 235px;
+    }
+
+    &__text {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    &__block_text {
+      max-height: fit-content;
+      padding-bottom: 10px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    *img {
+      max-width: 235px;
+    }
+
+    &__photo {
+      padding-bottom: 10px;
+      padding-right: 10px;
+    }
+
+    &_ol {
+      height: fit-content;
+    }
+
+    &_ol > li {
+      padding: 0;
+    }
+
+    &_p_bouquet,
+    &_p2_bouquet {
+      max-height: 180px;
     }
   }
 
-  .map-frame {
-    max-width: 100%;
-    justify-self: stretch;
-    align-self: stretch;
+  @media (max-width: $tablet) {
+    @include tablet-container;
+
+    &__title {
+      font-size: 36px;
+      margin-bottom: 20px;
+
+      &_h3,
+      &_h3_bouquet {
+        font-size: 16px;
+      }
+    }
+
+    &__title_h3_bouquet,
+    &__title_h3_bouquet_bouquet {
+      padding-bottom: 10px;
+    }
+
+    &_ol,
+    &_p,
+    &_p_bouquet,
+    &_p2_bouquet {
+      font-size: 12px;
+      line-height: 19.78px;
+    }
+
+    &_p {
+      max-height: 254px;
+      padding-top: 10px;
+    }
+
+    &__blocks {
+      display: flex;
+      flex-direction: row;
+      max-width: 660px;
+      justify-content: space-between;
+
+      &_bouquet {
+        display: flex;
+        flex-direction: row;
+        max-width: 660px;
+        justify-content: flex-start;
+      }
+
+      &_photo {
+        flex-wrap: wrap;
+        max-height: 550px;
+      }
+    }
+
+    &__text,
+    &__block_text {
+      max-width: 320px;
+      width: 100%;
+    }
+
+    *img {
+      max-width: 150px;
+    }
+
+    &__photo-1 > img,
+    &__photo-7 > img {
+      width: 150px;
+      height: 205px;
+    }
+
+    &__photo-1,
+    &__photo-2,
+    &__photo-5,
+    &__photo-7,
+    &__photo-8,
+    &__photo-11 {
+      order: -1;
+    }
+
+    &__photo-2 > img,
+    &__photo-8 > img {
+      width: 150px;
+      height: 98px;
+    }
+
+    &__photo-3 > img,
+    &__photo-9 > img {
+      width: 150px;
+      height: 98px;
+    }
+
+    &__photo-4 > img,
+    &__photo-10 > img {
+      width: 150px;
+      height: 242px;
+    }
+
+    &__photo-5 > img,
+    &__photo-11 > img {
+      width: 150px;
+      height: 184px;
+    }
+
+    &__photo-6 > img,
+    &__photo-12 > img {
+      width: 150px;
+      height: 147px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    @include mobile-container;
+    max-width: 360px;
+
+    &__title {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+
+      &_h3,
+      &_h3_bouquet {
+        font-size: 16px;
+        line-height: 19.5px;
+        padding-bottom: 10px;
+      }
+    }
+
+    &__blocks {
+      display: flex;
+      flex-direction: column;
+    }
+
+    *img {
+      max-width: 160px;
+    }
+
+    &__photo-1 > img {
+      width: 160px;
+      height: 205px;
+    }
+
+    &__photo-1,
+    &__photo-2,
+    &__photo-5 {
+      order: -1;
+    }
+
+    &__photo-2 > img {
+      width: 160px;
+      height: 98px;
+    }
+
+    &__photo-3 > img {
+      width: 160px;
+      height: 98px;
+    }
+
+    &__photo-4 > img {
+      width: 160px;
+      height: 242px;
+    }
+
+    &__photo-5 > img {
+      width: 160px;
+      height: 184px;
+    }
+
+    &__photo-6 > img {
+      width: 160px;
+      height: 147px;
+    }
+
+    &_ol {
+      height: 213px;
+      line-height: 24px;
+    }
+
+    &__blocks_bouquet {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+
+    &__blocks_photo_bouquet {
+      order: -1;
+    }
   }
 }
