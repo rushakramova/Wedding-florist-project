@@ -1,6 +1,7 @@
 body {
   background-color: white;
 }
+
 // Mixins
 @mixin container {
   max-width: 1578px;
@@ -39,14 +40,17 @@ body {
 // Colors
 $accent-color: #ca8d66;
 $gray: #5c6c72;
+$bggray: #E0E0E0;
 
 // Fonts
 $main-font: "Montserrat Alternates", sans-serif;
+$inter: 'Inter', sans-serif;
 $mfont-size: 36px;
 
 /*Screen sizes*/
 $big-display: 1920px;
 $middle-display: 1499px;
+$middle-display_example: 1559px;
 $tablet: 1149px;
 $mobile: 769px;
 
@@ -64,4 +68,372 @@ $mobile: 769px;
   @media screen and (max-width: $tablet) {
     font-size: $mfont-size;
   }
+}
+// Example
+.example {
+    @include container;
+
+    //Типографика H3 example, example_bouquet
+    &__title {
+
+        &_h3,
+        &_h3_bouquet {
+            margin-bottom: 40px;
+            font-family: $main-font;
+            color: $gray;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px;
+
+            //Отступ от заголовка h3
+            &_bouquet {
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    display: flex;
+    flex-direction: column;
+
+    &__blocks {
+        -webkit-columns: 4 345px;
+        -moz-columns: 4 345px;
+        columns: 4 345px;
+
+        &_photo {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    >img {
+        object-fit: cover;
+        height: auto;
+        width: 100%;
+        max-width: 345px;
+    }
+
+    //Отступы у фото
+    &__photo {
+        padding-bottom: 20px;
+    }
+
+    //Типографика
+    &_p_bouquet,
+    &_p2_bouquet,
+    &_ol {
+        font-family: $inter;
+        color: $gray;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+    }
+
+    &_p {
+        font-family: $main-font;
+        color: #000;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        padding-top: 20px;
+    }
+
+    //Отступы в списке
+    &_ol>li {
+        padding: 0.3em;
+    }
+
+    //Заливка фона за текстом
+    &_p_bouquet,
+    &_p2_bouquet {
+        background-color: $bggray;
+    }
+
+    //Ширина блоков с текстом
+    &__block_text {
+        background-clip: padding-box;
+        max-width: 345px;
+        padding-bottom: 20px;
+    }
+
+    //Высота блоков
+    &_p {
+        height: 233px;
+    }
+
+    &_ol {
+        height: 350px;
+        margin: 0;
+    }
+
+    &_p_bouquet {
+        height: 181px;
+    }
+
+    &_p2_bouquet {
+        height: 470px;
+    }
+
+    //Блоки текста example, bouquet
+    &__text {
+        display: flex;
+        flex-direction: column;
+        max-width: 345px;
+        gap: 20px;
+    }
+
+    @media (max-width: $middle-display_example) {
+        @include laptop-container;
+
+        //Типографика
+        &__title_h3,
+        &__title_h3_bouquet {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &_ol,
+        &_p_bouquet,
+        &_p2_bouquet {
+            font-size: 12px;
+        }
+
+        &_p {
+            font-size: 10px;
+            max-height: 254px;
+            padding-top: 10px;
+        }
+
+        &_p_bouquet,
+        &_p2_bouquet {
+            font-family: $main-font;
+            color: #000;
+            background-color: transparent;
+        }
+
+        &__blocks {
+            -webkit-columns: 4 235px;
+            -moz-columns: 4 235px;
+            columns: 4 235px;
+        }
+
+        &__text {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        &__block_text {
+            max-height: fit-content;
+            padding-bottom: 10px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        *img {
+            max-width: 235px;
+        }
+
+        &__photo {
+            padding-bottom: 10px;
+            padding-right: 10px;
+        }
+
+        &_ol {
+            height: fit-content;
+        }
+
+        &_ol>li {
+            padding: 0;
+        }
+
+        &_p_bouquet,
+        &_p2_bouquet {
+            max-height: 180px;
+        }
+
+    }
+
+    @media (max-width: $tablet) {
+        @include tablet-container;
+
+        &__title {
+            font-size: 36px;
+            margin-bottom: 20px;
+
+            &_h3,
+            &_h3_bouquet {
+                font-size: 16px;
+            }
+        }
+
+        &__title_h3_bouquet,
+        &__title_h3_bouquet_bouquet {
+            padding-bottom: 10px;
+        }
+
+        &_ol,
+        &_p,
+        &_p_bouquet,
+        &_p2_bouquet {
+            font-size: 12px;
+            line-height: 19.78px;
+        }
+
+        &_p {
+            max-height: 254px;
+            padding-top: 10px;
+        }
+
+        &__blocks {
+            display: flex;
+            flex-direction: row;
+            max-width: 660px;
+            justify-content: space-between;
+
+            &_bouquet {
+                display: flex;
+                flex-direction: row;
+                max-width: 660px;
+                justify-content: flex-start;
+            }
+
+            &_photo {
+                flex-wrap: wrap;
+                max-height: 550px;
+            }
+        }
+
+        &__text,
+        &__block_text {
+            max-width: 320px;
+            width: 100%;
+        }
+
+        *img {
+            max-width: 150px;
+        }
+
+        &__photo-1>img,
+        &__photo-7>img {
+            width: 150px;
+            height: 205px;
+        }
+
+        &__photo-1,
+        &__photo-2,
+        &__photo-5,
+        &__photo-7,
+        &__photo-8,
+        &__photo-11 {
+            order: -1;
+        }
+
+        &__photo-2>img,
+        &__photo-8>img {
+            width: 150px;
+            height: 98px;
+        }
+
+        &__photo-3>img,
+        &__photo-9>img {
+            width: 150px;
+            height: 98px;
+        }
+
+        &__photo-4>img,
+        &__photo-10>img {
+            width: 150px;
+            height: 242px;
+        }
+
+        &__photo-5>img,
+        &__photo-11>img {
+            width: 150px;
+            height: 184px;
+        }
+
+        &__photo-6>img,
+        &__photo-12>img {
+            width: 150px;
+            height: 147px;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        @include mobile-container;
+        max-width: 360px;
+
+        &__title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            &_h3,
+            &_h3_bouquet {
+                font-size: 16px;
+                line-height: 19.5px;
+                padding-bottom: 10px;
+            }
+        }
+
+        &__blocks {
+            display: flex;
+            flex-direction: column;
+        }
+
+        *img {
+            max-width: 160px;
+        }
+
+        &__photo-1>img {
+            width: 160px;
+            height: 205px;
+        }
+
+        &__photo-1,
+        &__photo-2,
+        &__photo-5 {
+            order: -1;
+        }
+
+        &__photo-2>img {
+            width: 160px;
+            height: 98px;
+        }
+
+        &__photo-3>img {
+            width: 160px;
+            height: 98px;
+        }
+
+        &__photo-4>img {
+            width: 160px;
+            height: 242px;
+        }
+
+        &__photo-5>img {
+            width: 160px;
+            height: 184px;
+        }
+
+        &__photo-6>img {
+            width: 160px;
+            height: 147px;
+        }
+
+        &_ol {
+            height: 213px;
+            line-height: 24px;
+        }
+
+        &__blocks_bouquet {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        &__blocks_photo_bouquet {
+            order: -1;
+        }
+    }
 }
