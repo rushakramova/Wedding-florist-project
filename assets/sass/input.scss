@@ -76,21 +76,31 @@ $mobile: 769px;
     @media screen and (max-width:$mobile){
         width: 100%;
         align-content: center;
-
-
     }
 
 }
 .container-about-me{
     @include container();
-}
+    @media screen and (max-width:$middle-display){
+        @include laptop-container();}
+
+    @media screen and (max-width:$tablet){
+        @include tablet-container();
+        margin-bottom: 15px;
+    }
+
+    @media screen and (max-width:$mobile){
+        @include mobile-container();
+    }
+    }
+
 .about-me{
     @include container();
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     margin-top: 16px;
-    
+
     &__studio-img{
         position: relative;
         margin-left: 0.5em;
@@ -128,6 +138,7 @@ $mobile: 769px;
     } 
 
     @media screen and (max-width:$middle-display){
+        @include laptop-container();
         margin-top: 5px;
         
         &__studio-img{
@@ -136,7 +147,7 @@ $mobile: 769px;
             object-fit: cover;
             height: auto;
             width: 100%;
-            max-width: 220px;
+            max-width: 260px;
         }
         &__avatar-img{
             // width: 400px;
@@ -154,18 +165,19 @@ $mobile: 769px;
             font-size: 18px;
             margin-left: -30px;
             color: #000000;
-            height: auto;
+            max-height: 440px;
             width: 100vw;
-            max-width: 350px;
+            max-width: 400px;
         }
     }
 
     @media screen and (max-width:$tablet){
+        @include tablet-container;
         margin-top: 5px;
         
         &__studio-img{
             position: relative;
-            margin-left: 0.5em;
+            margin-left: 0;
             object-fit: cover;
             height: auto;
             width: 100%;
@@ -185,20 +197,20 @@ $mobile: 769px;
             font-family: $main-font;
             font-weight: 400;
             font-size: 14px;
-            // margin-left: -30px;
             color: #000000;
-            height: auto;
+            max-height: 380px;
             width: 100vw;
-            max-width: 269px;
+            max-width: 370px;
         }
     }
 
     @media screen and (max-width:$mobile){
+        @include mobile-container;
         display: grid;
         grid-template-columns: 200px 1fr;
-        grid-template-rows: 400px 1fr 150px;
+        grid-template-rows: 320px 1fr 150px;
         gap: 5px;
-        align-items: center;
+        align-items: start;
         margin-top: 10px;
         padding: 15px;
 
@@ -206,26 +218,27 @@ $mobile: 769px;
             display: none;
         }
         &__img-mobile-769{
-            display: flex;
+            display: block;
             grid-column: 1/2;
             grid-row: 1/2;
             position: relative;
-            margin-left: 5em;
+            margin-left: 70px;
+            // margin-bottom: 100px;
             object-fit: cover;
             height: auto;
             width: 100%;
             max-width: 160px;
         }
         &__studio-img{
-
+            display: block;
             position: relative;
             grid-column: 2/3;
             grid-row: 1/2;
-            margin: 0;
+            margin-left:-35px;
             object-fit: cover;
-            height: auto;
+            height: 300px;
             width: 100%;
-            max-width: 220px;
+            width: 160px;
         }
 
         &__info{
@@ -234,18 +247,12 @@ $mobile: 769px;
             font-family: $main-font;
             font-weight: 400;
             font-size: 14px;
-            margin-left: 30px;
+            margin-left: 0px;
             color: #000000;
             height: auto;
-            width: 100vw;
-            max-width: 330px;
+            width: 90vw;
+            min-width: 320px;
         }
-
-
-
-
-
-
 
     }
 
@@ -310,6 +317,7 @@ $mobile: 769px;
 
 
     @media screen and (max-width:$tablet) {
+        margin-top: 0px;
         height: 72px;
         width: 320px;
 

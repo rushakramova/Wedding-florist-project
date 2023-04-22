@@ -58,6 +58,32 @@ ul {
   padding-left: 54px;
   padding-right: 54px;
 }
+@media screen and (max-width: 1499px) {
+  .container-about-me {
+    max-width: 1108px;
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+}
+@media screen and (max-width: 1149px) {
+  .container-about-me {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 54px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .container-about-me {
+    max-width: 530px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 .about-me {
   max-width: 1578px;
@@ -103,6 +129,10 @@ ul {
 }
 @media screen and (max-width: 1499px) {
   .about-me {
+    max-width: 1108px;
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 54px;
     margin-top: 5px;
   }
   .about-me__studio-img {
@@ -111,7 +141,7 @@ ul {
     object-fit: cover;
     height: auto;
     width: 100%;
-    max-width: 220px;
+    max-width: 260px;
   }
   .about-me__avatar-img {
     position: relative;
@@ -127,18 +157,22 @@ ul {
     font-size: 18px;
     margin-left: -30px;
     color: #000000;
-    height: auto;
+    max-height: 440px;
     width: 100vw;
-    max-width: 350px;
+    max-width: 400px;
   }
 }
 @media screen and (max-width: 1149px) {
   .about-me {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 54px;
     margin-top: 5px;
   }
   .about-me__studio-img {
     position: relative;
-    margin-left: 0.5em;
+    margin-left: 0;
     object-fit: cover;
     height: auto;
     width: 100%;
@@ -157,18 +191,23 @@ ul {
     font-weight: 400;
     font-size: 14px;
     color: #000000;
-    height: auto;
+    max-height: 380px;
     width: 100vw;
-    max-width: 269px;
+    max-width: 370px;
   }
 }
 @media screen and (max-width: 769px) {
   .about-me {
+    max-width: 530px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
     display: grid;
     grid-template-columns: 200px 1fr;
-    grid-template-rows: 400px 1fr 150px;
+    grid-template-rows: 320px 1fr 150px;
     gap: 5px;
-    align-items: center;
+    align-items: start;
     margin-top: 10px;
     padding: 15px;
   }
@@ -176,25 +215,26 @@ ul {
     display: none;
   }
   .about-me__img-mobile-769 {
-    display: flex;
+    display: block;
     grid-column: 1/2;
     grid-row: 1/2;
     position: relative;
-    margin-left: 5em;
+    margin-left: 70px;
     object-fit: cover;
     height: auto;
     width: 100%;
     max-width: 160px;
   }
   .about-me__studio-img {
+    display: block;
     position: relative;
     grid-column: 2/3;
     grid-row: 1/2;
-    margin: 0;
+    margin-left: -35px;
     object-fit: cover;
-    height: auto;
+    height: 300px;
     width: 100%;
-    max-width: 220px;
+    width: 160px;
   }
   .about-me__info {
     grid-column: 1/3;
@@ -202,11 +242,11 @@ ul {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    margin-left: 30px;
+    margin-left: 0px;
     color: #000000;
     height: auto;
-    width: 100vw;
-    max-width: 330px;
+    width: 90vw;
+    min-width: 320px;
   }
 }
 
@@ -261,6 +301,7 @@ ul {
 }
 @media screen and (max-width: 1149px) {
   .contacts {
+    margin-top: 0px;
     height: 72px;
     width: 320px;
   }
