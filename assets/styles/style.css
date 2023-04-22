@@ -50,6 +50,40 @@ ul {
   gap: 10px;
   justify-content: flex-start;
 }
+@media screen and (max-width: 1499px) {
+  .container__bouquets {
+    max-width: 1108px;
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  .container__bouquets .title {
+    font-size: 29.33px;
+  }
+}
+@media screen and (max-width: 1149px) {
+  .container__bouquets {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  .container__bouquets .title {
+    font-size: 29.33px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .container__bouquets {
+    max-width: 530px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .container__bouquets .title {
+    font-size: 36px;
+  }
+}
 
 .card {
   width: 345px;
@@ -76,81 +110,32 @@ ul {
   text-align: center;
   margin-top: 15px;
 }
-
-.card:hover {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-}
-
 @media screen and (max-width: 1499px) {
-  .container__bouquets {
-    max-width: 1108px;
-    margin: 0 auto;
-    padding-left: 54px;
-    padding-right: 54px;
-  }
-  .container__bouquets .title {
-    font-size: 29.33px;
-  }
-  .container__bouquets .container__cards .card {
+  .card {
     width: 235px;
     height: 300px;
   }
-  .container__bouquets .container__cards .card__name {
+  .card__name {
     font-size: 12px;
     margin-top: 5px;
   }
-  .container__bouquets .container__cards .card__price {
+  .card__price {
     font-size: 12px;
     margin-top: 5px;
   }
 }
-@media screen and (max-width: 1499px) and (max-width: 1149px) {
-  .container__bouquets {
-    max-width: 768px;
-    margin: 0 auto;
-    padding-left: 54px;
-    padding-right: 54px;
-  }
-  .container__bouquets .title {
-    font-size: 29.33px;
-  }
-  .container__bouquets .container__cards .card {
+@media screen and (max-width: 1149px) {
+  .card {
     width: 150px;
     height: 226px;
   }
-  .container__bouquets .container__cards .card__name {
-    font-size: 12px;
-    margin-top: 5px;
-  }
-  .container__bouquets .container__cards .card__price {
-    font-size: 12px;
-    margin-top: 5px;
+}
+@media screen and (max-width: 769px) {
+  .card {
+    width: 160px;
   }
 }
-@media screen and (max-width: 1499px) and (max-width: 769px) {
-  .container__bouquets {
-    max-width: 530px;
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .container__bouquets .title {
-    font-size: 36px;
-  }
-  .container__bouquets .container__cards .card {
-    width: 160px;
-    height: 226px;
-  }
-  .container__bouquets .container__cards .card__name {
-    font-size: 12px;
-    margin-top: 5px;
-  }
-  .container__bouquets .container__cards .card__img {
-    max-width: 300px;
-  }
-  .container__bouquets .container__cards .card__price {
-    font-size: 12px;
-    margin-top: 5px;
-  }
+
+.card:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
