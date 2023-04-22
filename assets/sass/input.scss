@@ -49,8 +49,8 @@ $mfont-size: 36px;
 
 /*Screen sizes*/
 $big-display: 1920px;
-$middle-display: 1499px;
 $middle-display_example: 1559px;
+$middle-display: 1499px;
 $tablet: 1149px;
 $mobile: 769px;
 
@@ -84,6 +84,9 @@ $mobile: 769px;
 // Заголовок блока "Обо мне"
 .container-about-me {
   @include container();
+  @media (max-width: $middle-display_example) {
+    @include laptop-container;
+  }
   @media screen and (max-width: $middle-display) {
     @include laptop-container();
   }
@@ -95,6 +98,7 @@ $mobile: 769px;
 
   @media screen and (max-width: $mobile) {
     @include mobile-container();
+    max-width: 360px;
   }
 }
 // Информация о создательнице
@@ -139,6 +143,21 @@ $mobile: 769px;
   &__info-text {
     margin-bottom: 1em;
   }
+  @media (max-width: $middle-display_example) {
+    @include laptop-container;
+    &__studio-img {
+      height: auto;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    &__info {
+      font-size: 24px;
+      height: auto;
+      width: 100vw;
+      min-width: 500px;
+    }
+  }
 
   @media screen and (max-width: $middle-display) {
     @include laptop-container();
@@ -176,17 +195,20 @@ $mobile: 769px;
     &__info {
       font-size: 14px;
       max-height: 380px;
-      max-width: 370px;
+      min-width: 300px;
     }
   }
 
   @media screen and (max-width: $mobile) {
     @include mobile-container;
+    // margin-left: 165px;
+    // margin-right: 165px;
     display: grid;
     grid-template-columns: 200px 1fr;
-    grid-template-rows: 320px 1fr 150px;
+    grid-template-rows: 320px 440px;
     gap: 5px;
     align-items: start;
+    max-width: 360px;
     margin-top: 10px;
     padding: 15px;
 
@@ -223,7 +245,7 @@ $mobile: 769px;
       margin-left: 0px;
       height: auto;
       width: 90vw;
-      min-width: 320px;
+      max-width: 300px;
     }
   }
 }
@@ -249,6 +271,19 @@ $mobile: 769px;
     padding-left: 81px;
     font-weight: 500;
     font-size: 32px;
+  }
+  @media (max-width: $middle-display_example) {
+    @include laptop-container;
+    width: 450px;
+    height: 85px;
+
+    &__order {
+      font-family: $main-font;
+      padding-left: 17px;
+      padding-right: 0px;
+      font-weight: 500;
+      font-size: 32px;
+    }
   }
 
   @media screen and (max-width: $middle-display) {
@@ -353,6 +388,7 @@ $mobile: 769px;
       filter: drop-shadow(5px 5px 10px #686069);
     }
   }
+
   @media screen and (max-width: $middle-display) {
     width: 100%;
     align-items: center;
@@ -379,6 +415,7 @@ $mobile: 769px;
       padding-right: 10px;
     }
   }
+
   @media screen and (max-width: $tablet) {
     width: 100%;
     align-items: center;
@@ -549,6 +586,9 @@ $mobile: 769px;
     @include laptop-container;
 
     //Типографика
+    &__title {
+      margin-top: 50px;
+    }
     &__title_h3,
     &__title_h3_bouquet {
       font-size: 16px;
@@ -625,6 +665,7 @@ $mobile: 769px;
       &_h3,
       &_h3_bouquet {
         font-size: 16px;
+        margin-top: 20px;
       }
     }
 
@@ -727,8 +768,9 @@ $mobile: 769px;
 
     &__title {
       display: flex;
-      justify-content: center;
+      justify-content: start;
       margin-bottom: 10px;
+      margin-top: 10px;
 
       &_h3,
       &_h3_bouquet {

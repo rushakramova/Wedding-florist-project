@@ -59,6 +59,14 @@ ul {
   padding-left: 54px;
   padding-right: 54px;
 }
+@media (max-width: 1559px) {
+  .container-about-me {
+    max-width: 1108px;
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+}
 @media screen and (max-width: 1499px) {
   .container-about-me {
     max-width: 1108px;
@@ -83,6 +91,7 @@ ul {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    max-width: 360px;
   }
 }
 
@@ -128,6 +137,25 @@ ul {
 .about-me__info-text {
   margin-bottom: 1em;
 }
+@media (max-width: 1559px) {
+  .about-me {
+    max-width: 1108px;
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  .about-me__studio-img {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+  }
+  .about-me__info {
+    font-size: 24px;
+    height: auto;
+    width: 100vw;
+    min-width: 500px;
+  }
+}
 @media screen and (max-width: 1499px) {
   .about-me {
     max-width: 1108px;
@@ -169,7 +197,7 @@ ul {
   .about-me__info {
     font-size: 14px;
     max-height: 380px;
-    max-width: 370px;
+    min-width: 300px;
   }
 }
 @media screen and (max-width: 769px) {
@@ -181,9 +209,10 @@ ul {
     padding-right: 15px;
     display: grid;
     grid-template-columns: 200px 1fr;
-    grid-template-rows: 320px 1fr 150px;
+    grid-template-rows: 320px 440px;
     gap: 5px;
     align-items: start;
+    max-width: 360px;
     margin-top: 10px;
     padding: 15px;
   }
@@ -219,7 +248,7 @@ ul {
     margin-left: 0px;
     height: auto;
     width: 90vw;
-    min-width: 320px;
+    max-width: 300px;
   }
 }
 
@@ -243,6 +272,23 @@ ul {
   padding-left: 81px;
   font-weight: 500;
   font-size: 32px;
+}
+@media (max-width: 1559px) {
+  .contacts {
+    max-width: 1108px;
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 54px;
+    width: 450px;
+    height: 85px;
+  }
+  .contacts__order {
+    font-family: "Montserrat Alternates", sans-serif;
+    padding-left: 17px;
+    padding-right: 0px;
+    font-weight: 500;
+    font-size: 32px;
+  }
 }
 @media screen and (max-width: 1499px) {
   .contacts {
@@ -402,6 +448,7 @@ ul {
     padding-right: 8px;
   }
 }
+
 .example {
   max-width: 1578px;
   margin: 0 auto;
@@ -493,6 +540,9 @@ ul {
     padding-left: 54px;
     padding-right: 54px;
   }
+  .example__title {
+    margin-top: 50px;
+  }
   .example__title_h3, .example__title_h3_bouquet {
     font-size: 16px;
     line-height: 20px;
@@ -555,6 +605,7 @@ ul {
   }
   .example__title_h3, .example__title_h3_bouquet {
     font-size: 16px;
+    margin-top: 20px;
   }
   .example__title_h3_bouquet, .example__title_h3_bouquet_bouquet {
     padding-bottom: 10px;
@@ -629,8 +680,9 @@ ul {
   }
   .example__title {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin-bottom: 10px;
+    margin-top: 10px;
   }
   .example__title_h3, .example__title_h3_bouquet {
     font-size: 16px;
