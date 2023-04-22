@@ -30,20 +30,15 @@ ul {
 
 .title {
   font-family: "Montserrat Alternates", sans-serif;
-  color: #CA8D66;
+  color: #ca8d66;
   font-size: 64px;
   font-weight: 500;
-  margin-bottom: 40px;
 }
-
-.line {
-  max-width: 1578px;
-  margin: 0 auto;
-  padding-left: 54px;
-  padding-right: 54px;
-  margin-top: 2.125em;
+@media screen and (max-width: 1149px) {
+  .title {
+    font-size: 36px;
+  }
 }
-
 .example {
   max-width: 1578px;
   margin: 0 auto;
@@ -53,6 +48,7 @@ ul {
   flex-direction: column;
 }
 .example__title_h3, .example__title_h3_bouquet {
+  margin-bottom: 40px;
   font-family: "Montserrat Alternates", sans-serif;
   color: #5C6C72;
   font-size: 24px;
@@ -323,5 +319,3 @@ ul {
     order: -1;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
