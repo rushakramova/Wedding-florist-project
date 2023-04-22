@@ -919,12 +919,6 @@ $mobile: 769px;
 .card:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
-// Блок букеты
-.container__bouquets {
-    @include container();
-    .title {
-        margin-bottom: 41px;
-    }
 
 // Блок с ценами
 .catalog {
@@ -944,6 +938,76 @@ $mobile: 769px;
   }
   @media (max-width: $middle-display_example) {
     @include laptop-container;
+  }
+
+  @media screen and (max-width: $middle-display) {
+    @include laptop-container;
+    margin-bottom: 20px;
+  }
+
+  &__cards {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    margin-bottom: 25px;
+  }
+
+  &__cards {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container;
+    margin-bottom: 35px;
+
+    &__cards {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-self: center;
+      max-width: 330px;
+      margin-top: 20px;
+      gap: 0.625em;
+    }
+
+    .title {
+      max-width: 330px;
+      width: 100%;
+      align-self: center;
+    }
+  }
+}
+// Блок с букетами
+.container__bouquets {
+  @include container;
+  margin-bottom: 25px;
+
+  @media (max-width: $middle-display_example) {
+    @include laptop-container;
+    margin-bottom: 25px;
+  }
+  @media screen and (max-width: $middle-display) {
+    @include laptop-container;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include tablet-container;
+    margin-bottom: 25px;
+  }
+}
+.container__cards {
+  @include container;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 70px;
+
+  @media (max-width: $middle-display_example) {
+    @include laptop-container;
+    justify-content: space-evenly;
   }
 
   @media screen and (max-width: $middle-display) {
