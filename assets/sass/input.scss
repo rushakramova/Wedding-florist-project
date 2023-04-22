@@ -27,12 +27,7 @@ body {
   padding-left: 54px;
   padding-right: 54px;
 }
-@mixin img {
-  object-fit: cover;
-  height: auto;
-  width: 100%;
-  max-width: 300px;
-}
+
 /*Reset*/
 @import "reset";
 
@@ -80,7 +75,7 @@ $mobile: 769px;
   &__name {
     font-family: $main-font;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 24px;
     color: $gray;
     text-align: center;
     margin-top: 15px;
@@ -89,7 +84,7 @@ $mobile: 769px;
   &__price {
     font-family: $main-font;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 24px;
     color: $accent-color;
     text-align: center;
     margin-top: 15px;
@@ -99,10 +94,17 @@ $mobile: 769px;
     height: 350px;
 
     &__img {
-      object-fit: cover;
-      height: auto;
-      width: 100%;
       max-width: 235px;
+    }
+
+    &__name {
+      font-size: 15px;
+      margin-top: 10px;
+    }
+
+    &__price {
+      font-size: 15px;
+      margin-top: 10px;
     }
   }
   @media screen and (max-width: $tablet) {
@@ -110,19 +112,16 @@ $mobile: 769px;
     height: 226px;
 
     &__img {
-      object-fit: cover;
-      height: auto;
-      width: 100%;
       max-width: 150px;
     }
 
     &__name {
-      font-size: 0.75em;
+      font-size: 12px;
       margin-top: 5px;
     }
 
     &__price {
-      font-size: 0.75em;
+      font-size: 12px;
       margin-top: 5px;
     }
   }
@@ -131,20 +130,7 @@ $mobile: 769px;
     height: 226px;
 
     &__img {
-      object-fit: cover;
-      height: auto;
-      width: 100%;
       max-width: 160px;
-    }
-
-    &__name {
-      font-size: 0.75em;
-      margin-top: 5px;
-    }
-
-    &__price {
-      font-size: 0.75em;
-      margin-top: 5px;
     }
   }
 }
@@ -359,7 +345,7 @@ $mobile: 769px;
 }
 
 // Блок с ценами
-.prices {
+.catalog {
   @include container;
   display: flex;
   flex-direction: column;
