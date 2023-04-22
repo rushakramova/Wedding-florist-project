@@ -70,18 +70,19 @@ header {
   border: 1px solid black;
 }
 .menuconteiner {
-  border: 1px solid red;
-  @include container;
+  //border: 1px solid red;//remove-dinara
+  //@include container; //remove-dinara
   font-family: $main-font;
   font-weight: 600;
-  max-width: 1920px;
+  // max-width: 1920px; //remove-dinara
   width: 100%;
+  margin: 0 auto; //add-dinara
   height: 112px;
   background-color: rgb(255, 255, 255, 0.6);
   backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 2;
 
   &__blok {
     margin: 0 auto;
@@ -146,7 +147,7 @@ header {
       height: 57px;
     }
     @media (max-width: $mobile) {
-      @include mobile-container();
+      //@include mobile-container(); //remove-dinara
       max-width: 769px;
       height: 60px;
 
@@ -263,34 +264,8 @@ header {
         left: 15px;
         width: 219px;
         height: 57px;
-        border: 1px solid #000000;
+        //border: 1px solid #000000;//remove-dinara
       }
-      // #burgermenu:checked + label + nav {
-      //   display: block;
-      //   animation: show 0.5s ease;
-      // }
-      // [for="burger"]::before {
-      //   content: "☰";
-      //   color: $accent-color;
-      // }
-      /*.mask-content {
-                display: block;
-                position: fixed;
-                top: 0;
-                left: 0;
-                z-index: 998;
-                width: 100%;
-                height: 100%;
-                background-color: $accent-color;
-                visibility: hidden;
-                opacity: 0;
-            }
-            [id='burgermenu']:checked ~ .mask-content {
-                visibility: visible;
-                opacity: 1;
-                -webkit-transition: opacity .5s, visibility .5s;
-                transition: opacity .5s, visibility .5s;
-            }*/
     }
   }
 }
@@ -305,6 +280,8 @@ header {
   max-width: 1920px;
   height: 858px;
   width: 100%;
+  margin-left: auto; //add-dinara
+  margin-right: auto; //add-dinara
   font-family: $main-font;
   font-weight: 500;
   font-size: 32px;
@@ -413,8 +390,9 @@ header {
     &__bloc_1,
     &__bloc_2 {
       border-radius: 0px 0px 0px 0px;
-      margin-left: 15px;
-      margin-left: 15px;
+      //margin-left: 15px;//remove-dinara
+      //margin-left: 15px;//remove-dinara
+      padding-left: 15px; //add-dinara
       width: 100%;
       background: white;
       backdrop-filter: none;

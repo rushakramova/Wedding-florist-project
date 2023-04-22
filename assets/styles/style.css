@@ -49,21 +49,16 @@ header {
 }
 
 .menuconteiner {
-  border: 1px solid red;
-  max-width: 1578px;
-  margin: 0 auto;
-  padding-left: 54px;
-  padding-right: 54px;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
-  max-width: 1920px;
   width: 100%;
+  margin: 0 auto;
   height: 112px;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 2;
 }
 .menuconteiner__blok {
   margin: 0 auto;
@@ -138,31 +133,8 @@ header {
 }
 @media (max-width: 1149px) and (max-width: 769px) {
   .menuconteiner {
-    max-width: 530px;
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
     max-width: 769px;
     height: 60px;
-    /*.mask-content {
-              display: block;
-              position: fixed;
-              top: 0;
-              left: 0;
-              z-index: 998;
-              width: 100%;
-              height: 100%;
-              background-color: $accent-color;
-              visibility: hidden;
-              opacity: 0;
-          }
-          [id='burgermenu']:checked ~ .mask-content {
-              visibility: visible;
-              opacity: 1;
-              -webkit-transition: opacity .5s, visibility .5s;
-              transition: opacity .5s, visibility .5s;
-          }*/
   }
   .menuconteiner #gedsamugim-kanagemen {
     display: block;
@@ -265,7 +237,6 @@ header {
     left: 15px;
     width: 219px;
     height: 57px;
-    border: 1px solid #000000;
   }
 }
 
@@ -280,6 +251,8 @@ header {
   max-width: 1920px;
   height: 858px;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
   font-size: 32px;
@@ -390,8 +363,7 @@ header {
   }
   .title-mainpage__bloc_1, .title-mainpage__bloc_2 {
     border-radius: 0px 0px 0px 0px;
-    margin-left: 15px;
-    margin-left: 15px;
+    padding-left: 15px;
     width: 100%;
     background: white;
     backdrop-filter: none;
