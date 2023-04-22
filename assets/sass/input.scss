@@ -113,9 +113,11 @@ header {
   &__link:hover {
     text-decoration: underline;
   }
+  // скрываем элементы под мобилку//add-dinara
+  &__logomobile,
   #gedsamugim-kanagemen {
     display: none;
-  }
+  } //add-dinara
 
   @media (max-width: $middle-display) {
     @include laptop-container;
@@ -148,6 +150,7 @@ header {
     }
     @media (max-width: $mobile) {
       //@include mobile-container(); //remove-dinara
+      padding-left: 15px; //add-dinara
       max-width: 769px;
       height: 60px;
 
@@ -155,7 +158,7 @@ header {
         display: block;
         position: absolute;
         top: 20px;
-        right: 48px;
+        right: 15px;
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
@@ -235,35 +238,39 @@ header {
         transform: scale(1, 1);
         opacity: 1;
       }
-
+      //прячем меню на десктоп и планшет
       &__nav {
         display: none;
         user-select: none;
-        border: 1px solid green;
+        //border: 1px solid green;//remove-dinara
       }
-      &__blok {
-        border: 1px solid rgb(128, 0, 96);
-        display: block;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        margin: 0;
-        width: 200px;
-        height: 319px;
-        padding: 30px 63px auto 30px;
-      }
+      // &__blok { //remove-dinara
+      //   border: 1px solid rgb(128, 0, 96);
+      //   display: block;
+      //   position: fixed;
+      //   top: 0;
+      //   bottom: 0;
+      //   right: 0;
+      //   margin: 0;
+      //   width: 200px;
+      //   height: 319px;
+      //   padding: 30px 63px auto 30px;
+      // }//remove-dinara
       &__logo {
         display: none;
       }
+      //показываем лого под мобилку
       &__logomobile {
-        background-image: url(/assets/images/img_header/Logo_mobile.png);
+        //background-image: url(/assets/images/img_header/Logo_mobile.png);//remove-dinara
         display: block;
-        position: fixed;
-        top: 2px;
-        left: 15px;
-        width: 219px;
-        height: 57px;
+        img {
+          max-width: 100%; //add-dinara
+        }
+        // position: fixed;//remove-dinara
+        // top: 2px;//remove-dinara
+        // left: 15px;//remove-dinara
+        // width: 219px;//remove-dinara
+        // height: 57px;//remove-dinara
         //border: 1px solid #000000;//remove-dinara
       }
     }

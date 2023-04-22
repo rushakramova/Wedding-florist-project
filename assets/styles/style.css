@@ -88,6 +88,7 @@ header {
 .menuconteiner__link:hover {
   text-decoration: underline;
 }
+.menuconteiner__logomobile,
 .menuconteiner #gedsamugim-kanagemen {
   display: none;
 }
@@ -133,6 +134,7 @@ header {
 }
 @media (max-width: 1149px) and (max-width: 769px) {
   .menuconteiner {
+    padding-left: 15px;
     max-width: 769px;
     height: 60px;
   }
@@ -140,7 +142,7 @@ header {
     display: block;
     position: absolute;
     top: 20px;
-    right: 48px;
+    right: 15px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -212,31 +214,15 @@ header {
   .menuconteiner__nav {
     display: none;
     user-select: none;
-    border: 1px solid green;
-  }
-  .menuconteiner__blok {
-    border: 1px solid rgb(128, 0, 96);
-    display: block;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin: 0;
-    width: 200px;
-    height: 319px;
-    padding: 30px 63px auto 30px;
   }
   .menuconteiner__logo {
     display: none;
   }
   .menuconteiner__logomobile {
-    background-image: url(/assets/images/img_header/Logo_mobile.png);
     display: block;
-    position: fixed;
-    top: 2px;
-    left: 15px;
-    width: 219px;
-    height: 57px;
+  }
+  .menuconteiner__logomobile img {
+    max-width: 100%;
   }
 }
 
