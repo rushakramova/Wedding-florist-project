@@ -4,7 +4,7 @@ body {
 
 // Mixins
 @mixin container {
-    max-width: 1578px;
+    max-width: 1548px;
     margin: 0 auto;
     padding-left: 54px;
     padding-right: 54px;
@@ -30,13 +30,6 @@ body {
     margin: 0 auto;
     padding-left: 54px;
     padding-right: 54px;
-}
-
-@mixin img {
-    object-fit: cover;
-    height: auto;
-    width: 100%;
-    max-width: 300px;
 }
 
 /*Reset*/
@@ -83,44 +76,42 @@ $mobile: 769px;
         flex-wrap: wrap;
         gap: 10px;
         justify-content: flex-start;
-
-        .card {
-            width: 345px;
-            height: 470px;
-            // border: 1px $gray solid;
-        }
-
-        .card:hover {
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-        }
-
-        .card__img {
-            width: 100%;
-            object-fit: cover;
-            height: auto;
-        }
-
-        .card__name {
-            font-family: $main-font;
-            font-weight: 600;
-            font-size: 24px;
-            color: $gray;
-            text-align: center;
-            margin-top: 15px;
-        }
-
-        .card__price {
-            font-family: $main-font;
-            font-weight: 600;
-            font-size: 24px;
-            color: $accent-color;
-            text-align: center;
-            margin-top: 15px;
-        }
     }
-
 }
 
+.card {
+    width: 345px;
+    height: 470px;
+    // border: 1px $gray solid;
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+    }
+
+    &__name {
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 24px;
+        color: $gray;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    &__price {
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 24px;
+        color: $accent-color;
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+.card:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
 
 //Ноут 1499px
 @media screen and (max-width: $middle-display) {

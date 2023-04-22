@@ -36,7 +36,7 @@ ul {
 }
 
 .container__bouquets {
-  max-width: 1578px;
+  max-width: 1548px;
   margin: 0 auto;
   padding-left: 54px;
   padding-right: 54px;
@@ -50,19 +50,17 @@ ul {
   gap: 10px;
   justify-content: flex-start;
 }
-.container__bouquets .container__cards .card {
+
+.card {
   width: 345px;
   height: 470px;
 }
-.container__bouquets .container__cards .card:hover {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-}
-.container__bouquets .container__cards .card__img {
+.card__img {
   width: 100%;
   object-fit: cover;
   height: auto;
 }
-.container__bouquets .container__cards .card__name {
+.card__name {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -70,13 +68,17 @@ ul {
   text-align: center;
   margin-top: 15px;
 }
-.container__bouquets .container__cards .card__price {
+.card__price {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
   font-size: 24px;
   color: #ca8d66;
   text-align: center;
   margin-top: 15px;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (max-width: 1499px) {
