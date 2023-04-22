@@ -119,6 +119,14 @@ ul {
   .card__img {
     max-width: 235px;
   }
+  .card__name {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .card__price {
+    font-size: 15px;
+    margin-top: 10px;
+  }
 }
 @media screen and (max-width: 1149px) {
   .card {

@@ -140,6 +140,16 @@ $mobile: 769px;
             max-width: 235px;
         }
 
+        &__name {
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        &__price {
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
     }
 
     @media screen and (max-width: $tablet) {
