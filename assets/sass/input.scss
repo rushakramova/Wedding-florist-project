@@ -65,10 +65,6 @@ $mobile: 769px;
     font-size: $mfont-size;
   }
 }
-.line {
-  @include container();
-  margin-top: 2.125em;
-}
 // Display
 $dg: grid;
 
@@ -77,20 +73,26 @@ $dg: grid;
   display: $dg;
   font-family: $main-font;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 1.5fr;
+  grid-template-rows: 110px 250px 1.5fr;
+  gap: 2px;
   padding: 0;
   max-width: 1441px;
   max-height: 818px;
+  .title-map__mobile {
+    display: none;
+  }
 
   &__title1,
   &__title2 {
     grid-row: 1/2;
+    padding-top: 10px;
   }
 
   &__text1,
   &__text2 {
     display: $dg;
-    font-size: 2em;
+    font-size: 32px;
+    font-weight: 500;
     grid-row: 2/3;
   }
   &__logo,
@@ -105,14 +107,81 @@ $dg: grid;
     display: $dg;
     align-items: stretch;
   }
+  @media screen and (max-width: $middle-display) {
+    @include laptop-container();
+    grid-template-columns: 1.1fr 1fr;
+    grid-template-rows: 0.5fr 150px 1.5fr;
+    gap: 10px;
+
+    &__title1,
+    &__title2 {
+      font-size: $mfont-size;
+    }
+
+    &__text1,
+    &__text2 {
+      font-size: 18px;
+    }
+    .contacts-logo {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+
   @media screen and (max-width: $tablet) {
     @include tablet-container();
-    display: $dg;
-    font-family: $main-font;
-    max-width: 660px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1.5fr 0.5fr 1fr;
-    border: 1px solid black;
+    grid-template-rows: 0.5fr 120px 1.5fr;
+    &__text1,
+    &__text2 {
+      font-size: 14px;
+    }
+    &__title1,
+    &__title2 {
+      padding-top: 0px;
+    }
+    .title-map__mobile {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 150px 220px 45px 100px;
+    gap: 2px;
+    font-size: $mfont-size;
+
+    .title-map__mobile {
+      display: block;
+    }
+    .title-map__display {
+      display: none;
+    }
+    &__title1 {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+
+    &__title2 {
+      font-size: $mfont-size;
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    &__text1 {
+      grid-column: 1/2;
+      grid-row: 5/6;
+    }
+    &__text2 {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    &__map {
+      max-width: 350px;
+    }
+    &__logo {
+      display: none;
+    }
   }
 
   .contacts-map__list .phone-link {
@@ -136,57 +205,5 @@ $dg: grid;
     max-width: 100%;
     justify-self: stretch;
     align-self: stretch;
-  }
-
-  @media screen and (max-width: $mobile) {
-    @include mobile-container();
-    display: $dg;
-    font-family: $main-font;
-    max-width: 100%;
-    grid-template-columns: 330px;
-    grid-template-rows: 0.5fr 1fr 1.5fr 0.5fr 1fr;
-    padding: 0;
-    border: 1px solid black;
-  }
-
-  &__title1 {
-    order: 4;
-  }
-
-  &__title2 {
-    &__title {
-      font-size: 1em;
-    }
-    order: 1;
-  }
-
-  &__text1 {
-    border: 1px solid black;
-    display: $dg;
-    font-size: 1em;
-    order: 5;
-  }
-  &__text2 {
-    border: 1px solid black;
-    display: $dg;
-    font-size: 1em;
-    order: 2;
-  }
-  &__map {
-    border: 1px solid black;
-    display: $dg;
-    max-width: 100%;
-    order: 3;
-  }
-  &__logo {
-    display: none;
-  }
-  &__list {
-    border: 1px solid black;
-    display: $dg;
-    align-items: stretch;
-  }
-  .title {
-    font-size: 2em;
   }
 }

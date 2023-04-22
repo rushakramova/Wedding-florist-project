@@ -40,14 +40,6 @@ ul {
   }
 }
 
-.line {
-  max-width: 1578px;
-  margin: 0 auto;
-  padding-left: 54px;
-  padding-right: 54px;
-  margin-top: 2.125em;
-}
-
 .contacts-map {
   max-width: 1578px;
   margin: 0 auto;
@@ -56,17 +48,23 @@ ul {
   display: grid;
   font-family: "Montserrat Alternates", sans-serif;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 1.5fr;
+  grid-template-rows: 110px 250px 1.5fr;
+  gap: 2px;
   padding: 0;
   max-width: 1441px;
   max-height: 818px;
 }
+.contacts-map .title-map__mobile {
+  display: none;
+}
 .contacts-map__title1, .contacts-map__title2 {
   grid-row: 1/2;
+  padding-top: 10px;
 }
 .contacts-map__text1, .contacts-map__text2 {
   display: grid;
-  font-size: 2em;
+  font-size: 32px;
+  font-weight: 500;
   grid-row: 2/3;
 }
 .contacts-map__logo, .contacts-map__map {
@@ -80,18 +78,86 @@ ul {
   display: grid;
   align-items: stretch;
 }
+@media screen and (max-width: 1499px) {
+  .contacts-map {
+    max-width: 1108px;
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 54px;
+    grid-template-columns: 1.1fr 1fr;
+    grid-template-rows: 0.5fr 150px 1.5fr;
+    gap: 10px;
+  }
+  .contacts-map__title1, .contacts-map__title2 {
+    font-size: 36px;
+  }
+  .contacts-map__text1, .contacts-map__text2 {
+    font-size: 18px;
+  }
+  .contacts-map .contacts-logo {
+    width: 100%;
+    max-width: 500px;
+  }
+}
 @media screen and (max-width: 1149px) {
   .contacts-map {
     max-width: 768px;
     margin: 0 auto;
     padding-left: 54px;
     padding-right: 54px;
-    display: grid;
-    font-family: "Montserrat Alternates", sans-serif;
-    max-width: 660px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1.5fr 0.5fr 1fr;
-    border: 1px solid black;
+    grid-template-rows: 0.5fr 120px 1.5fr;
+  }
+  .contacts-map__text1, .contacts-map__text2 {
+    font-size: 14px;
+  }
+  .contacts-map__title1, .contacts-map__title2 {
+    padding-top: 0px;
+  }
+  .contacts-map .title-map__mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 769px) {
+  .contacts-map {
+    max-width: 530px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 150px 220px 45px 100px;
+    gap: 2px;
+    font-size: 36px;
+  }
+  .contacts-map .title-map__mobile {
+    display: block;
+  }
+  .contacts-map .title-map__display {
+    display: none;
+  }
+  .contacts-map__title1 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .contacts-map__title2 {
+    font-size: 36px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .contacts-map__text1 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .contacts-map__text2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .contacts-map__map {
+    max-width: 350px;
+  }
+  .contacts-map__logo {
+    display: none;
   }
 }
 .contacts-map .contacts-map__list .phone-link {
@@ -117,59 +183,3 @@ ul {
   justify-self: stretch;
   align-self: stretch;
 }
-@media screen and (max-width: 769px) {
-  .contacts-map {
-    max-width: 530px;
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: grid;
-    font-family: "Montserrat Alternates", sans-serif;
-    max-width: 100%;
-    grid-template-columns: 330px;
-    grid-template-rows: 0.5fr 1fr 1.5fr 0.5fr 1fr;
-    padding: 0;
-    border: 1px solid black;
-  }
-}
-.contacts-map__title1 {
-  order: 4;
-}
-.contacts-map__title2 {
-  order: 1;
-}
-.contacts-map__title2__title {
-  font-size: 1em;
-}
-.contacts-map__text1 {
-  border: 1px solid black;
-  display: grid;
-  font-size: 1em;
-  order: 5;
-}
-.contacts-map__text2 {
-  border: 1px solid black;
-  display: grid;
-  font-size: 1em;
-  order: 2;
-}
-.contacts-map__map {
-  border: 1px solid black;
-  display: grid;
-  max-width: 100%;
-  order: 3;
-}
-.contacts-map__logo {
-  display: none;
-}
-.contacts-map__list {
-  border: 1px solid black;
-  display: grid;
-  align-items: stretch;
-}
-.contacts-map .title {
-  font-size: 2em;
-}
-
-/*# sourceMappingURL=style.css.map */
