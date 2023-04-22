@@ -30,7 +30,7 @@ ul {
 
 .title {
   font-family: "Montserrat Alternates", sans-serif;
-  color: #CA8D66;
+  color: #ca8d66;
   font-size: 64px;
   font-weight: 500;
 }
@@ -47,7 +47,8 @@ ul {
 }
 @media screen and (max-width: 769px) {
   .arrow {
-    width: 100%;
+    width: 100vw;
+    min-width: 350px;
     align-content: center;
   }
 }
@@ -136,24 +137,12 @@ ul {
     margin-top: 5px;
   }
   .about-me__studio-img {
-    position: relative;
-    margin-left: 0.5em;
-    object-fit: cover;
-    height: auto;
-    width: 100%;
     max-width: 260px;
   }
   .about-me__avatar-img {
-    position: relative;
-    left: -70px;
-    object-fit: cover;
-    height: auto;
-    width: 100%;
     max-width: 170px;
   }
   .about-me__info {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 400;
     font-size: 18px;
     margin-left: -30px;
     color: #000000;
@@ -171,28 +160,15 @@ ul {
     margin-top: 5px;
   }
   .about-me__studio-img {
-    position: relative;
     margin-left: 0;
-    object-fit: cover;
-    height: auto;
-    width: 100%;
     max-width: 220px;
   }
   .about-me__avatar-img {
-    position: relative;
-    left: -70px;
-    object-fit: cover;
-    height: auto;
-    width: 100%;
     max-width: 170px;
   }
   .about-me__info {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 400;
     font-size: 14px;
-    color: #000000;
     max-height: 380px;
-    width: 100vw;
     max-width: 370px;
   }
 }
@@ -239,11 +215,8 @@ ul {
   .about-me__info {
     grid-column: 1/3;
     grid-row: 2/3;
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 400;
     font-size: 14px;
     margin-left: 0px;
-    color: #000000;
     height: auto;
     width: 90vw;
     min-width: 320px;
@@ -261,76 +234,65 @@ ul {
   align-items: center;
   justify-content: flex-start;
 }
+.contacts_price {
+  margin-top: 58px;
+  align-self: flex-end;
+}
 .contacts__order {
-  margin-left: 81px;
+  font-family: "Montserrat Alternates", sans-serif;
+  padding-left: 81px;
   font-weight: 500;
   font-size: 32px;
 }
 @media screen and (max-width: 1499px) {
   .contacts {
-    height: 72px;
     width: 320px;
+    height: 72px;
+  }
+  .contacts_price {
+    margin-top: 20px;
   }
   .contacts__order {
     width: 100%;
-    font-weight: 500;
+    padding-left: 0px;
+    text-align: center;
     font-size: 16px;
-  }
-  .contacts .icon-social {
-    display: inline-flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .contacts .icon-social__item-link_instagram {
-    margin-left: 8px;
-    margin-right: 10px;
-  }
-  .contacts .icon-social__item-link_vk {
-    margin-right: 10px;
-  }
-  .contacts .icon-social__item-link_telegram {
-    margin-right: 10px;
-  }
-  .contacts .icon-social__item-link_whatsapp {
-    margin-right: 10px;
-  }
-  .contacts .icon-social__item-link_phone {
-    margin-right: 10px;
   }
 }
 @media screen and (max-width: 1149px) {
   .contacts {
-    margin-top: 0px;
-    height: 72px;
     width: 320px;
+    height: 72px;
+  }
+  .contacts_price {
+    margin-top: 20px;
   }
   .contacts__order {
     width: 100%;
-    font-weight: 500;
+    padding-left: 0px;
+    text-align: center;
     font-size: 16px;
   }
-  .contacts .icon-social {
-    display: inline-flex;
+}
+@media screen and (max-width: 769px) {
+  .contacts {
+    max-width: 330px;
     width: 100%;
-    align-items: center;
-    justify-content: space-around;
+    height: 100px;
+    background: white;
+    border-radius: 0px;
+    border: 1px rgba(202, 141, 102, 0.5) solid;
   }
-  .contacts .icon-social__item-link_instagram {
-    margin-left: 8px;
-    margin-right: 10px;
+  .contacts_price {
+    margin-top: 20px;
+    align-self: center;
   }
-  .contacts .icon-social__item-link_vk {
-    margin-right: 10px;
-  }
-  .contacts .icon-social__item-link_telegram {
-    margin-right: 10px;
-  }
-  .contacts .icon-social__item-link_whatsapp {
-    margin-right: 10px;
-  }
-  .contacts .icon-social__item-link_phone {
-    margin-right: 10px;
+  .contacts__order {
+    width: 100%;
+    padding-left: 0px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
   }
 }
 
@@ -341,33 +303,102 @@ ul {
   padding-top: 8px;
 }
 .icon-social__item-link_instagram {
-  margin-left: 18px;
-  margin-right: 30px;
+  padding-left: 18px;
+  padding-right: 30px;
 }
 .icon-social__item-link_instagram :hover {
   filter: drop-shadow(10px 5px 10px #ca40ec);
 }
 .icon-social__item-link_vk {
-  margin-right: 30px;
+  padding-right: 30px;
 }
 .icon-social__item-link_vk :hover {
   filter: drop-shadow(10px 5px 10px #6365f1);
 }
 .icon-social__item-link_telegram {
-  margin-right: 30px;
+  padding-right: 30px;
 }
 .icon-social__item-link_telegram :hover {
   filter: drop-shadow(10px 5px 10px #77acf1);
 }
 .icon-social__item-link_whatsapp {
-  margin-right: 30px;
+  padding-right: 30px;
 }
 .icon-social__item-link_whatsapp :hover {
-  filter: drop-shadow(10px 5px 10px #00D95F);
+  filter: drop-shadow(10px 5px 10px #00d95f);
 }
 .icon-social__item-link_phone {
-  margin-right: 30px;
+  padding-right: 30px;
 }
 .icon-social__item-link_phone :hover {
   filter: drop-shadow(5px 5px 10px #686069);
+}
+@media screen and (max-width: 1499px) {
+  .icon-social {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .icon-social__item-link_instagram {
+    padding-left: 8px;
+    padding-right: 10px;
+  }
+  .icon-social__item-link_vk {
+    padding-right: 10px;
+  }
+  .icon-social__item-link_telegram {
+    padding-right: 10px;
+  }
+  .icon-social__item-link_whatsapp {
+    padding-right: 10px;
+  }
+  .icon-social__item-link_phone {
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 1149px) {
+  .icon-social {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .icon-social__item-link_instagram {
+    padding-left: 8px;
+    padding-right: 10px;
+  }
+  .icon-social__item-link_vk {
+    padding-right: 10px;
+  }
+  .icon-social__item-link_telegram {
+    padding-right: 10px;
+  }
+  .icon-social__item-link_whatsapp {
+    padding-right: 10px;
+  }
+  .icon-social__item-link_phone {
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .icon-social {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .icon-social__item-link_instagram {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .icon-social__item-link_vk {
+    padding-right: 8px;
+  }
+  .icon-social__item-link_telegram {
+    padding-right: 8px;
+  }
+  .icon-social__item-link_whatsapp {
+    padding-right: 8px;
+  }
+  .icon-social__item-link_phone {
+    padding-right: 8px;
+  }
 }
