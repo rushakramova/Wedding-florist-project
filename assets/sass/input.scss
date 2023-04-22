@@ -4,7 +4,7 @@ body {
 
 // Mixins
 @mixin container {
-    max-width: 1548px;
+    max-width: 1578px;
     margin: 0 auto;
     padding-left: 54px;
     padding-right: 54px;
@@ -19,6 +19,7 @@ body {
 
 @mixin mobile-container {
     max-width: 530px;
+    width: 100%;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -42,11 +43,11 @@ body {
 @import "reset";
 
 // Colors
-$accent-color: #CA8D66;
-$gray: #5C6C72;
+$accent-color: #ca8d66;
+$gray: #5c6c72;
 
 // Fonts
-$main-font: 'Montserrat Alternates', sans-serif;
+$main-font: "Montserrat Alternates", sans-serif;
 $mfont-size: 36px;
 
 /*Screen sizes*/
@@ -148,68 +149,69 @@ $mobile: 769px;
             }
         }
     }
-}
 
-// Планшет 1149px
-@media screen and (max-width: $tablet) {
 
-    .container__bouquets {
-        @include tablet-container;
+    // Планшет 1149px
+    @media screen and (max-width: $tablet) {
 
-        .title {
-            font-size: 29.33px;
-        }
+        .container__bouquets {
+            @include tablet-container;
 
-        .container__cards {
-
-            .card {
-                width: 150px;
-                height: 226px;
+            .title {
+                font-size: 29.33px;
             }
 
-            .card__name {
-                font-size: 12px;
-                margin-top: 5px;
+            .container__cards {
 
-            }
+                .card {
+                    width: 150px;
+                    height: 226px;
+                }
 
-            .card__price {
-                font-size: 12px;
-                margin-top: 5px;
+                .card__name {
+                    font-size: 12px;
+                    margin-top: 5px;
+
+                }
+
+                .card__price {
+                    font-size: 12px;
+                    margin-top: 5px;
+                }
             }
         }
     }
-}
 
-//Мобилка 769px
-@media screen and (max-width: $mobile) {
+    //Мобилка 769px
+    @media screen and (max-width: $mobile) {
 
-    .container__bouquets {
-        @include mobile-container();
+        .container__bouquets {
+            @include mobile-container();
 
-        .title {
-            font-size: 36px;
-        }
-
-        .container__cards {
-
-            .card {
-                width: 160px;
-                height: 226px;
+            .title {
+                font-size: 36px;
             }
 
-            .card__name {
-                font-size: 12px;
-                margin-top: 5px;
-            }
+            .container__cards {
 
-            .card__img {
-                max-width: 300px;
-            }
+                .card {
+                    width: 160px;
+                    height: 226px;
+                }
 
-            .card__price {
-                font-size: 12px;
-                margin-top: 5px;
+                .card__name {
+                    font-size: 12px;
+                    margin-top: 5px;
+                }
+
+                .card__img {
+                    max-width: 300px;
+                }
+
+                .card__price {
+                    font-size: 12px;
+                    margin-top: 5px;
+                }
             }
         }
     }

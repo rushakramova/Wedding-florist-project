@@ -30,13 +30,13 @@ ul {
 
 .title {
   font-family: "Montserrat Alternates", sans-serif;
-  color: #CA8D66;
+  color: #ca8d66;
   font-size: 64px;
   font-weight: 500;
 }
 
 .container__bouquets {
-  max-width: 1548px;
+  max-width: 1578px;
   margin: 0 auto;
   padding-left: 54px;
   padding-right: 54px;
@@ -66,7 +66,7 @@ ul {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
   font-size: 24px;
-  color: #5C6C72;
+  color: #5c6c72;
   text-align: center;
   margin-top: 15px;
 }
@@ -74,7 +74,7 @@ ul {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
   font-size: 24px;
-  color: #CA8D66;
+  color: #ca8d66;
   text-align: center;
   margin-top: 15px;
 }
@@ -102,7 +102,7 @@ ul {
     margin-top: 5px;
   }
 }
-@media screen and (max-width: 1149px) {
+@media screen and (max-width: 1499px) and (max-width: 1149px) {
   .container__bouquets {
     max-width: 768px;
     margin: 0 auto;
@@ -125,9 +125,10 @@ ul {
     margin-top: 5px;
   }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1499px) and (max-width: 769px) {
   .container__bouquets {
     max-width: 530px;
+    width: 100%;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
