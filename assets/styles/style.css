@@ -736,6 +736,7 @@ ul {
     order: -1;
   }
 }
+
 .card {
   max-width: 345px;
   height: 470px;
@@ -809,6 +810,7 @@ ul {
 .card:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
+
 .catalog {
   max-width: 1578px;
   margin: 0 auto;
@@ -826,6 +828,14 @@ ul {
   width: 100%;
   margin-top: 41px;
   gap: 1.25em;
+}
+@media (max-width: 1559px) {
+  .catalog {
+    max-width: 1108px;
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
 }
 @media screen and (max-width: 1499px) {
   .catalog {

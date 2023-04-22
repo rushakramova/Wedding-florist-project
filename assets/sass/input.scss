@@ -935,6 +935,9 @@ $mobile: 769px;
     margin-top: 41px;
     gap: 1.25em;
   }
+  @media (max-width: $middle-display_example) {
+    @include laptop-container;
+  }
 
   @media screen and (max-width: $middle-display) {
     @include laptop-container;
