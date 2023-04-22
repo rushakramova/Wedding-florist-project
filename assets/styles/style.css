@@ -39,6 +39,7 @@ ul {
     font-size: 36px;
   }
 }
+
 .example {
   max-width: 1578px;
   margin: 0 auto;
@@ -47,10 +48,12 @@ ul {
   display: flex;
   flex-direction: column;
 }
-.example__title_h3, .example__title_h3_bouquet {
+.example__title {
   margin-bottom: 40px;
+}
+.example__title_h3, .example__title_h3_bouquet {
   font-family: "Montserrat Alternates", sans-serif;
-  color: #5C6C72;
+  color: #5c6c72;
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
@@ -78,7 +81,7 @@ ul {
 }
 .example_p_bouquet, .example_p2_bouquet, .example_ol {
   font-family: "Inter", sans-serif;
-  color: #5C6C72;
+  color: #5c6c72;
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
@@ -95,7 +98,7 @@ ul {
   padding: 0.3em;
 }
 .example_p_bouquet, .example_p2_bouquet {
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
 }
 .example__block_text {
   background-clip: padding-box;
