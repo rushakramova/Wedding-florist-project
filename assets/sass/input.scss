@@ -919,6 +919,13 @@ $mobile: 769px;
 .card:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
+// Блок букеты
+.container__bouquets {
+    @include container();
+    .title {
+        margin-bottom: 41px;
+    }
+
 // Блок с ценами
 .catalog {
   @include container;

@@ -884,3 +884,12 @@ ul {
     align-self: center;
   }
 }
+.container__bouquets {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container__bouquets .title {
+  margin-bottom: 41px;
+}
