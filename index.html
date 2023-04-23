@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,16 +18,70 @@
 
 <body>
     <header>
-        <nav>
-            <!-- Навигация -->
+    
+    <div class="menuconteiner">
+        <!-- Лого под мобилку -->
+        <div class="menuconteiner__logomobile">
+          <img src="assets/images/img_header/Logo_mobile.png" alt="logo" />
+        </div>
+        <!-- Бургер меню -->
+        <nav role="compesab-ndergoing">
+          <div id="gedsamugim-kanagemen">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="gemenon-tandem">
+              <a href="#obomne" class="menuconteiner__link"><li>Обо мне</li></a>
+              <a href="#examples" class="menuconteiner__link"
+                ><li>Примеры</li></a
+              >
+              <a href="#price" class="menuconteiner__link"><li>Цены</li></a>
+              <a href="#contact" class="menuconteiner__link"
+                ><li>Контакты</li></a
+              >
+            </ul>
+          </div>
         </nav>
+        <!-- Меню на десктоп и планшет -->
+        <nav class="menuconteiner__nav">
+          <ul class="menuconteiner__blok">
+            <li class="menuconteiner__chapter">
+              <a href="#obomne" class="menuconteiner__link">Обо мне</a>
+            </li>
+            <li class="menuconteiner__chapter">
+              <a href="#examples" class="menuconteiner__link">Примеры</a>
+            </li>
+            <li class="menuconteiner__logo">
+              <a href="#menu" class="menuconteiner__link"> </a>
+            </li>
+            <li class="menuconteiner__chapter">
+              <a href="#price" class="menuconteiner__link">Цены</a>
+            </li>
+            <li class="menuconteiner__chapter">
+              <a href="#contact" class="menuconteiner__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
     </header>
 
     <main>
-        <div>
-            <!-- Ссылки-якоря -->
+    
+     <div class="title-mainpage">
+        <!-- Ссылки-якоря -->
+        <div class="title-mainpage__bloc_1">
+          <p class="title-mainpage__text1">
+            Свадебные букеты и композиции <br />
+            из сухоцветов и стабилизированных цветов
+          </p>
         </div>
-
+        <div class="title-mainpage__bloc_2">
+          <p class="title-mainpage__text2">
+            Неувядающие и вечные, как ваша любовь
+          </p>
+        </div>       
         <!-- Обо мне -->
         <div class="arrow">
             <img src="./assets/images/arrow.svg" alt="arrow icon">
