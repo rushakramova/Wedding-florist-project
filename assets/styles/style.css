@@ -260,10 +260,12 @@ header {
   margin-bottom: 114px;
 }
 .title-mainpage__text1 {
+  font-weight: 700;
   margin-left: 242px;
   padding-top: 35px;
 }
 .title-mainpage__text2 {
+  font-weight: 700;
   margin-left: 242px;
   padding-top: 37px;
 }
