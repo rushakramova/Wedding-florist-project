@@ -1608,7 +1608,7 @@ header {
   gap: 5px;
   font-family: "Montserrat Alternates", sans-serif;
   background: rgba(202, 141, 102, 0.57);
-  max-width: 1470px;
+  max-width: 100vw;
 }
 .footer .footer_icons {
   grid-column: 2/3;
@@ -1650,7 +1650,7 @@ header {
     margin: 0 auto;
     padding-left: 54px;
     padding-right: 54px;
-    max-width: 1402px;
+    max-width: 100vw;
   }
 }
 @media screen and (max-width: 1499px) {

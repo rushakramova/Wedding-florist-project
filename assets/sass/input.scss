@@ -1676,7 +1676,8 @@ header {
   gap: 5px;
   font-family: $main-font;
   background: rgba(202, 141, 102, 0.57);
-  max-width: 1470px;
+  max-width: 100vw;
+  // max-width: 1470px;
 
   .footer_icons {
     grid-column: 2/3;
@@ -1718,7 +1719,7 @@ header {
 
   @media (max-width: $middle-display_example) {
     @include laptop-container;
-    max-width: 1402px;
+    max-width: 100vw;
   }
 
   @media screen and (max-width: $middle-display) {
