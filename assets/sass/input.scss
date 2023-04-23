@@ -290,7 +290,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover 858px;
   background-position: center;
-  // opacity: 0.73;
+  opacity: 0.73;
   max-width: 1920px;
   height: 858px;
   width: 100%;
@@ -397,6 +397,7 @@ header {
   @media (max-width: $mobile) {
     background-image: url(/assets/images/img_header/img_for_header_mobile.jpg);
     margin-top: 60px;
+    margin-bottom: 120px;
     max-width: 769px;
     height: 189px;
     width: 100%;
@@ -1518,11 +1519,13 @@ header {
   display: $dg;
   font-family: $main-font;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 110px 250px 1.5fr;
+  grid-template-rows: 110px 250px;
   gap: 2px;
-  padding: 0;
-  max-width: 1441px;
+  // padding: 0;
+  // margin-bottom: 50px;
+  // max-width: 1441px;
   max-height: 818px;
+
   .title-map__mobile {
     display: none;
   }
@@ -1554,7 +1557,7 @@ header {
   }
   @media screen and (max-width: $middle-display) {
     @include laptop-container();
-    grid-template-columns: 1.1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 0.5fr 150px 1.5fr;
     gap: 10px;
 
@@ -1577,7 +1580,7 @@ header {
 
   @media screen and (max-width: $tablet) {
     @include tablet-container();
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 0.5fr 120px 1.5fr;
     &__text1,
     &__text2 {
@@ -1595,7 +1598,7 @@ header {
 
   @media screen and (max-width: $mobile) {
     @include mobile-container();
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: 40px 150px 220px 45px 100px;
     gap: 2px;
     font-size: $mfont-size;
@@ -1654,5 +1657,147 @@ header {
     max-width: 100%;
     justify-self: stretch;
     align-self: stretch;
+  }
+}
+// Футер
+.footer {
+  @include container();
+  display: $dg;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 100px;
+  justify-items: center;
+  gap: 5px;
+  font-family: $main-font;
+  background: rgba(202, 141, 102, 0.57);
+  max-width: 1470px;
+
+  .footer_icons {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-top: 45px;
+    justify-self: left;
+  }
+
+  &__footer-img {
+    display: none;
+  }
+
+  &__info-1 {
+    font-size: 32px;
+    font-weight: 500;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-top: 55px;
+    padding-right: 50px;
+    justify-self: right;
+  }
+
+  &__info-2 {
+    font-size: 32px;
+    color: $gray;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: right;
+    padding-right: 50px;
+  }
+  &__info-3 {
+    font-size: 12px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: $gray;
+    padding-left: 80px;
+    justify-self: left;
+  }
+
+  @media (max-width: $middle-display_example) {
+    @include laptop-container;
+    max-width: 1402px;
+  }
+
+  @media screen and (max-width: $middle-display) {
+    @include laptop-container();
+    max-width: 100vw;
+  }
+  @media screen and (max-width: $tablet) {
+    @include tablet-container();
+    max-width: 100vw;
+    margin: 0;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80px 50px 50px;
+
+    .footer_icons {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      padding-top: 0px;
+      justify-self: left;
+      padding-left: 20px;
+    }
+    &__info-1 {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      padding-top: 35px;
+      padding-right: 50px;
+      justify-self: right;
+    }
+
+    &__info-2 {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      padding-top: 35px;
+      justify-self: center;
+      padding-right: 50px;
+    }
+    &__info-3 {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      justify-self: right;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    @include mobile-container();
+    background: none;
+    max-width: 100vw;
+    margin: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px 120px 100px;
+
+    &__info-1 {
+      display: none;
+    }
+
+    &__info-2 {
+      display: none;
+    }
+
+    &__info-3 {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      justify-self: center;
+      text-align: center;
+      font-size: 10px;
+      color: rgba(202, 141, 102, 0.37);
+      padding-left: 0px;
+    }
+    &__footer-img {
+      display: block;
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    &__item-img {
+      max-width: 300px;
+    }
+
+    .footer_icons {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      max-width: 330px;
+      width: 100%;
+      height: 100px;
+      background: white;
+      border-radius: 0px;
+      border: 1px rgba(202, 141, 102, 0.5) solid;
+      justify-self: center;
+      padding-top: 20px;
+    }
   }
 }
