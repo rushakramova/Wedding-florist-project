@@ -1332,3 +1332,110 @@ header {
     margin-top: 20px;
   }
 }
+/*Testimonials*/
+.testimonials {
+  max-width: 1578px;
+  margin: 0 auto;
+  padding-left: 54px;
+  padding-right: 54px;
+  margin-bottom: 70px;
+}
+.testimonials__title {
+  margin-bottom: 40px;
+}
+.testimonials__cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.testimonials__card {
+  flex-basis: 49%;
+  border: 1px solid #ca8d66;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+}
+.testimonials__img {
+  flex-basis: 35%;
+  max-width: 242px;
+  width: 100%;
+  padding: 30px 17px;
+}
+.testimonials__text {
+  padding: 40px 13px;
+}
+.testimonials__author {
+  margin-bottom: 25px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ca8d66;
+}
+.testimonials__quote {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #5c6c72;
+}
+@media (max-width: 1499px) {
+  .testimonials {
+    max-width: 1108px;
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  .testimonials__title {
+    margin-bottom: 5px;
+  }
+  .testimonials__img {
+    max-width: 114.42px;
+    padding: 10px;
+  }
+  .testimonials__text {
+    max-width: 100%;
+    padding: 10px 10px 10px 0;
+  }
+  .testimonials__author {
+    margin-bottom: 5px;
+  }
+  .testimonials__author, .testimonials__quote {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+@media (max-width: 1149px) {
+  .testimonials {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  .testimonials__card {
+    flex-basis: 48%;
+  }
+}
+@media (max-width: 769px) {
+  .testimonials {
+    max-width: 530px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 25px;
+  }
+  .testimonials__title {
+    margin-bottom: 10px;
+  }
+  .testimonials__cards {
+    gap: 10px;
+  }
+  .testimonials__card {
+    flex-basis: 95%;
+  }
+}
