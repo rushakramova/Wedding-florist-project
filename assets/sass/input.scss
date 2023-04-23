@@ -114,7 +114,7 @@ header {
     color: $accent-color;
   }
   &__logo {
-    background-image: url(/assets/images/img_header/Logo.png);
+    background-image: url(./assets/images/img_header/Logo.png);
     height: 112px;
   }
   &__link:hover {
@@ -137,7 +137,7 @@ header {
       height: 96px;
     }
     &__logo {
-      background-image: url(/assets/images/img_header/Logo_tablet.png);
+      background-image: url(./assets/images/img_header/Logo_tablet.png);
       height: 57px;
     }
   }
@@ -152,7 +152,7 @@ header {
       height: 80px;
     }
     &__logo {
-      background-image: url(/assets/images/img_header/Logo_tablet.png);
+      background-image: url(./assets/images/img_header/Logo_tablet.png);
       height: 57px;
     }
     @media (max-width: $mobile) {
@@ -286,7 +286,7 @@ header {
 .title-mainpage {
   margin-top: 117px;
   position: relative;
-  background-image: url(/assets/images/img_header/img_for_header.jpg);
+  background-image: url(../../assets/images/img_header/img_for_header.jpg);
   background-repeat: no-repeat;
   background-size: cover 858px;
   background-position: center;
@@ -329,7 +329,7 @@ header {
     padding-top: 37px;
   }
   @media (max-width: $middle-display) {
-    background-image: url(/assets/images/img_header/img_for_header_middle.jpg);
+    background-image: url(../../assets/images/img_header/img_for_header_middle.jpg);
     margin-top: 90px;
     max-width: 1459px;
     height: 668px;
@@ -361,7 +361,7 @@ header {
     }
   }
   @media (max-width: $tablet) {
-    background-image: url(/assets/images/img_header/img_for_header_tablet.jpg);
+    background-image: url(../../assets/images/img_header/img_for_header_tablet.jpg);
     margin-top: 70px;
     max-width: 1149px;
     height: 340px;
@@ -395,9 +395,10 @@ header {
     }
   }
   @media (max-width: $mobile) {
-    background-image: url(/assets/images/img_header/img_for_header_mobile.jpg);
+    background-image: url(../../assets/images/img_header/img_for_header_mobile.jpg);
     margin-top: 60px;
     margin-bottom: 120px;
+    background-size: cover;
     max-width: 769px;
     height: 189px;
     width: 100%;
