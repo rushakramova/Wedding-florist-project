@@ -1108,7 +1108,7 @@ header {
   text-align: center;
   margin-top: 15px;
 }
-.card__catalog {
+.card__price {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -1128,7 +1128,7 @@ header {
     font-size: 15px;
     margin-top: 10px;
   }
-  .card__catalog {
+  .card__price {
     font-size: 15px;
     margin-top: 10px;
   }
@@ -1145,7 +1145,7 @@ header {
     font-size: 12px;
     margin-top: 5px;
   }
-  .card__catalog {
+  .card__price {
     font-size: 12px;
     margin-top: 5px;
   }
