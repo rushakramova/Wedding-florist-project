@@ -633,6 +633,7 @@ header {
   border-radius: 10px;
   align-items: center;
   justify-content: flex-start;
+  align-content: center;
 
   &_catalog {
     margin-top: 58px;
@@ -648,7 +649,7 @@ header {
   @media (max-width: $middle-display_example) {
     @include laptop-container;
     width: 450px;
-    height: 85px;
+    height: 90px;
 
     &__order {
       font-family: $main-font;

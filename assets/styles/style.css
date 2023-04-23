@@ -607,6 +607,7 @@ header {
   border-radius: 10px;
   align-items: center;
   justify-content: flex-start;
+  align-content: center;
 }
 .contacts_catalog {
   margin-top: 58px;
@@ -625,7 +626,7 @@ header {
     padding-left: 54px;
     padding-right: 54px;
     width: 450px;
-    height: 85px;
+    height: 90px;
   }
   .contacts__order {
     font-family: "Montserrat Alternates", sans-serif;
