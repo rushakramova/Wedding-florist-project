@@ -418,6 +418,7 @@ header {
       margin-bottom: 23px;
     }
     &__text1 {
+      font-weight: 700;
       margin-left: 0px;
       padding-top: 0px;
     }
@@ -433,8 +434,16 @@ header {
   display: inline-flex;
   width: 100%;
   justify-content: center;
+  @media (max-width: $middle-display_example) {
+    margin-top: 80px;
+  }
+  @media screen and (max-width: $middle-display) {
+    margin-top: 30px;
+  }
 
   @media screen and (max-width: $mobile) {
+    margin-top: 10px;
+    margin-bottom: 15px;
     width: 100vw;
     min-width: 350px;
     align-content: center;
