@@ -79,7 +79,7 @@ header {
   color: #ca8d66;
 }
 .menuconteiner__logo {
-  background-image: url(./assets/images/img_header/Logo.png);
+  background-image: url(../../assets/images/img_header/Logo.png);
   height: 112px;
 }
 .menuconteiner__link:hover {
@@ -105,7 +105,7 @@ header {
     height: 96px;
   }
   .menuconteiner__logo {
-    background-image: url(./assets/images/img_header/Logo_tablet.png);
+    background-image: url(../../assets/images/img_header/Logo_tablet.png);
     height: 57px;
   }
 }
@@ -125,7 +125,7 @@ header {
     height: 80px;
   }
   .menuconteiner__logo {
-    background-image: url(./assets/images/img_header/Logo_tablet.png);
+    background-image: url(../../assets/images/img_header/Logo_tablet.png);
     height: 57px;
   }
 }
@@ -634,6 +634,9 @@ header {
     font-weight: 500;
     font-size: 32px;
   }
+  .contacts_price {
+    margin-right: 20px;
+  }
 }
 @media screen and (max-width: 1499px) {
   .contacts {
@@ -677,6 +680,7 @@ header {
   .contacts_price {
     margin-top: 20px;
     align-self: center;
+    margin: 0px;
   }
   .contacts__order {
     width: 100%;
@@ -855,6 +859,7 @@ header {
   background-color: #e0e0e0;
 }
 .example__block_text {
+  font-size: 14px;
   background-clip: padding-box;
   max-width: 345px;
   padding-bottom: 20px;

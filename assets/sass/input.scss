@@ -114,7 +114,7 @@ header {
     color: $accent-color;
   }
   &__logo {
-    background-image: url(./assets/images/img_header/Logo.png);
+    background-image: url(../../assets/images/img_header/Logo.png);
     height: 112px;
   }
   &__link:hover {
@@ -137,7 +137,7 @@ header {
       height: 96px;
     }
     &__logo {
-      background-image: url(./assets/images/img_header/Logo_tablet.png);
+      background-image: url(../../assets/images/img_header/Logo_tablet.png);
       height: 57px;
     }
   }
@@ -152,7 +152,7 @@ header {
       height: 80px;
     }
     &__logo {
-      background-image: url(./assets/images/img_header/Logo_tablet.png);
+      background-image: url(../../assets/images/img_header/Logo_tablet.png);
       height: 57px;
     }
     @media (max-width: $mobile) {
@@ -657,6 +657,9 @@ header {
       font-weight: 500;
       font-size: 32px;
     }
+    &_price {
+      margin-right: 20px;
+    }
   }
 
   @media screen and (max-width: $middle-display) {
@@ -702,6 +705,7 @@ header {
     &_price {
       margin-top: 20px;
       align-self: center;
+      margin: 0px;
     }
 
     &__order {
@@ -924,6 +928,7 @@ header {
 
   //Ширина блоков с текстом
   &__block_text {
+    font-size: 14px;
     background-clip: padding-box;
     max-width: 345px;
     padding-bottom: 20px;
