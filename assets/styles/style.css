@@ -638,7 +638,7 @@ header {
     font-size: 32px;
   }
   .contacts_catalog {
-    margin-right: 20px;
+    margin-right: 0px;
   }
 }
 @media screen and (max-width: 1499px) {
