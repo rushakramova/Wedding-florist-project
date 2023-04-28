@@ -838,7 +838,6 @@ header {
 .example__blocks_photo {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .example > img {
   object-fit: cover;
@@ -979,6 +978,9 @@ header {
     font-size: 12px;
     line-height: 19.78px;
   }
+  .example_p_bouquet, .example_p2_bouquet {
+    width: 300px;
+  }
   .example_p {
     max-height: 254px;
     padding-top: 10px;
@@ -1002,6 +1004,9 @@ header {
   .example__text, .example__block_text {
     max-width: 320px;
     width: 100%;
+  }
+  .example .advantage {
+    height: 160px;
   }
   .example__text {
     padding-left: 10px;
