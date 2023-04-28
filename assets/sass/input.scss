@@ -972,35 +972,38 @@ header {
   }
 
   //Типографика
-  &_p_bouquet,
-  &_p2_bouquet,
-  &_ol {
-    font-family: $inter;
-    color: $gray;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 29px;
-  }
-
-  &_p {
+  &_p,&_ol,&_p_bouquet,
+  &_p2_bouquet {
     font-family: $main-font;
     color: #000;
     font-weight: 400;
-    font-size: 12px;
+    padding-top: 15px;
+  }
+
+  &_p,&_p_bouquet,
+  &_p2_bouquet {
+    font-size: 16px;
     line-height: 20px;
-    padding-top: 20px;
+  }
+
+  &_ol {
+    font-size: 20px;
+    line-height: 27px;
+    padding-left: 25px;
+    margin-top: 0;
   }
 
   //Отступы в списке
   &_ol>li {
     padding: 0.3em;
+    padding-left: 0;
   }
 
   //Заливка фона за текстом
-  &_p_bouquet,
+  /*&_p_bouquet,
   &_p2_bouquet {
     background-color: $bggray;
-  }
+  }*/
 
   //Ширина блоков с текстом
   &__block_text {
@@ -1012,20 +1015,24 @@ header {
 
   //Высота блоков
   &_p {
-    height: 233px;
+    height: 280px;
+    padding-bottom: 25px;
+    padding-top: 25px;
   }
 
-  &_ol {
-    height: 350px;
-    margin: 0;
+  .advantage {
+    height: 323px;
   }
 
   &_p_bouquet {
-    height: 181px;
+    height: 81px;
+    width: 290px;
+    padding-top: 5px;
   }
 
   &_p2_bouquet {
-    height: 470px;
+    height: 270px;
+    width: 280px;
   }
 
   //Блоки текста example, bouquet
@@ -1033,7 +1040,6 @@ header {
     display: flex;
     flex-direction: column;
     max-width: 345px;
-    gap: 20px;
   }
 
   @media (max-width: $middle-display_example) {
@@ -1247,6 +1253,7 @@ header {
     &__blocks {
       display: flex;
       flex-direction: column;
+
       &_photo {
         align-content: center;
       }
