@@ -911,18 +911,20 @@ header {
     font-size: 16px;
     line-height: 20px;
   }
+  .example__title_h3_bouquet {
+    padding-bottom: 10px;
+  }
   .example_ol, .example_p_bouquet, .example_p2_bouquet {
     font-size: 12px;
   }
   .example_p {
-    font-size: 10px;
-    max-height: 254px;
+    font-size: 11px;
+    max-height: 230px;
+    line-height: 16px;
     padding-top: 10px;
   }
   .example_p_bouquet, .example_p2_bouquet {
-    font-family: "Montserrat Alternates", sans-serif;
-    color: #000;
-    background-color: transparent;
+    width: 210px;
   }
   .example__blocks {
     -webkit-columns: 4 235px;
@@ -931,13 +933,11 @@ header {
   }
   .example__text {
     flex-wrap: wrap;
-    gap: 10px;
   }
   .example__block_text {
     max-height: fit-content;
     padding-bottom: 10px;
     font-weight: 400;
-    line-height: 20px;
   }
   .example * img {
     max-width: 235px;
@@ -946,15 +946,15 @@ header {
     padding-bottom: 20px;
     padding-right: 20px;
   }
+  .example .advantage {
+    height: 220px;
+  }
   .example_ol {
     height: fit-content;
     padding-left: 15px;
   }
   .example_ol > li {
     padding: 0;
-  }
-  .example_p_bouquet, .example_p2_bouquet {
-    max-height: 180px;
   }
 }
 @media (max-width: 1149px) {
