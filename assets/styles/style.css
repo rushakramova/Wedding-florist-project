@@ -38,6 +38,11 @@ ul {
   font-size: 64px;
   font-weight: 500;
 }
+@media screen and (max-width: 1149px) {
+  .title {
+    font-size: 36px;
+  }
+}
 
 /*header*/
 header {
@@ -379,9 +384,6 @@ header {
   width: 100%;
   justify-content: center;
 }
-<<<<<<< HEAD
-
-=======
 @media (max-width: 1559px) {
   .arrow {
     margin-top: 80px;
@@ -392,7 +394,6 @@ header {
     margin-top: 30px;
   }
 }
->>>>>>> main
 @media screen and (max-width: 769px) {
   .arrow {
     margin-top: 10px;
@@ -404,12 +405,11 @@ header {
 }
 
 .container-about-me {
-  max-width: 1578px;
+  max-width: 1548px;
   margin: 0 auto;
   padding-left: 54px;
   padding-right: 54px;
 }
-
 @media (max-width: 1559px) {
   .container-about-me {
     max-width: 1108px;
@@ -418,7 +418,6 @@ header {
     padding-right: 54px;
   }
 }
-
 @media screen and (max-width: 1499px) {
   .container-about-me {
     max-width: 1108px;
@@ -427,7 +426,6 @@ header {
     padding-right: 54px;
   }
 }
-
 @media screen and (max-width: 1149px) {
   .container-about-me {
     max-width: 768px;
@@ -437,7 +435,6 @@ header {
     margin-bottom: 15px;
   }
 }
-
 @media screen and (max-width: 769px) {
   .container-about-me {
     max-width: 530px;
@@ -450,7 +447,7 @@ header {
 }
 
 .about-me {
-  max-width: 1578px;
+  max-width: 1548px;
   margin: 0 auto;
   padding-left: 54px;
   padding-right: 54px;
@@ -459,7 +456,6 @@ header {
   align-items: center;
   margin-top: 16px;
 }
-
 .about-me__studio-img {
   position: relative;
   margin-left: 0.5em;
@@ -468,7 +464,6 @@ header {
   width: 100%;
   max-width: 300px;
 }
-
 .about-me__avatar-img {
   position: relative;
   left: -70px;
@@ -478,11 +473,9 @@ header {
   max-width: 300px;
   z-index: 1;
 }
-
 .about-me__img-mobile-769 {
   display: none;
 }
-
 .about-me__info {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
@@ -492,11 +485,9 @@ header {
   width: 100vw;
   max-width: 658px;
 }
-
 .about-me__info-text {
   margin-bottom: 1em;
 }
-
 @media (max-width: 1559px) {
   .about-me {
     max-width: 1108px;
@@ -504,13 +495,11 @@ header {
     padding-left: 54px;
     padding-right: 54px;
   }
-
   .about-me__studio-img {
     height: auto;
     width: 100%;
     max-width: 400px;
   }
-
   .about-me__info {
     font-size: 24px;
     height: auto;
@@ -518,7 +507,6 @@ header {
     min-width: 500px;
   }
 }
-
 @media screen and (max-width: 1499px) {
   .about-me {
     max-width: 1108px;
@@ -527,15 +515,12 @@ header {
     padding-right: 54px;
     margin-top: 5px;
   }
-
   .about-me__studio-img {
     max-width: 260px;
   }
-
   .about-me__avatar-img {
     max-width: 170px;
   }
-
   .about-me__info {
     font-size: 18px;
     margin-left: -30px;
@@ -545,7 +530,6 @@ header {
     max-width: 400px;
   }
 }
-
 @media screen and (max-width: 1149px) {
   .about-me {
     max-width: 768px;
@@ -554,123 +538,83 @@ header {
     padding-right: 54px;
     margin-top: 5px;
   }
+  .about-me__studio-img {
+    margin-left: 0;
+    max-width: 220px;
+  }
+  .about-me__avatar-img {
+    max-width: 170px;
+  }
+  .about-me__info {
+    font-size: 14px;
+    max-height: 380px;
+    min-width: 300px;
+  }
 }
-
-.contacts-map .contacts-map__list .phone-link {
-  color: #5c6c72;
-  text-decoration: none;
-}
-
-.contacts-map .contacts-map__list .phone-link:hover {
-  text-decoration: underline;
-}
-
-.contacts-map .contacts-map__list .messenger-link,
-.contacts-map .contacts-map__list .social-link,
-.contacts-map .contacts-map__list .map-link {
-  text-decoration: none;
-  color: #000000;
-}
-
-.contacts-map .contacts-map__list .messenger-link:hover,
-.contacts-map .contacts-map__list .social-link:hover,
-.contacts-map .contacts-map__list .map-link:hover {
-  text-decoration: underline;
-}
-
-.contacts-map .map-frame {
-  max-width: 100%;
-  justify-self: stretch;
-  align-self: stretch;
-}
-
 @media screen and (max-width: 769px) {
-  .contacts-map {
+  .about-me {
     max-width: 530px;
     width: 100%;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
     display: grid;
-    font-family: "Montserrat Alternates", sans-serif;
-    max-width: 100%;
-    grid-template-columns: 330px;
-    grid-template-rows: 0.5fr 1fr 1.5fr 0.5fr 1fr;
-    padding: 0;
-    border: 1px solid black;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 320px 440px;
+    gap: 5px;
+    align-items: start;
+    max-width: 360px;
+    margin-top: 10px;
+    padding: 15px;
+  }
+  .about-me__avatar-img {
+    display: none;
+  }
+  .about-me__img-mobile-769 {
+    display: block;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: relative;
+    margin-left: 70px;
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    max-width: 160px;
+  }
+  .about-me__studio-img {
+    display: block;
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-left: -35px;
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    width: 160px;
+  }
+  .about-me__info {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: 14px;
+    margin-left: 0px;
+    height: auto;
+    width: 90vw;
+    max-width: 300px;
   }
 }
 
-.contacts-map__title1 {
-  order: 4;
-}
-
-.contacts-map__title2 {
-  order: 1;
-}
-
-.contacts-map__title2__title {
-  font-size: 1em;
-}
-
-.contacts-map__text1 {
-  border: 1px solid black;
-  display: grid;
-  font-size: 1em;
-  order: 5;
-}
-
-.contacts-map__text2 {
-  border: 1px solid black;
-  display: grid;
-  font-size: 1em;
-  order: 2;
-}
-
-.contacts-map__map {
-  border: 1px solid black;
-  display: grid;
-  max-width: 100%;
-  order: 3;
-}
-
-.contacts-map__logo {
-  display: none;
-}
-
-.contacts-map__list {
-  border: 1px solid black;
-  display: grid;
-  align-items: stretch;
-}
-
-.contacts-map .title {
-  font-size: 2em;
-}
-
-.container__bouquets {
-  max-width: 1470px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.container__bouquets .title {
-  margin-bottom: 41px;
-}
-
-.container__bouquets .container__cards {
-  display: flex;
+.contacts {
+  display: inline-flex;
   flex-wrap: wrap;
-  gap: 10px;
+  width: 710px;
+  height: 72px;
+  background: rgba(202, 141, 102, 0.5);
+  margin-top: 1.8em;
+  border-radius: 10px;
+  align-items: center;
   justify-content: flex-start;
   align-content: center;
 }
-<<<<<<< HEAD
-
-.container__bouquets .container__cards .card {
-  width: 345px;
-=======
 .contacts_catalog {
   margin-top: 58px;
   align-self: flex-end;
@@ -862,7 +806,7 @@ header {
 }
 
 .example {
-  max-width: 1578px;
+  max-width: 1548px;
   margin: 0 auto;
   padding-left: 54px;
   padding-right: 54px;
@@ -938,17 +882,228 @@ header {
   height: 181px;
 }
 .example_p2_bouquet {
->>>>>>> main
   height: 470px;
 }
+.example__text {
+  display: flex;
+  flex-direction: column;
+  max-width: 345px;
+  gap: 20px;
+}
+@media (max-width: 1559px) {
+  .example {
+    max-width: 1108px;
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  .example__title {
+    margin-top: 50px;
+  }
+  .example__title_h3, .example__title_h3_bouquet {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .example_ol, .example_p_bouquet, .example_p2_bouquet {
+    font-size: 12px;
+  }
+  .example_p {
+    font-size: 10px;
+    max-height: 254px;
+    padding-top: 10px;
+  }
+  .example_p_bouquet, .example_p2_bouquet {
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #000;
+    background-color: transparent;
+  }
+  .example__blocks {
+    -webkit-columns: 4 235px;
+    -moz-columns: 4 235px;
+    columns: 4 235px;
+  }
+  .example__text {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .example__block_text {
+    max-height: fit-content;
+    padding-bottom: 10px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .example * img {
+    max-width: 235px;
+  }
+  .example__photo {
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+  .example_ol {
+    height: fit-content;
+  }
+  .example_ol > li {
+    padding: 0;
+  }
+  .example_p_bouquet, .example_p2_bouquet {
+    max-height: 180px;
+  }
+}
+@media (max-width: 1149px) {
+  .example {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  .example__title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .example__title_h3, .example__title_h3_bouquet {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .example__title_h3_bouquet, .example__title_h3_bouquet_bouquet {
+    padding-bottom: 10px;
+  }
+  .example_ol, .example_p, .example_p_bouquet, .example_p2_bouquet {
+    font-size: 12px;
+    line-height: 19.78px;
+  }
+  .example_p {
+    max-height: 254px;
+    padding-top: 10px;
+  }
+  .example__blocks {
+    display: flex;
+    flex-direction: row;
+    max-width: 660px;
+    justify-content: space-between;
+  }
+  .example__blocks_bouquet {
+    display: flex;
+    flex-direction: row;
+    max-width: 660px;
+    justify-content: flex-start;
+  }
+  .example__blocks_photo {
+    flex-wrap: wrap;
+    max-height: 550px;
+  }
+  .example__text, .example__block_text {
+    max-width: 320px;
+    width: 100%;
+  }
+  .example * img {
+    max-width: 150px;
+  }
+  .example__photo-1 > img, .example__photo-7 > img {
+    width: 150px;
+    height: 205px;
+  }
+  .example__photo-1, .example__photo-2, .example__photo-5, .example__photo-7, .example__photo-8, .example__photo-11 {
+    order: -1;
+  }
+  .example__photo-2 > img, .example__photo-8 > img {
+    width: 150px;
+    height: 98px;
+  }
+  .example__photo-3 > img, .example__photo-9 > img {
+    width: 150px;
+    height: 98px;
+  }
+  .example__photo-4 > img, .example__photo-10 > img {
+    width: 150px;
+    height: 242px;
+  }
+  .example__photo-5 > img, .example__photo-11 > img {
+    width: 150px;
+    height: 184px;
+  }
+  .example__photo-6 > img, .example__photo-12 > img {
+    width: 150px;
+    height: 147px;
+  }
+}
+@media (max-width: 769px) {
+  .example {
+    max-width: 530px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 360px;
+  }
+  .example__title {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .example__title_h3, .example__title_h3_bouquet {
+    font-size: 16px;
+    line-height: 19.5px;
+    padding-bottom: 10px;
+  }
+  .example__blocks {
+    display: flex;
+    flex-direction: column;
+  }
+  .example * img {
+    max-width: 160px;
+  }
+  .example__photo-1 > img {
+    width: 160px;
+    height: 205px;
+  }
+  .example__photo-1, .example__photo-2, .example__photo-5 {
+    order: -1;
+  }
+  .example__photo-2 > img {
+    width: 160px;
+    height: 98px;
+  }
+  .example__photo-3 > img {
+    width: 160px;
+    height: 98px;
+  }
+  .example__photo-4 > img {
+    width: 160px;
+    height: 242px;
+  }
+  .example__photo-5 > img {
+    width: 160px;
+    height: 184px;
+  }
+  .example__photo-6 > img {
+    width: 160px;
+    height: 147px;
+  }
+  .example_ol {
+    height: 213px;
+    line-height: 24px;
+  }
+  .example__blocks_bouquet {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .example__blocks_photo_bouquet {
+    order: -1;
+  }
+}
 
+.card {
+  max-width: 345px;
+  height: 470px;
+}
 .card__img {
   object-fit: cover;
   height: auto;
   width: 100%;
   max-width: 370px;
 }
-
 .card__name {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
@@ -957,7 +1112,6 @@ header {
   text-align: center;
   margin-top: 15px;
 }
-
 .card__price {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
@@ -966,55 +1120,45 @@ header {
   text-align: center;
   margin-top: 15px;
 }
-
 @media screen and (max-width: 1499px) {
   .card {
     width: 235px;
     height: 350px;
   }
-
   .card__img {
     max-width: 235px;
   }
-
   .card__name {
     font-size: 15px;
     margin-top: 10px;
   }
-
   .card__price {
     font-size: 15px;
     margin-top: 10px;
   }
 }
-
 @media screen and (max-width: 1149px) {
   .card {
     width: 150px;
     height: 226px;
   }
-
   .card__img {
     max-width: 150px;
   }
-
   .card__name {
     font-size: 12px;
     margin-top: 5px;
   }
-
   .card__price {
     font-size: 12px;
     margin-top: 5px;
   }
 }
-
 @media screen and (max-width: 769px) {
   .card {
     width: 160px;
     height: 226px;
   }
-
   .card__img {
     max-width: 160px;
   }
@@ -1024,18 +1168,24 @@ header {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
-.container__bouquets .line {
-  margin-top: 60px;
-  margin-right: 30px;
+.catalog {
+  max-width: 1548px;
+  margin: 0 auto;
+  padding-left: 54px;
+  padding-right: 54px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
 }
-
-.container__bouquets .line .line__img {
+.catalog__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   width: 100%;
+  margin-top: 41px;
+  gap: 1.25em;
 }
-<<<<<<< HEAD
-
-/*# sourceMappingURL=style.css.map */
-=======
 @media (max-width: 1559px) {
   .catalog {
     max-width: 1108px;
@@ -1093,7 +1243,7 @@ header {
 }
 
 .container__bouquets {
-  max-width: 1578px;
+  max-width: 1548px;
   margin: 0 auto;
   padding-left: 54px;
   padding-right: 54px;
@@ -1143,7 +1293,7 @@ header {
 }
 
 .container__cards {
-  max-width: 1578px;
+  max-width: 1548px;
   margin: 0 auto;
   padding-left: 54px;
   padding-right: 54px;
@@ -1199,7 +1349,7 @@ header {
 
 /*Testimonials*/
 .testimonials {
-  max-width: 1578px;
+  max-width: 1548px;
   margin: 0 auto;
   padding-left: 54px;
   padding-right: 54px;
@@ -1306,7 +1456,7 @@ header {
 }
 
 .contacts-map {
-  max-width: 1578px;
+  max-width: 1548px;
   margin: 0 auto;
   padding-left: 54px;
   padding-right: 54px;
@@ -1453,7 +1603,7 @@ header {
 }
 
 .footer {
-  max-width: 1578px;
+  max-width: 1548px;
   margin: 0 auto;
   padding-left: 54px;
   padding-right: 54px;
@@ -1605,4 +1755,3 @@ header {
     padding-top: 20px;
   }
 }
->>>>>>> main
