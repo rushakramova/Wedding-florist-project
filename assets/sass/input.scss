@@ -1168,7 +1168,7 @@ header {
 
       &_photo {
         flex-wrap: wrap;
-        max-height: 560px;
+        max-height: 570px;
       }
     }
 
@@ -1236,6 +1236,9 @@ header {
     &__photo-12>img {
       width: 150px;
       height: 147px;
+    }
+    .contacts {
+      display: none;
     }
   }
 
@@ -1324,6 +1327,9 @@ header {
 
     &__blocks_photo_bouquet {
       order: -1;
+    }
+    .contacts {
+      display:inherit;
     }
   }
 }

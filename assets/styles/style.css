@@ -999,7 +999,7 @@ header {
   }
   .example__blocks_photo {
     flex-wrap: wrap;
-    max-height: 560px;
+    max-height: 570px;
   }
   .example__text, .example__block_text {
     max-width: 320px;
@@ -1043,6 +1043,9 @@ header {
   .example__photo-6 > img, .example__photo-12 > img {
     width: 150px;
     height: 147px;
+  }
+  .example .contacts {
+    display: none;
   }
 }
 @media (max-width: 769px) {
@@ -1117,6 +1120,9 @@ header {
   }
   .example__blocks_photo_bouquet {
     order: -1;
+  }
+  .example .contacts {
+    display: inherit;
   }
 }
 
