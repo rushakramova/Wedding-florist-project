@@ -1440,9 +1440,17 @@ header {
   }
   &__cards {
     display: flex;
-    flex-flow: row wrap;
+    //flex-flow: row wrap;
     justify-content: flex-start;
-    gap: 20px;
+    //align-items: center;
+    //gap: 20px;
+
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .slick-initialized .slick-slide {
+    display: flex;
   }
   &__card {
     flex-basis: 49%;
@@ -1450,6 +1458,10 @@ header {
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
+
+    float: left;
+    position: relative;
+    margin-right: 20px;
   }
   &__img {
     flex-basis: 35%;
@@ -1478,6 +1490,29 @@ header {
     color: $gray;
   }
 
+  //styles for slyder dots
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  .slick-dots li {
+    margin: 0 20px;
+  }
+  .slick-dots li button {
+    width: 15px; /* ширина кнопки */
+    height: 15px; /* высота кнопки */
+    border-radius: 50%; /* округляем кнопку */
+    background-color: #ca8d6650; /* цвет фона */
+    font-size: 0px; /*убираем цифры, slick-slyder их добавляет автоматом*/
+    border: none; /* убираем границу */
+  }
+  .slick-dots li button:focus {
+    background-color: $gray; /* цвет фона при нажатии*/
+  }
+
   @media (max-width: $middle-display) {
     @include laptop-container;
     &__title {
@@ -1504,9 +1539,9 @@ header {
 
   @media (max-width: $tablet) {
     @include tablet-container;
-    &__card {
-      flex-basis: 48%;
-    }
+    // &__card {
+    //   flex-basis: 48%;
+    // }
   }
 
   @media (max-width: $mobile) {
@@ -1515,11 +1550,19 @@ header {
     &__title {
       margin-bottom: 10px;
     }
-    &__cards {
-      gap: 10px;
+    // &__cards {
+    //   gap: 10px;
+    // }
+    // &__card {
+    //   flex-basis: 95%;
+    // }
+    .slick-dots {
+      margin-top: 20px;
     }
-    &__card {
-      flex-basis: 95%;
+
+    .slick-dots li button {
+      width: 10px; /* ширина кнопки */
+      height: 10px; /* высота кнопки */
     }
   }
 }

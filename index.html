@@ -19,6 +19,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <title>Cotton Blu - мастерская невянущих цветов</title>
   </head>
 
@@ -553,6 +559,35 @@
               </p>
             </div>
           </section>
+
+          <section class="testimonials__card">
+            <img
+              src="assets/images/testimonials/testimonials-img5.png"
+              alt="testimonials-img5"
+              class="testimonials__img"
+            />
+            <div class="testimonials__text">
+              <h3 class="testimonials__author">Сергей и Анна</h3>
+              <p class="testimonials__quote">
+                Вам спасибо за это чудо 💜 каждый день любуюсь , лучший букет в
+                моей жизни подарила сама себе ахах
+              </p>
+            </div>
+          </section>
+
+          <section class="testimonials__card">
+            <img
+              src="assets/images/testimonials/testimonials-img6.png"
+              alt="testimonials-img6"
+              class="testimonials__img"
+            />
+            <div class="testimonials__text">
+              <h3 class="testimonials__author">Анна и Влад</h3>
+              <p class="testimonials__quote">
+                Спасибо вам еще раз! Букет и аксессуары просто шикарны!
+              </p>
+            </div>
+          </section>
         </div>
       </div>
 
@@ -697,5 +732,29 @@
         </a>
       </div>
     </footer>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".testimonials__cards").slick({
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          autoplay: false,
+          dots: true,
+          arrows: false,
+          responsive: [
+            {
+              breakpoint: 769,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
   </body>
 </html>

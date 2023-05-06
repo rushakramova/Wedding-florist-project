@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -1360,9 +1361,13 @@ header {
 }
 .testimonials__cards {
   display: flex;
-  flex-flow: row wrap;
   justify-content: flex-start;
-  gap: 20px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.testimonials .slick-initialized .slick-slide {
+  display: flex;
 }
 .testimonials__card {
   flex-basis: 49%;
@@ -1370,6 +1375,9 @@ header {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
+  float: left;
+  position: relative;
+  margin-right: 20px;
 }
 .testimonials__img {
   flex-basis: 35%;
@@ -1396,6 +1404,26 @@ header {
   font-size: 24px;
   line-height: 29px;
   color: #5c6c72;
+}
+.testimonials .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 0;
+}
+.testimonials .slick-dots li {
+  margin: 0 20px;
+}
+.testimonials .slick-dots li button {
+  width: 15px; /* ширина кнопки */
+  height: 15px; /* высота кнопки */
+  border-radius: 50%; /* округляем кнопку */
+  background-color: rgba(202, 141, 102, 0.3137254902); /* цвет фона */
+  font-size: 0px; /*убираем цифры, slick-slyder их добавляет автоматом*/
+  border: none; /* убираем границу */
+}
+.testimonials .slick-dots li button:focus {
+  background-color: #5c6c72; /* цвет фона при нажатии*/
 }
 @media (max-width: 1499px) {
   .testimonials {
@@ -1431,9 +1459,6 @@ header {
     padding-left: 54px;
     padding-right: 54px;
   }
-  .testimonials__card {
-    flex-basis: 48%;
-  }
 }
 @media (max-width: 769px) {
   .testimonials {
@@ -1447,11 +1472,12 @@ header {
   .testimonials__title {
     margin-bottom: 10px;
   }
-  .testimonials__cards {
-    gap: 10px;
+  .testimonials .slick-dots {
+    margin-top: 20px;
   }
-  .testimonials__card {
-    flex-basis: 95%;
+  .testimonials .slick-dots li button {
+    width: 10px; /* ширина кнопки */
+    height: 10px; /* высота кнопки */
   }
 }
 
@@ -1755,3 +1781,5 @@ header {
     padding-top: 20px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
