@@ -1440,10 +1440,7 @@ header {
   }
   &__cards {
     display: flex;
-    //flex-flow: row wrap;
     justify-content: flex-start;
-    //align-items: center;
-    //gap: 20px;
 
     width: 100%;
     overflow: hidden;
@@ -1451,9 +1448,9 @@ header {
   }
   .slick-initialized .slick-slide {
     display: flex;
+    height: 372px;
   }
   &__card {
-    flex-basis: 49%;
     border: 1px solid $accent-color;
     display: flex;
     flex-flow: row nowrap;
@@ -1465,6 +1462,7 @@ header {
   }
   &__img {
     flex-basis: 35%;
+    flex-shrink: 0;
     max-width: 242px;
     width: 100%;
     padding: 30px 17px;
@@ -1478,7 +1476,6 @@ header {
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    line-height: 29px;
     color: $accent-color;
   }
   &__quote {
@@ -1486,7 +1483,6 @@ header {
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    line-height: 29px;
     color: $gray;
   }
 
@@ -1502,19 +1498,22 @@ header {
     margin: 0 20px;
   }
   .slick-dots li button {
-    width: 15px; /* ширина кнопки */
-    height: 15px; /* высота кнопки */
-    border-radius: 50%; /* округляем кнопку */
-    background-color: #ca8d6650; /* цвет фона */
-    font-size: 0px; /*убираем цифры, slick-slyder их добавляет автоматом*/
-    border: none; /* убираем границу */
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ca8d6650;
+    font-size: 0px;
+    border: none;
   }
   .slick-dots li button:focus {
-    background-color: $gray; /* цвет фона при нажатии*/
+    background-color: $gray;
   }
 
   @media (max-width: $middle-display) {
     @include laptop-container;
+    .slick-initialized .slick-slide {
+      height: 230px;
+    }
     &__title {
       margin-bottom: 5px;
     }
@@ -1539,9 +1538,6 @@ header {
 
   @media (max-width: $tablet) {
     @include tablet-container;
-    // &__card {
-    //   flex-basis: 48%;
-    // }
   }
 
   @media (max-width: $mobile) {
@@ -1550,19 +1546,22 @@ header {
     &__title {
       margin-bottom: 10px;
     }
-    // &__cards {
-    //   gap: 10px;
-    // }
-    // &__card {
-    //   flex-basis: 95%;
-    // }
     .slick-dots {
       margin-top: 20px;
     }
-
     .slick-dots li button {
-      width: 10px; /* ширина кнопки */
-      height: 10px; /* высота кнопки */
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  @media (max-width: 325px) {
+    .slick-initialized .slick-slide {
+      height: auto;
+    }
+    &__author,
+    &__quote {
+      font-size: 10px;
     }
   }
 }

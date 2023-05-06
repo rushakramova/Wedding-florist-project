@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -1368,9 +1367,9 @@ header {
 }
 .testimonials .slick-initialized .slick-slide {
   display: flex;
+  height: 372px;
 }
 .testimonials__card {
-  flex-basis: 49%;
   border: 1px solid #ca8d66;
   display: flex;
   flex-flow: row nowrap;
@@ -1381,6 +1380,7 @@ header {
 }
 .testimonials__img {
   flex-basis: 35%;
+  flex-shrink: 0;
   max-width: 242px;
   width: 100%;
   padding: 30px 17px;
@@ -1394,7 +1394,6 @@ header {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 29px;
   color: #ca8d66;
 }
 .testimonials__quote {
@@ -1402,7 +1401,6 @@ header {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 29px;
   color: #5c6c72;
 }
 .testimonials .slick-dots {
@@ -1415,15 +1413,15 @@ header {
   margin: 0 20px;
 }
 .testimonials .slick-dots li button {
-  width: 15px; /* ширина кнопки */
-  height: 15px; /* высота кнопки */
-  border-radius: 50%; /* округляем кнопку */
-  background-color: rgba(202, 141, 102, 0.3137254902); /* цвет фона */
-  font-size: 0px; /*убираем цифры, slick-slyder их добавляет автоматом*/
-  border: none; /* убираем границу */
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(202, 141, 102, 0.3137254902);
+  font-size: 0px;
+  border: none;
 }
 .testimonials .slick-dots li button:focus {
-  background-color: #5c6c72; /* цвет фона при нажатии*/
+  background-color: #5c6c72;
 }
 @media (max-width: 1499px) {
   .testimonials {
@@ -1431,6 +1429,9 @@ header {
     margin: 0 auto;
     padding-left: 54px;
     padding-right: 54px;
+  }
+  .testimonials .slick-initialized .slick-slide {
+    height: 230px;
   }
   .testimonials__title {
     margin-bottom: 5px;
@@ -1476,8 +1477,16 @@ header {
     margin-top: 20px;
   }
   .testimonials .slick-dots li button {
-    width: 10px; /* ширина кнопки */
-    height: 10px; /* высота кнопки */
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (max-width: 325px) {
+  .testimonials .slick-initialized .slick-slide {
+    height: auto;
+  }
+  .testimonials__author, .testimonials__quote {
+    font-size: 10px;
   }
 }
 
