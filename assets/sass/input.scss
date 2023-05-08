@@ -1649,7 +1649,8 @@ header {
     }
   }
 
-  .contacts-map__list .phone-link {
+  .contacts-map__list .phone-link,
+  .contacts-map__list .social-link{
     color: $gray;
     text-decoration: none;
     &:hover {
@@ -1657,7 +1658,6 @@ header {
     }
   }
   .contacts-map__list .messenger-link,
-  .contacts-map__list .social-link,
   .contacts-map__list .map-link {
     text-decoration: none;
     color: #000000;
