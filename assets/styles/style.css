@@ -1360,19 +1360,27 @@ header {
 }
 .testimonials__cards {
   display: flex;
-  flex-flow: row wrap;
   justify-content: flex-start;
-  gap: 20px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.testimonials .slick-initialized .slick-slide {
+  display: flex;
+  height: 372px;
 }
 .testimonials__card {
-  flex-basis: 49%;
   border: 1px solid #ca8d66;
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
+  float: left;
+  position: relative;
+  margin-right: 20px;
 }
 .testimonials__img {
   flex-basis: 35%;
+  flex-shrink: 0;
   max-width: 242px;
   width: 100%;
   padding: 30px 17px;
@@ -1386,7 +1394,6 @@ header {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 29px;
   color: #ca8d66;
 }
 .testimonials__quote {
@@ -1394,8 +1401,27 @@ header {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 29px;
   color: #5c6c72;
+}
+.testimonials .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 0;
+}
+.testimonials .slick-dots li {
+  margin: 0 20px;
+}
+.testimonials .slick-dots li button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(202, 141, 102, 0.3137254902);
+  font-size: 0px;
+  border: none;
+}
+.testimonials .slick-dots li button:focus {
+  background-color: #5c6c72;
 }
 @media (max-width: 1499px) {
   .testimonials {
@@ -1403,6 +1429,9 @@ header {
     margin: 0 auto;
     padding-left: 54px;
     padding-right: 54px;
+  }
+  .testimonials .slick-initialized .slick-slide {
+    height: 230px;
   }
   .testimonials__title {
     margin-bottom: 5px;
@@ -1431,9 +1460,6 @@ header {
     padding-left: 54px;
     padding-right: 54px;
   }
-  .testimonials__card {
-    flex-basis: 48%;
-  }
 }
 @media (max-width: 769px) {
   .testimonials {
@@ -1447,11 +1473,20 @@ header {
   .testimonials__title {
     margin-bottom: 10px;
   }
-  .testimonials__cards {
-    gap: 10px;
+  .testimonials .slick-dots {
+    margin-top: 20px;
   }
-  .testimonials__card {
-    flex-basis: 95%;
+  .testimonials .slick-dots li button {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (max-width: 325px) {
+  .testimonials .slick-initialized .slick-slide {
+    height: auto;
+  }
+  .testimonials__author, .testimonials__quote {
+    font-size: 10px;
   }
 }
 
@@ -1755,3 +1790,5 @@ header {
     padding-top: 20px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
