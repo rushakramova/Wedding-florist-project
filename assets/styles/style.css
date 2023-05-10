@@ -1613,21 +1613,21 @@ header {
     display: none;
   }
 }
-.contacts-map .contacts-map__list .phone-link {
+.contacts-map .contacts-map__list .phone-link,
+.contacts-map .contacts-map__list .social-link {
   color: #5c6c72;
   text-decoration: none;
 }
-.contacts-map .contacts-map__list .phone-link:hover {
+.contacts-map .contacts-map__list .phone-link:hover,
+.contacts-map .contacts-map__list .social-link:hover {
   text-decoration: underline;
 }
 .contacts-map .contacts-map__list .messenger-link,
-.contacts-map .contacts-map__list .social-link,
 .contacts-map .contacts-map__list .map-link {
   text-decoration: none;
   color: #000000;
 }
 .contacts-map .contacts-map__list .messenger-link:hover,
-.contacts-map .contacts-map__list .social-link:hover,
 .contacts-map .contacts-map__list .map-link:hover {
   text-decoration: underline;
 }
