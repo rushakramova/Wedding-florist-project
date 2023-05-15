@@ -632,7 +632,7 @@ header {
   display: inline-flex;
   flex-wrap: wrap;
   width: 710px;
-  height: 72px;
+  height: 100px;
   background: rgba(202, 141, 102, 0.5);
   margin-top: 1.8em;
   border-radius: 10px;
@@ -1692,7 +1692,7 @@ header {
   }
 
   .contacts-map__list .phone-link,
-  .contacts-map__list .social-link{
+  .contacts-map__list .social-link {
     color: $gray;
     text-decoration: none;
     &:hover {
