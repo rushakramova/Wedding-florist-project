@@ -1457,7 +1457,7 @@ header {
 
 .contacts-map {
   max-width: 1578px;
-  margin: 0 auto;
+  margin: 30px auto;
   padding-left: 54px;
   padding-right: 54px;
   display: grid;
@@ -1494,7 +1494,7 @@ header {
 @media screen and (max-width: 1499px) {
   .contacts-map {
     max-width: 1108px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding-left: 54px;
     padding-right: 54px;
     grid-template-columns: 50% 50%;
@@ -1517,7 +1517,7 @@ header {
 @media screen and (max-width: 1149px) {
   .contacts-map {
     max-width: 768px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding-left: 54px;
     padding-right: 54px;
     grid-template-columns: 50% 50%;
@@ -1538,7 +1538,7 @@ header {
   .contacts-map {
     max-width: 530px;
     width: 100%;
-    margin: 0 auto;
+    margin: 15px auto;
     padding-left: 15px;
     padding-right: 15px;
     grid-template-columns: 100%;
