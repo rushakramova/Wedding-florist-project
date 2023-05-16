@@ -812,6 +812,10 @@ header {
   padding-right: 54px;
   display: flex;
   flex-direction: column;
+  /*&_p_bouquet,
+  &_p2_bouquet {
+    background-color: $bggray;
+  }*/
 }
 .example__title {
   margin-bottom: 40px;
@@ -844,26 +848,25 @@ header {
 .example__photo {
   padding-bottom: 20px;
 }
-.example_p_bouquet, .example_p2_bouquet, .example_ol {
-  font-family: "Inter", sans-serif;
-  color: #5c6c72;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 29px;
-}
-.example_p {
+.example_p, .example_ol, .example_p_bouquet, .example_p2_bouquet {
   font-family: "Montserrat Alternates", sans-serif;
   color: #000;
   font-weight: 400;
-  font-size: 12px;
+  padding-top: 15px;
+}
+.example_p, .example_p_bouquet, .example_p2_bouquet {
+  font-size: 16px;
   line-height: 20px;
-  padding-top: 20px;
+}
+.example_ol {
+  font-size: 20px;
+  line-height: 27px;
+  padding-left: 25px;
+  margin-top: 0;
 }
 .example_ol > li {
   padding: 0.3em;
-}
-.example_p_bouquet, .example_p2_bouquet {
-  background-color: #e0e0e0;
+  padding-left: 0;
 }
 .example__block_text {
   font-size: 14px;
@@ -872,23 +875,26 @@ header {
   padding-bottom: 20px;
 }
 .example_p {
-  height: 233px;
+  height: 300px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
-.example_ol {
-  height: 350px;
-  margin: 0;
+.example .advantage {
+  height: 323px;
 }
 .example_p_bouquet {
-  height: 181px;
+  height: 81px;
+  width: 290px;
+  padding-top: 5px;
 }
 .example_p2_bouquet {
-  height: 470px;
+  height: 270px;
+  width: 280px;
 }
 .example__text {
   display: flex;
   flex-direction: column;
   max-width: 345px;
-  gap: 20px;
 }
 @media (max-width: 1559px) {
   .example {
@@ -904,18 +910,20 @@ header {
     font-size: 16px;
     line-height: 20px;
   }
+  .example__title_h3_bouquet {
+    padding-bottom: 10px;
+  }
   .example_ol, .example_p_bouquet, .example_p2_bouquet {
     font-size: 12px;
   }
   .example_p {
-    font-size: 10px;
-    max-height: 254px;
+    font-size: 11px;
+    max-height: 230px;
+    line-height: 16px;
     padding-top: 10px;
   }
   .example_p_bouquet, .example_p2_bouquet {
-    font-family: "Montserrat Alternates", sans-serif;
-    color: #000;
-    background-color: transparent;
+    width: 210px;
   }
   .example__blocks {
     -webkit-columns: 4 235px;
@@ -924,29 +932,28 @@ header {
   }
   .example__text {
     flex-wrap: wrap;
-    gap: 10px;
   }
   .example__block_text {
     max-height: fit-content;
     padding-bottom: 10px;
     font-weight: 400;
-    line-height: 20px;
   }
   .example * img {
     max-width: 235px;
   }
   .example__photo {
-    padding-bottom: 10px;
-    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+  .example .advantage {
+    height: 220px;
   }
   .example_ol {
     height: fit-content;
+    padding-left: 15px;
   }
   .example_ol > li {
     padding: 0;
-  }
-  .example_p_bouquet, .example_p2_bouquet {
-    max-height: 180px;
   }
 }
 @media (max-width: 1149px) {
@@ -971,6 +978,9 @@ header {
     font-size: 12px;
     line-height: 19.78px;
   }
+  .example_p_bouquet, .example_p2_bouquet {
+    width: 300px;
+  }
   .example_p {
     max-height: 254px;
     padding-top: 10px;
@@ -989,11 +999,20 @@ header {
   }
   .example__blocks_photo {
     flex-wrap: wrap;
-    max-height: 550px;
+    max-height: 570px;
   }
   .example__text, .example__block_text {
     max-width: 320px;
     width: 100%;
+  }
+  .example .advantage {
+    height: 160px;
+  }
+  .example__text {
+    padding-left: 10px;
+  }
+  .example__text_bouquet {
+    margin-right: 20px;
   }
   .example * img {
     max-width: 150px;
@@ -1025,6 +1044,9 @@ header {
     width: 150px;
     height: 147px;
   }
+  .example .contacts {
+    display: none;
+  }
 }
 @media (max-width: 769px) {
   .example {
@@ -1050,8 +1072,15 @@ header {
     display: flex;
     flex-direction: column;
   }
-  .example * img {
+  .example__blocks_photo {
+    align-content: center;
+  }
+  .example > img {
     max-width: 160px;
+  }
+  .example__photo {
+    padding-bottom: 10px;
+    padding-right: 10px;
   }
   .example__photo-1 > img {
     width: 160px;
@@ -1091,6 +1120,9 @@ header {
   }
   .example__blocks_photo_bouquet {
     order: -1;
+  }
+  .example .contacts {
+    display: inherit;
   }
 }
 
