@@ -673,7 +673,7 @@ header {
     height: 72px;
 
     &_catalog {
-      margin-top: 20px;
+      display: none;
     }
 
     &__order {
@@ -689,7 +689,9 @@ header {
     height: 72px;
 
     &_catalog {
+      display: block;
       margin-top: 20px;
+      padding: 0;
     }
 
     &__order {
@@ -709,9 +711,7 @@ header {
     border: 1px rgba(202, 141, 102, 0.5) solid;
 
     &_catalog {
-      margin-top: 20px;
-      align-self: center;
-      margin: 25px;
+      display: none;
     }
 
     &__order {
@@ -778,24 +778,24 @@ header {
     justify-content: space-around;
 
     &__item-link_instagram {
-      padding-left: 8px;
-      padding-right: 10px;
+      padding-left: 5%;
+      padding-right: 20%;
     }
 
     &__item-link_vk {
-      padding-right: 10px;
+      padding-right: 20%;
     }
 
     &__item-link_telegram {
-      padding-right: 10px;
+      padding-right: 20%;
     }
 
     &__item-link_whatsapp {
-      padding-right: 10px;
+      padding-right: 20%;
     }
 
     &__item-link_phone {
-      padding-right: 10px;
+      padding-right: 5%;
     }
   }
 
@@ -805,24 +805,24 @@ header {
     justify-content: space-around;
 
     &__item-link_instagram {
-      padding-left: 8px;
-      padding-right: 10px;
+      padding-left: 5%;
+      padding-right: 20%;
     }
 
     &__item-link_vk {
-      padding-right: 10px;
+      padding-right: 20%;
     }
 
     &__item-link_telegram {
-      padding-right: 10px;
+      padding-right: 20%;
     }
 
     &__item-link_whatsapp {
-      padding-right: 10px;
+      padding-right: 20%;
     }
 
     &__item-link_phone {
-      padding-right: 10px;
+      padding-right: 5%;
     }
   }
   @media screen and (max-width: $mobile) {
@@ -831,24 +831,24 @@ header {
     justify-content: space-around;
 
     &__item-link_instagram {
-      padding-left: 8px;
-      padding-right: 8px;
+      padding-left: 5%;
+      padding-right: 20%;
     }
 
     &__item-link_vk {
-      padding-right: 8px;
+      padding-right: 20%;
     }
 
     &__item-link_telegram {
-      padding-right: 8px;
+      padding-right: 20%;
     }
 
     &__item-link_whatsapp {
-      padding-right: 8px;
+      padding-right: 20%;
     }
 
     &__item-link_phone {
-      padding-right: 8px;
+      padding-right: 5%;
     }
   }
 }
