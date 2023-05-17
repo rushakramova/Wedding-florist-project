@@ -406,10 +406,11 @@ header {
   }
   @media (max-width: $mobile) {
     background-image: url(../../assets/images/img_header/img_header_mobile.svg);
-    /*background-image: url(../../assets/images/img_header/img_header_png_mobile.png);*/
+    //background-image: url(../../assets/images/img_header/img_header_png_mobile.png);
     margin-top: 60px;
     margin-bottom: 120px;
     background-size: cover;
+    background-position: center right;
     max-width: 769px;
     height: 344px;
     width: 100%;
