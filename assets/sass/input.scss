@@ -1533,6 +1533,7 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 110px 250px;
   gap: 2px;
+  margin-bottom: 50px;
   // padding: 0;
   // margin-bottom: 50px;
   // max-width: 1441px;
@@ -1572,6 +1573,7 @@ header {
     grid-template-columns: 50% 50%;
     grid-template-rows: 0.5fr 150px 1.5fr;
     gap: 10px;
+    margin-bottom: 30px;
 
     &__title1,
     &__title2 {
@@ -1594,6 +1596,7 @@ header {
     @include tablet-container();
     grid-template-columns: 50% 50%;
     grid-template-rows: 0.5fr 120px 1.5fr;
+    margin-bottom: 20px;
     &__text1,
     &__text2 {
       font-size: 14px;
@@ -1613,6 +1616,7 @@ header {
     grid-template-columns: 100%;
     grid-template-rows: 40px 150px 220px 45px 100px;
     gap: 2px;
+    margin-bottom: 15px;
     font-size: $mfont-size;
 
     .title-map__mobile {

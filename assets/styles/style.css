@@ -1457,7 +1457,7 @@ header {
 
 .contacts-map {
   max-width: 1578px;
-  margin: 30px auto;
+  margin: 0 auto;
   padding-left: 54px;
   padding-right: 54px;
   display: grid;
@@ -1465,6 +1465,7 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 110px 250px;
   gap: 2px;
+  margin-bottom: 50px;
   max-height: 818px;
 }
 .contacts-map .title-map__mobile {
@@ -1494,12 +1495,13 @@ header {
 @media screen and (max-width: 1499px) {
   .contacts-map {
     max-width: 1108px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding-left: 54px;
     padding-right: 54px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 0.5fr 150px 1.5fr;
     gap: 10px;
+    margin-bottom: 30px;
   }
   .contacts-map__title1, .contacts-map__title2 {
     font-size: 36px;
@@ -1517,11 +1519,12 @@ header {
 @media screen and (max-width: 1149px) {
   .contacts-map {
     max-width: 768px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding-left: 54px;
     padding-right: 54px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 0.5fr 120px 1.5fr;
+    margin-bottom: 20px;
   }
   .contacts-map__text1, .contacts-map__text2 {
     font-size: 14px;
@@ -1538,12 +1541,13 @@ header {
   .contacts-map {
     max-width: 530px;
     width: 100%;
-    margin: 15px auto;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
     grid-template-columns: 100%;
     grid-template-rows: 40px 150px 220px 45px 100px;
     gap: 2px;
+    margin-bottom: 15px;
     font-size: 36px;
   }
   .contacts-map .title-map__mobile {
