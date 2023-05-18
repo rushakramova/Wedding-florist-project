@@ -81,6 +81,7 @@ header {
 .menuconteiner__link {
   text-decoration: none;
   color: #ca8d66;
+  font-size: 24px;
 }
 .menuconteiner__logo {
   background-image: url(../../assets/images/img_header/Logo.png);
@@ -384,6 +385,7 @@ header {
 
 .arrow {
   display: inline-flex;
+  margin-top: 30px;
   width: 100%;
   justify-content: center;
 }
@@ -399,11 +401,7 @@ header {
 }
 @media screen and (max-width: 769px) {
   .arrow {
-    margin-top: 10px;
-    margin-bottom: 15px;
-    width: 100vw;
-    min-width: 350px;
-    align-content: center;
+    display: none;
   }
 }
 
@@ -563,7 +561,7 @@ header {
     padding-right: 15px;
     display: grid;
     grid-template-columns: 200px 1fr;
-    grid-template-rows: 320px 440px;
+    grid-template-rows: 320px 320px;
     gap: 5px;
     align-items: start;
     max-width: 360px;
@@ -1071,6 +1069,15 @@ header {
     line-height: 19.5px;
     padding-bottom: 10px;
   }
+  .example .advantage {
+    height: 130px;
+  }
+  .example_p_bouquet {
+    height: 30px;
+  }
+  .example_p2_bouquet {
+    height: 170px;
+  }
   .example__blocks {
     display: flex;
     flex-direction: column;
@@ -1533,7 +1540,7 @@ header {
   display: grid;
   font-family: "Montserrat Alternates", sans-serif;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 110px 250px;
+  grid-template-rows: 110px 280px;
   gap: 2px;
   margin-bottom: 50px;
   max-height: 818px;
@@ -1543,13 +1550,16 @@ header {
 }
 .contacts-map__title1, .contacts-map__title2 {
   grid-row: 1/2;
+  margin-top: 15px;
   padding-top: 10px;
 }
 .contacts-map__text1, .contacts-map__text2 {
-  display: grid;
   font-size: 32px;
   font-weight: 500;
   grid-row: 2/3;
+}
+.contacts-map__text1 li, .contacts-map__text2 li {
+  margin-top: 20px;
 }
 .contacts-map__logo, .contacts-map__map {
   display: grid;
@@ -1559,8 +1569,8 @@ header {
   align-self: center;
 }
 .contacts-map__list {
-  display: grid;
   align-items: stretch;
+  margin-top: 5px;
 }
 @media screen and (max-width: 1499px) {
   .contacts-map {
@@ -1580,6 +1590,9 @@ header {
   }
   .contacts-map__text1, .contacts-map__text2 {
     font-size: 18px;
+  }
+  .contacts-map__text1 li, .contacts-map__text2 li {
+    margin-top: 10px;
   }
   .contacts-map .contacts-logo {
     width: 100%;
@@ -1614,8 +1627,10 @@ header {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: 27px;
+    margin-right: 27px;
     grid-template-columns: 100%;
-    grid-template-rows: 40px 150px 220px 45px 100px;
+    grid-template-rows: 40px 150px 220px 45px 130px;
     gap: 2px;
     margin-bottom: 15px;
     font-size: 36px;
@@ -1629,7 +1644,7 @@ header {
   .contacts-map__title1 {
     grid-column: 1/2;
     grid-row: 4/5;
-    margin-top: 0px;
+    margin-top: 10px;
   }
   .contacts-map__title2 {
     font-size: 36px;
@@ -1758,7 +1773,7 @@ header {
     grid-row: 2/3;
     padding-top: 0px;
     justify-self: left;
-    padding-left: 20px;
+    padding-left: 0px;
   }
   .footer__info-1 {
     grid-column: 1/2;
@@ -1819,7 +1834,7 @@ header {
   .footer .footer_icons {
     grid-column: 1/2;
     grid-row: 1/2;
-    max-width: 330px;
+    max-width: 370px;
     width: 100%;
     height: 100px;
     background: white;
