@@ -159,6 +159,8 @@ header {
     opacity: 0;
     z-index: 2;
     -webkit-touch-callout: none;
+    background: linear-gradient(to bottom, rgb(206, 220, 231) 0%, rgb(89, 106, 114) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#cedce7", endColorstr="#596a72", GradientType=0);
   }
   .menuconteiner #gedsamugim-kanagemen span {
     display: block;
@@ -230,11 +232,12 @@ header {
 .title-mainpage {
   margin-top: 117px;
   position: relative;
-  background-image: url(../../assets/images/img_header/img_for_header.jpg);
+  background-image: url(../../assets/images/img_header/img_header.svg);
+  /*background-image: url(../../assets/images/img_header/img_header_png.png);*/
   background-repeat: no-repeat;
   background-size: cover 858px;
   background-position: center;
-  opacity: 0.73;
+  /*opacity: 0.73;*/
   max-width: 1920px;
   height: 858px;
   width: 100%;
@@ -275,10 +278,11 @@ header {
 }
 @media (max-width: 1499px) {
   .title-mainpage {
-    background-image: url(../../assets/images/img_header/img_for_header_middle.jpg);
+    background-image: url(../../assets/images/img_header/img_header_middle.svg);
+    /*background-image: url(../../assets/images/img_header/img_header_png_middle.png);*/
     margin-top: 90px;
     max-width: 1459px;
-    height: 668px;
+    height: 652px;
     width: 100%;
     font-size: 22px;
   }
@@ -308,10 +312,11 @@ header {
 }
 @media (max-width: 1149px) {
   .title-mainpage {
-    background-image: url(../../assets/images/img_header/img_for_header_tablet.jpg);
+    background-image: url(../../assets/images/img_header/img_header_tablet.svg);
+    /*background-image: url(../../assets/images/img_header/img_header_png_tablete.png);*/
     margin-top: 70px;
     max-width: 1149px;
-    height: 340px;
+    height: 513px;
     width: 100%;
     font-size: 14px;
     display: flex;
@@ -343,12 +348,13 @@ header {
 }
 @media (max-width: 769px) {
   .title-mainpage {
-    background-image: url(../../assets/images/img_header/img_for_header_mobile.jpg);
+    background-image: url(../../assets/images/img_header/img_header_mobile.svg);
     margin-top: 60px;
     margin-bottom: 120px;
     background-size: cover;
+    background-position: center right;
     max-width: 769px;
-    height: 189px;
+    height: 344px;
     width: 100%;
     justify-items: center;
   }
@@ -361,7 +367,7 @@ header {
   }
   .title-mainpage__bloc_1 {
     height: 53px;
-    margin-top: 216px;
+    margin-top: 359px;
   }
   .title-mainpage__bloc_2 {
     height: 17px;
@@ -1822,3 +1828,5 @@ header {
     padding-top: 20px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
