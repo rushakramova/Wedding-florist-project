@@ -1535,6 +1535,7 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 110px 250px;
   gap: 2px;
+  margin-bottom: 50px;
   max-height: 818px;
 }
 .contacts-map .title-map__mobile {
@@ -1570,6 +1571,7 @@ header {
     grid-template-columns: 50% 50%;
     grid-template-rows: 0.5fr 150px 1.5fr;
     gap: 10px;
+    margin-bottom: 30px;
   }
   .contacts-map__title1, .contacts-map__title2 {
     font-size: 36px;
@@ -1592,6 +1594,7 @@ header {
     padding-right: 54px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 0.5fr 120px 1.5fr;
+    margin-bottom: 20px;
   }
   .contacts-map__text1, .contacts-map__text2 {
     font-size: 14px;
@@ -1614,6 +1617,7 @@ header {
     grid-template-columns: 100%;
     grid-template-rows: 40px 150px 220px 45px 100px;
     gap: 2px;
+    margin-bottom: 15px;
     font-size: 36px;
   }
   .contacts-map .title-map__mobile {
