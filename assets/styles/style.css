@@ -232,8 +232,7 @@ header {
 .title-mainpage {
   margin-top: 117px;
   position: relative;
-  background-image: url(../../assets/images/img_header/img_header.svg);
-  /*background-image: url(../../assets/images/img_header/img_header_png.png);*/
+  background-image: url(../../assets/images/img_header/img_header_png.png);
   background-repeat: no-repeat;
   background-size: cover 858px;
   background-position: center;
@@ -278,8 +277,7 @@ header {
 }
 @media (max-width: 1499px) {
   .title-mainpage {
-    background-image: url(../../assets/images/img_header/img_header_middle.svg);
-    /*background-image: url(../../assets/images/img_header/img_header_png_middle.png);*/
+    background-image: url(../../assets/images/img_header/img_header_png_middle.png);
     margin-top: 90px;
     max-width: 1459px;
     height: 652px;
@@ -312,8 +310,7 @@ header {
 }
 @media (max-width: 1149px) {
   .title-mainpage {
-    background-image: url(../../assets/images/img_header/img_header_tablet.svg);
-    /*background-image: url(../../assets/images/img_header/img_header_png_tablete.png);*/
+    background-image: url(../../assets/images/img_header/img_header_png_tablete.png);
     margin-top: 70px;
     max-width: 1149px;
     height: 513px;
@@ -348,7 +345,7 @@ header {
 }
 @media (max-width: 769px) {
   .title-mainpage {
-    background-image: url(../../assets/images/img_header/img_header_mobile.svg);
+    background-image: url(../../assets/images/img_header/img_header_png_mobile.png);
     margin-top: 60px;
     margin-bottom: 120px;
     background-size: cover;
@@ -1828,5 +1825,3 @@ header {
     padding-top: 20px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

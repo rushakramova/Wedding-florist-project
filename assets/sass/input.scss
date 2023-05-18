@@ -185,7 +185,11 @@ header {
         opacity: 0;
         z-index: 2;
         -webkit-touch-callout: none;
-        background: linear-gradient(to bottom, rgba(206, 220, 231, 1) 0%, rgba(89, 106, 114, 1) 100%);
+        background: linear-gradient(
+          to bottom,
+          rgba(206, 220, 231, 1) 0%,
+          rgba(89, 106, 114, 1) 100%
+        );
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72', GradientType=0);
       }
 
@@ -291,8 +295,8 @@ header {
 .title-mainpage {
   margin-top: 117px;
   position: relative;
-  background-image: url(../../assets/images/img_header/img_header.svg);
-  /*background-image: url(../../assets/images/img_header/img_header_png.png);*/
+  // background-image: url(../../assets/images/img_header/img_header.svg);
+  background-image: url(../../assets/images/img_header/img_header_png.png);
   background-repeat: no-repeat;
   background-size: cover 858px;
   background-position: center;
@@ -337,8 +341,8 @@ header {
     padding-top: 37px;
   }
   @media (max-width: $middle-display) {
-    background-image: url(../../assets/images/img_header/img_header_middle.svg);
-    /*background-image: url(../../assets/images/img_header/img_header_png_middle.png);*/
+    // background-image: url(../../assets/images/img_header/img_header_middle.svg);
+    background-image: url(../../assets/images/img_header/img_header_png_middle.png);
     margin-top: 90px;
     max-width: 1459px;
     height: 652px;
@@ -370,8 +374,8 @@ header {
     }
   }
   @media (max-width: $tablet) {
-    background-image: url(../../assets/images/img_header/img_header_tablet.svg);
-    /*background-image: url(../../assets/images/img_header/img_header_png_tablete.png);*/
+    // background-image: url(../../assets/images/img_header/img_header_tablet.svg);
+    background-image: url(../../assets/images/img_header/img_header_png_tablete.png);
     margin-top: 70px;
     max-width: 1149px;
     height: 513px;
@@ -405,8 +409,8 @@ header {
     }
   }
   @media (max-width: $mobile) {
-    background-image: url(../../assets/images/img_header/img_header_mobile.svg);
-    //background-image: url(../../assets/images/img_header/img_header_png_mobile.png);
+    // background-image: url(../../assets/images/img_header/img_header_mobile.svg);
+    background-image: url(../../assets/images/img_header/img_header_png_mobile.png);
     margin-top: 60px;
     margin-bottom: 120px;
     background-size: cover;
