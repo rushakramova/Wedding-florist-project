@@ -651,7 +651,7 @@ header {
     height: 72px;
   }
   .contacts_catalog {
-    margin-top: 20px;
+    display: none;
   }
   .contacts__order {
     width: 100%;
@@ -666,7 +666,9 @@ header {
     height: 72px;
   }
   .contacts_catalog {
+    display: block;
     margin-top: 20px;
+    padding: 0;
   }
   .contacts__order {
     width: 100%;
@@ -685,9 +687,7 @@ header {
     border: 1px rgba(202, 141, 102, 0.5) solid;
   }
   .contacts_catalog {
-    margin-top: 20px;
-    align-self: center;
-    margin: 25px;
+    display: none;
   }
   .contacts__order {
     width: 100%;
@@ -742,20 +742,20 @@ header {
     justify-content: space-around;
   }
   .icon-social__item-link_instagram {
-    padding-left: 8px;
-    padding-right: 10px;
+    padding-left: 5%;
+    padding-right: 20%;
   }
   .icon-social__item-link_vk {
-    padding-right: 10px;
+    padding-right: 20%;
   }
   .icon-social__item-link_telegram {
-    padding-right: 10px;
+    padding-right: 20%;
   }
   .icon-social__item-link_whatsapp {
-    padding-right: 10px;
+    padding-right: 20%;
   }
   .icon-social__item-link_phone {
-    padding-right: 10px;
+    padding-right: 5%;
   }
 }
 @media screen and (max-width: 1149px) {
@@ -765,20 +765,20 @@ header {
     justify-content: space-around;
   }
   .icon-social__item-link_instagram {
-    padding-left: 8px;
-    padding-right: 10px;
+    padding-left: 5%;
+    padding-right: 20%;
   }
   .icon-social__item-link_vk {
-    padding-right: 10px;
+    padding-right: 20%;
   }
   .icon-social__item-link_telegram {
-    padding-right: 10px;
+    padding-right: 20%;
   }
   .icon-social__item-link_whatsapp {
-    padding-right: 10px;
+    padding-right: 20%;
   }
   .icon-social__item-link_phone {
-    padding-right: 10px;
+    padding-right: 5%;
   }
 }
 @media screen and (max-width: 769px) {
@@ -788,20 +788,20 @@ header {
     justify-content: space-around;
   }
   .icon-social__item-link_instagram {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 5%;
+    padding-right: 20%;
   }
   .icon-social__item-link_vk {
-    padding-right: 8px;
+    padding-right: 20%;
   }
   .icon-social__item-link_telegram {
-    padding-right: 8px;
+    padding-right: 20%;
   }
   .icon-social__item-link_whatsapp {
-    padding-right: 8px;
+    padding-right: 20%;
   }
   .icon-social__item-link_phone {
-    padding-right: 8px;
+    padding-right: 5%;
   }
 }
 
