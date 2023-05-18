@@ -185,6 +185,12 @@ header {
         opacity: 0;
         z-index: 2;
         -webkit-touch-callout: none;
+        background: linear-gradient(
+          to bottom,
+          rgba(206, 220, 231, 1) 0%,
+          rgba(89, 106, 114, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72', GradientType=0);
       }
 
       #gedsamugim-kanagemen span {
@@ -289,11 +295,12 @@ header {
 .title-mainpage {
   margin-top: 117px;
   position: relative;
-  background-image: url(../../assets/images/img_header/img_for_header.jpg);
+  // background-image: url(../../assets/images/img_header/img_header.svg);
+  background-image: url(../../assets/images/img_header/img_header_png.png);
   background-repeat: no-repeat;
   background-size: cover 858px;
   background-position: center;
-  opacity: 0.73;
+  /*opacity: 0.73;*/
   max-width: 1920px;
   height: 858px;
   width: 100%;
@@ -334,10 +341,11 @@ header {
     padding-top: 37px;
   }
   @media (max-width: $middle-display) {
-    background-image: url(../../assets/images/img_header/img_for_header_middle.jpg);
+    // background-image: url(../../assets/images/img_header/img_header_middle.svg);
+    background-image: url(../../assets/images/img_header/img_header_png_middle.png);
     margin-top: 90px;
     max-width: 1459px;
-    height: 668px;
+    height: 652px;
     width: 100%;
     font-size: 22px;
     &__bloc_1,
@@ -366,10 +374,11 @@ header {
     }
   }
   @media (max-width: $tablet) {
-    background-image: url(../../assets/images/img_header/img_for_header_tablet.jpg);
+    // background-image: url(../../assets/images/img_header/img_header_tablet.svg);
+    background-image: url(../../assets/images/img_header/img_header_png_tablete.png);
     margin-top: 70px;
     max-width: 1149px;
-    height: 340px;
+    height: 513px;
     width: 100%;
     font-size: 14px;
     display: flex;
@@ -400,12 +409,14 @@ header {
     }
   }
   @media (max-width: $mobile) {
-    background-image: url(../../assets/images/img_header/img_for_header_mobile.jpg);
+    // background-image: url(../../assets/images/img_header/img_header_mobile.svg);
+    background-image: url(../../assets/images/img_header/img_header_png_mobile.png);
     margin-top: 60px;
     margin-bottom: 120px;
     background-size: cover;
+    background-position: center right;
     max-width: 769px;
-    height: 189px;
+    height: 344px;
     width: 100%;
     justify-items: center;
     &__bloc_1,
@@ -420,7 +431,7 @@ header {
     }
     &__bloc_1 {
       height: 53px;
-      margin-top: 216px;
+      margin-top: 359px;
     }
     &__bloc_2 {
       height: 17px;
@@ -632,7 +643,7 @@ header {
   display: inline-flex;
   flex-wrap: wrap;
   width: 710px;
-  height: 72px;
+  height: 100px;
   background: rgba(202, 141, 102, 0.5);
   margin-top: 1.8em;
   border-radius: 10px;
@@ -673,7 +684,7 @@ header {
     height: 72px;
 
     &_catalog {
-      margin-top: 20px;
+      display: none;
     }
 
     &__order {
@@ -689,7 +700,9 @@ header {
     height: 72px;
 
     &_catalog {
+      display: block;
       margin-top: 20px;
+      padding: 0;
     }
 
     &__order {
@@ -709,9 +722,7 @@ header {
     border: 1px rgba(202, 141, 102, 0.5) solid;
 
     &_catalog {
-      margin-top: 20px;
-      align-self: center;
-      margin: 25px;
+      display: none;
     }
 
     &__order {
@@ -778,24 +789,24 @@ header {
     justify-content: space-around;
 
     &__item-link_instagram {
-      padding-left: 8px;
-      padding-right: 10px;
+      padding-left: 5%;
+      padding-right: 20%;
     }
 
     &__item-link_vk {
-      padding-right: 10px;
+      padding-right: 20%;
     }
 
     &__item-link_telegram {
-      padding-right: 10px;
+      padding-right: 20%;
     }
 
     &__item-link_whatsapp {
-      padding-right: 10px;
+      padding-right: 20%;
     }
 
     &__item-link_phone {
-      padding-right: 10px;
+      padding-right: 5%;
     }
   }
 
@@ -805,24 +816,24 @@ header {
     justify-content: space-around;
 
     &__item-link_instagram {
-      padding-left: 8px;
-      padding-right: 10px;
+      padding-left: 5%;
+      padding-right: 20%;
     }
 
     &__item-link_vk {
-      padding-right: 10px;
+      padding-right: 20%;
     }
 
     &__item-link_telegram {
-      padding-right: 10px;
+      padding-right: 20%;
     }
 
     &__item-link_whatsapp {
-      padding-right: 10px;
+      padding-right: 20%;
     }
 
     &__item-link_phone {
-      padding-right: 10px;
+      padding-right: 5%;
     }
   }
   @media screen and (max-width: $mobile) {
@@ -831,24 +842,24 @@ header {
     justify-content: space-around;
 
     &__item-link_instagram {
-      padding-left: 8px;
-      padding-right: 8px;
+      padding-left: 5%;
+      padding-right: 20%;
     }
 
     &__item-link_vk {
-      padding-right: 8px;
+      padding-right: 20%;
     }
 
     &__item-link_telegram {
-      padding-right: 8px;
+      padding-right: 20%;
     }
 
     &__item-link_whatsapp {
-      padding-right: 8px;
+      padding-right: 20%;
     }
 
     &__item-link_phone {
-      padding-right: 8px;
+      padding-right: 5%;
     }
   }
 }
@@ -902,35 +913,41 @@ header {
   }
 
   //Типографика
+  &_p,
+  &_ol,
   &_p_bouquet,
-  &_p2_bouquet,
-  &_ol {
-    font-family: $inter;
-    color: $gray;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 29px;
-  }
-
-  &_p {
+  &_p2_bouquet {
     font-family: $main-font;
     color: #000;
     font-weight: 400;
-    font-size: 12px;
+    padding-top: 15px;
+  }
+
+  &_p,
+  &_p_bouquet,
+  &_p2_bouquet {
+    font-size: 16px;
     line-height: 20px;
-    padding-top: 20px;
+  }
+
+  &_ol {
+    font-size: 20px;
+    line-height: 27px;
+    padding-left: 25px;
+    margin-top: 0;
   }
 
   //Отступы в списке
   &_ol > li {
     padding: 0.3em;
+    padding-left: 0;
   }
 
   //Заливка фона за текстом
-  &_p_bouquet,
+  /*&_p_bouquet,
   &_p2_bouquet {
     background-color: $bggray;
-  }
+  }*/
 
   //Ширина блоков с текстом
   &__block_text {
@@ -942,20 +959,24 @@ header {
 
   //Высота блоков
   &_p {
-    height: 233px;
+    height: 300px;
+    padding-bottom: 25px;
+    padding-top: 25px;
   }
 
-  &_ol {
-    height: 350px;
-    margin: 0;
+  .advantage {
+    height: 323px;
   }
 
   &_p_bouquet {
-    height: 181px;
+    height: 81px;
+    width: 290px;
+    padding-top: 5px;
   }
 
   &_p2_bouquet {
-    height: 470px;
+    height: 270px;
+    width: 280px;
   }
 
   //Блоки текста example, bouquet
@@ -963,7 +984,6 @@ header {
     display: flex;
     flex-direction: column;
     max-width: 345px;
-    gap: 20px;
   }
 
   @media (max-width: $middle-display_example) {
@@ -973,12 +993,15 @@ header {
     &__title {
       margin-top: 50px;
     }
+
     &__title_h3,
     &__title_h3_bouquet {
       font-size: 16px;
       line-height: 20px;
     }
-
+    &__title_h3_bouquet {
+      padding-bottom: 10px;
+    }
     &_ol,
     &_p_bouquet,
     &_p2_bouquet {
@@ -986,16 +1009,15 @@ header {
     }
 
     &_p {
-      font-size: 10px;
-      max-height: 254px;
+      font-size: 11px;
+      max-height: 230px;
+      line-height: 16px;
       padding-top: 10px;
     }
 
     &_p_bouquet,
     &_p2_bouquet {
-      font-family: $main-font;
-      color: #000;
-      background-color: transparent;
+      width: 210px;
     }
 
     &__blocks {
@@ -1006,14 +1028,12 @@ header {
 
     &__text {
       flex-wrap: wrap;
-      gap: 10px;
     }
 
     &__block_text {
       max-height: fit-content;
       padding-bottom: 10px;
       font-weight: 400;
-      line-height: 20px;
     }
 
     *img {
@@ -1021,21 +1041,21 @@ header {
     }
 
     &__photo {
-      padding-bottom: 10px;
-      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-right: 20px;
+    }
+
+    .advantage {
+      height: 220px;
     }
 
     &_ol {
       height: fit-content;
+      padding-left: 15px;
     }
 
     &_ol > li {
       padding: 0;
-    }
-
-    &_p_bouquet,
-    &_p2_bouquet {
-      max-height: 180px;
     }
   }
 
@@ -1066,6 +1086,10 @@ header {
       line-height: 19.78px;
     }
 
+    &_p_bouquet,
+    &_p2_bouquet {
+      width: 300px;
+    }
     &_p {
       max-height: 254px;
       padding-top: 10px;
@@ -1086,7 +1110,7 @@ header {
 
       &_photo {
         flex-wrap: wrap;
-        max-height: 550px;
+        max-height: 570px;
       }
     }
 
@@ -1094,6 +1118,17 @@ header {
     &__block_text {
       max-width: 320px;
       width: 100%;
+    }
+
+    .advantage {
+      height: 160px;
+    }
+    &__text {
+      padding-left: 10px;
+    }
+
+    &__text_bouquet {
+      margin-right: 20px;
     }
 
     *img {
@@ -1144,6 +1179,9 @@ header {
       width: 150px;
       height: 147px;
     }
+    .contacts {
+      display: none;
+    }
   }
 
   @media (max-width: $mobile) {
@@ -1167,10 +1205,19 @@ header {
     &__blocks {
       display: flex;
       flex-direction: column;
+
+      &_photo {
+        align-content: center;
+      }
     }
 
-    *img {
+    > img {
       max-width: 160px;
+    }
+
+    &__photo {
+      padding-bottom: 10px;
+      padding-right: 10px;
     }
 
     &__photo-1 > img {
@@ -1222,6 +1269,9 @@ header {
 
     &__blocks_photo_bouquet {
       order: -1;
+    }
+    .contacts {
+      display: inherit;
     }
   }
 }
@@ -1440,19 +1490,29 @@ header {
   }
   &__cards {
     display: flex;
-    flex-flow: row wrap;
     justify-content: flex-start;
-    gap: 20px;
+
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .slick-initialized .slick-slide {
+    display: flex;
+    height: 372px;
   }
   &__card {
-    flex-basis: 49%;
     border: 1px solid $accent-color;
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
+
+    float: left;
+    position: relative;
+    margin-right: 20px;
   }
   &__img {
     flex-basis: 35%;
+    flex-shrink: 0;
     max-width: 242px;
     width: 100%;
     padding: 30px 17px;
@@ -1466,7 +1526,6 @@ header {
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    line-height: 29px;
     color: $accent-color;
   }
   &__quote {
@@ -1474,12 +1533,37 @@ header {
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    line-height: 29px;
     color: $gray;
+  }
+
+  //styles for slyder dots
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  .slick-dots li {
+    margin: 0 20px;
+  }
+  .slick-dots li button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ca8d6650;
+    font-size: 0px;
+    border: none;
+  }
+  .slick-dots li button:focus {
+    background-color: $gray;
   }
 
   @media (max-width: $middle-display) {
     @include laptop-container;
+    .slick-initialized .slick-slide {
+      height: 230px;
+    }
     &__title {
       margin-bottom: 5px;
     }
@@ -1504,9 +1588,6 @@ header {
 
   @media (max-width: $tablet) {
     @include tablet-container;
-    &__card {
-      flex-basis: 48%;
-    }
   }
 
   @media (max-width: $mobile) {
@@ -1515,11 +1596,22 @@ header {
     &__title {
       margin-bottom: 10px;
     }
-    &__cards {
-      gap: 10px;
+    .slick-dots {
+      margin-top: 20px;
     }
-    &__card {
-      flex-basis: 95%;
+    .slick-dots li button {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  @media (max-width: 325px) {
+    .slick-initialized .slick-slide {
+      height: auto;
+    }
+    &__author,
+    &__quote {
+      font-size: 10px;
     }
   }
 }
@@ -1654,7 +1746,7 @@ header {
   }
 
   .contacts-map__list .phone-link,
-  .contacts-map__list .social-link{
+  .contacts-map__list .social-link {
     color: $gray;
     text-decoration: none;
     &:hover {
