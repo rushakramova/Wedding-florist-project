@@ -1728,8 +1728,6 @@ header {
 
   @media screen and (max-width: $mobile) {
     @include mobile-container;
-    margin-left: 27px;
-    margin-right: 27px;
     grid-template-columns: 100%;
     grid-template-rows: 40px 150px 220px 45px 130px;
     gap: 2px;
