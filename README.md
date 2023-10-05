@@ -2,8 +2,25 @@
       <a href="https://imgbb.com/"><img src="https://i.ibb.co/JQF1sqq/Logo.png" alt="Logo" border="0"></a>
 </p>
 
-## About
+---
 
+## Website functionality
+This site is workshop of non withering flowers.
+Wedding bouquets and arrangements from dried flowers and stabilized flowers
+
+* The main menu at the top of the page contains such sections as: "About me", "Examples", "Prices" and "Contacts", it will help you quickly move between the specified blocks.
+
+* In the "About me" section, clients can meet Anna, the creator of these beautiful bouquets, and learn a little about the workshop.
+
+* The user will learn what dried flowers and stabilized flowers are, and will be able to see examples of bouquets in the "Examples" block.
+
+* In the blocks "Bouquets" and "Accessories" you can see options for accessories, bouquets and estimated prices for them.
+
+* This page also contains testimonials from real customers.
+
+* "Мake an order" buttons with icons of social networks will help you quickly contact Anna and clarify all the necessary details.
+
+* Аt the bottom of the page there is contact information and an interactive map with the address of the workshop.
 
 
 ## Documentation
